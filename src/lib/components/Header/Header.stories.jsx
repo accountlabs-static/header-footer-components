@@ -1,6 +1,6 @@
 import React from 'react'
 import App from '../App'
-import { default as HeaderComponent } from './header-component/index'
+import { Header as HeaderComponent } from './header-component/index'
 
 export default {
   title: 'Header',

@@ -27,8 +27,8 @@ import { useIsMobile } from '../../hooks'
 import { LINKS } from '../../config'
 import { Container } from '../../styles/layout.style'
 import ArrowUp from '../../assets/images/ArrowUp'
-import ship from './images/ship.svg'
-import orderTrack from './images/orderTrack.svg'
+import ship from '../images/ship.svg'
+import orderTrack from '../images/orderTrack.svg'
 
 const menuList = [
   [
@@ -208,44 +208,44 @@ export const Footer = forwardRef(() => {
   const icons = [
     {
       title: 'Discord',
-      icon: new URL('./images/discord.png', import.meta.url).href,
-      activeIcon: new URL('./images/discord_c.png', import.meta.url).href,
+      icon: new URL('../images/discord.png', import.meta.url).href,
+      activeIcon: new URL('../images/discord_c.png', import.meta.url).href,
       link: 'https://keyst.one/discord',
     },
     {
       title: 'Twitter',
-      icon: new URL('./images/x.png', import.meta.url).href,
-      activeIcon: new URL('./images/x_c.png', import.meta.url).href,
+      icon: new URL('../images/x.png', import.meta.url).href,
+      activeIcon: new URL('../images/x_c.png', import.meta.url).href,
       link: isZh ? 'https://twitter.com/KeystoneCN' : 'https://twitter.com/KeystoneWallet',
     },
     {
       title: 'Medium',
-      icon: new URL('./images/medium.png', import.meta.url).href,
-      activeIcon: new URL('./images/medium_c.png', import.meta.url).href,
+      icon: new URL('../images/medium.png', import.meta.url).href,
+      activeIcon: new URL('../images/medium_c.png', import.meta.url).href,
       link: 'https://blog.keyst.one',
     },
     {
       title: 'YouTube',
-      icon: new URL('./images/youtube.png', import.meta.url).href,
-      activeIcon: new URL('./images/youtube_c.png', import.meta.url).href,
+      icon: new URL('../images/youtube.png', import.meta.url).href,
+      activeIcon: new URL('../images/youtube_c.png', import.meta.url).href,
       link: 'https://www.youtube.com/channel/UCaReIdawwYPPcyWGoNunF7g',
     },
     {
       title: 'Telegram',
-      icon: new URL('./images/telegram.png', import.meta.url).href,
-      activeIcon: new URL('./images/telegram_c.png', import.meta.url).href,
+      icon: new URL('../images/telegram.png', import.meta.url).href,
+      activeIcon: new URL('../images/telegram_c.png', import.meta.url).href,
       link: isZh ? 'https://t.me/KeystoneWalletCN' : 'https://t.me/KeystoneWallet',
     },
     {
       title: '即刻',
-      icon: new URL('./images/jike.png', import.meta.url).href,
-      activeIcon: new URL('./images/jike_c.png', import.meta.url).href,
+      icon: new URL('../images/jike.png', import.meta.url).href,
+      activeIcon: new URL('../images/jike_c.png', import.meta.url).href,
       link: 'https://web.okjike.com/u/370FC219-7DFC-4774-BC01-3AE19347D1E7',
     },
     {
       title: 'Reddit',
-      icon: new URL('./images/reddit.png', import.meta.url).href,
-      activeIcon: new URL('./images/reddit_c.png', import.meta.url).href,
+      icon: new URL('../images/reddit.png', import.meta.url).href,
+      activeIcon: new URL('../images/reddit_c.png', import.meta.url).href,
       link: 'https://www.reddit.com/r/KeystoneWallet/',
     },
   ]
@@ -306,7 +306,7 @@ export const Footer = forwardRef(() => {
       <Container>
         <Main>
           <MainLeft>
-            <Logo src={new URL('./images/logo.png', import.meta.url).href} loading="lazy" />
+            <Logo src={new URL('../images/logo.png', import.meta.url).href} loading="lazy" />
             <Slogan>
               <FormattedMessage {...messages.slogan} values={{ br: <br /> }} />
             </Slogan>

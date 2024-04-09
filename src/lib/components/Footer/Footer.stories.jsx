@@ -1,6 +1,6 @@
 import React from 'react'
 import App from '../App'
-import { default as FooterComponent } from './footer-component/index'
+import { Footer as FooterComponent } from './footer-component/index'
 
 export default {
   title: 'Footer',
