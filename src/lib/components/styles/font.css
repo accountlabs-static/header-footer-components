@@ -1,0 +1,98 @@
+@import 'https://cdn.jsdelivr.net/npm/@openfonts/open-sans_all@1.44.2/index.min.css';
+@import 'https://cdn.jsdelivr.net/npm/@openfonts/montserrat_all@1.44.2/index.min.css';
+
+@font-face {
+  font-display: swap;
+  font-family: 'Din';
+  src: url('https://keyst.one/statics/fonts/mainsite/din_regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'DinBold';
+  src: url('https://keyst.one/statics/fonts/mainsite/din_bold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'DinLight';
+  src: url('https://keyst.one/statics/fonts/mainsite/din_light.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'DinNext';
+  src: url('https://keyst.one/statics/fonts/mainsite/DINNextLTPro-BoldCondensed.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratLight';
+  src: url('https://keyst.one/statics/fonts/mainsite/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratMedium';
+  src: url('https://keyst.one/statics/fonts/mainsite/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratSemiBold';
+  src: url('https://keyst.one/statics/fonts/mainsite/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratBold';
+  src: url('https://keyst.one/statics/fonts/mainsite/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Mont';
+  src: url('https://keyst.one/statics/fonts/mainsite/Mont-Regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 275;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-ExtraLight.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 300;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-Light.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 400;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-SemiBold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 700;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-Bold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Titillium Web';
+  font-weight: 900;
+  src: url('https://keyst.one/statics/fonts/mainsite/TitilliumWeb-Black.ttf');
+}

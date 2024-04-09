@@ -1,0 +1,118 @@
+@import url('./styles/font.css');
+
+:root {
+  font-family: 'Montserrat', -apple-system, 'PingFang SC', 'Microsoft Yahei',
+    微软雅黑, 'MicrosoftJhengHei', BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --transition: all 0.25s ease-in-out;
+
+  --height-header: 64px;
+  --header-computed-height: 64px;
+  --transition-duration: 0.25s;
+  background-color: #111214;
+}
+
+$d-bd-primary: #3d71ff;
+$d-bd-pink: #e0516e;
+$d-bd-oranger: #e07f3f;
+$d-bd-cyan: #1be0c6;
+$d-bd-contiguous: #1dbbf5;
+$d-bd-purple: #ad93f5;
+$d-fg-emphasis: #ffffff;
+$bg-metamask: linear-gradient(270deg, #FF97E2 0%, #FFB156 100%);
+$bg-okx: linear-gradient(135deg, #F0FD69 0%, #85EFEE 100%);
+$bg-btc: linear-gradient(90deg, #ffa440 15%, #f66537 100%);
+
+:export {
+  d-bd-primary: $d-bd-primary;
+  d-bd-pink: $d-bd-pink;
+  d-bd-oranger: $d-bd-oranger;
+  d-bd-cyan: $d-bd-cyan;
+  d-bd-contiguous: $d-bd-contiguous;
+  d-bd-purple: $d-bd-purple;
+  d-fg-emphasis: $d-fg-emphasis;
+  bg-metamask: $bg-metamask;
+  bg-okx: $bg-okx;
+}
+
+.theme-dark {
+  --color-bg-metamask: #{$bg-metamask};
+  --color-bg-okx: #{$bg-okx};
+  --color-bg-btc: #{$bg-btc};
+  --color-bd-primary: #{$d-bd-primary};
+  --color-bd-primary-trans: #{rgba($d-bd-primary, 0.12)};
+  --color-bd-primary-trans5: #{rgba($d-bd-primary, 0.05)};
+  --color-bd-primary-trans10: #{rgba($d-bd-primary, 0.1)};
+  --color-bd-cyan: #{$d-bd-cyan};
+  --color-bd-cyan-trans: #{rgba($d-bd-cyan, 0.24)};
+  --color-bd-pink: #{$d-bd-pink};
+  --color-bd-pink-trans: #{rgba($d-bd-pink, 0.24)};
+  --color-bd-pink-trans10: #{rgba($d-bd-pink, 0.1)};
+  --color-bd-contiguous: #{$d-bd-contiguous};
+  --color-bd-purple: #{$d-bd-purple};
+  --color-bd-oranger: #{$d-bd-oranger};
+  --color-bd-oranger-trans: #{rgba($d-bd-oranger, 0.12)};
+  --color-bd-oranger-trans10: #{rgba($d-bd-oranger, 0.1)};
+  --color-bd-purple-trans: #{rgba($d-bd-purple, 0.12)};
+
+  --color-fg-emphasis: #{$d-fg-emphasis};
+  --color-fg-emphasis-trans20: #{rgba($d-fg-emphasis, 0.2)};
+  --color-fg-default: #f5f8ff;
+  --color-fg-muted: #bcc0cc;
+  --color-fg-subtle: #83868f;
+  --color-fg-slight: #6b6f7a;
+
+  --color-bg-emphasis: #000000;
+  --color-bg-default: #111214;
+  --color-bg-default-trans: rgba(17, 18, 20, 0.88);
+  --color-bg-default-trans60: rgba(17, 18, 20, 0.6);
+  --color-bg-muted: #1a1b1f;
+  --color-bg-subtle: #1f2124;
+  --color-bg-slight: #272829;
+  --color-bd-contiguous-trans: #{rgba(#09aeeb, 0.12)};
+
+  --color-gd-primary: linear-gradient(90deg, #3d71ff 0%, #93cef5 100%);
+  --color-gd-variant: linear-gradient(90deg, #1be0c6 0%, #1dbbf5 100%);
+  --color-gd-pink: linear-gradient(90deg, #e1526e 0%, #ffadbe 100%);
+  --color-gd-orange: linear-gradient(270deg, #f5c793 0%, #e6772e 100%);
+  --color-gd-purple: linear-gradient(270deg, #a585ff 0%, #9d5cff 100%);
+  --color-gd-red: linear-gradient(90deg, #E05151 0%, #F98F8F 100%);
+  --color-gd-metamask: linear-gradient(270deg, #FF97E2 0%, #FFB156 100%);
+
+  --color-border-emphasis: #969aa3;
+  --color-border-default: #757985;
+  --color-border-subtle: #2f3033;
+  --color-border-slight: #272829;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+
