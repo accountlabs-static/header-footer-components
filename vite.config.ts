@@ -39,7 +39,6 @@ const app = async (): Promise<UserConfigExport> => {
           globals: {
             react: 'React',
             'react/jsx-runtime': 'react/jsx-runtime',
-            'react-dom': 'ReactDOM',
             tailwindcss: 'tailwindcss',
           },
         },
