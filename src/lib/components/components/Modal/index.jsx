@@ -28,7 +28,7 @@ export default function Modal({
   disableMaskClose,
   // getContainer = document && document.getElementById('root'),
 }) {
-  // const containerRef = useRef()
+  const containerRef = useRef()
 
   // const hostElement = getContainer
 
@@ -39,7 +39,7 @@ export default function Modal({
   const { visible, className: transitionClassName } = useVisibleTransition({
     open,
     transition,
-    // containerRef,
+    containerRef,
     onClose,
     defaultVisible: defaultOpen,
   })
