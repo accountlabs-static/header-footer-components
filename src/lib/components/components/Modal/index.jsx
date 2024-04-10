@@ -26,11 +26,11 @@ export default function Modal({
   mask = true,
   centered = false,
   disableMaskClose,
-  getContainer = document && document.getElementById('root'),
+  // getContainer = document && document.getElementById('root'),
 }) {
   const containerRef = useRef()
 
-  const hostElement = getContainer
+  // const hostElement = getContainer
 
   function stopPropagation(ev) {
     ev.stopPropagation()
@@ -50,16 +50,16 @@ export default function Modal({
   }
 
   useEffect(() => {
-    if (open) {
-      document && document.body.classList.add('modal-mobile')
-    } else {
-      document && document.body.classList.remove('modal-mobile')
-    }
+    // if (open) {
+    //   document && document.body.classList.add('modal-mobile')
+    // } else {
+    //   document && document.body.classList.remove('modal-mobile')
+    // }
   }, [open])
 
   const content = (
     <Main
-      render={document?.body}
+      // render={document?.body}
       visible={open}
       className={`${open ? 'visible' : ''} ${className}`}
       onClick={onMaskClick}
@@ -99,9 +99,9 @@ export default function Modal({
     </Main>
   )
 
-  if (hostElement && isBrowser()) {
-    return createPortal(content, hostElement)
-  }
+  // if (hostElement && isBrowser()) {
+  //   return createPortal(content, hostElement)
+  // }
 
   /* fallback to inline rendering */
   console.warn('Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.')

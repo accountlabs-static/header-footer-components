@@ -28,11 +28,11 @@ export default function Contact() {
     }
     const windowRef = window.open(data.value, '_blank')
     windowRef.focus()
-    setTimeout(function () {
-      if (!windowRef?.document?.hasFocus()) {
-        windowRef.close()
-      }
-    }, 500)
+    // setTimeout(function () {
+    //   if (!windowRef?.document?.hasFocus()) {
+    //     windowRef.close()
+    //   }
+    // }, 500)
   }, [])
 
   const options = useMemo(
