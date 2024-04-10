@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { Tooltip } from 'react-tooltip'
 import {
@@ -201,8 +201,7 @@ const menuList = [
 const desktopMenuOrder = ['keystone', 'legal', 'partnership']
 const mobileMenuOrder = ['keystone', 'partnership', 'legal']
 
-// eslint-disable-next-line react/display-name
-export const Footer = forwardRef(() => {
+export const Footer = () => {
   const intl = useIntl()
   const isZh = useMemo(() => intl.locale === 'zh', [intl.locale])
   const icons = [
@@ -363,4 +362,4 @@ export const Footer = forwardRef(() => {
       </Top>
     </FooterBox>
   )
-})
+}
