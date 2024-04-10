@@ -1,1 +1,1 @@
-export * from './footer-component/index'
+export * from './footer-component/Footer'

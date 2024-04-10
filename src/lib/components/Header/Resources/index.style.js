@@ -1,10 +1,10 @@
-import ArrowWireRight from "../../assets/images/ArrowWireRight";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { Container } from "../../styles/layout.style";
-import { H5 } from "../../styles/title.style";
-import { Body, Caption } from "../../styles/body.style";
-import { DEVICE_QUERY_MOBILE } from "../../config";
+import ArrowWireRight from '../../assets/images/ArrowWireRight'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import { Container } from '../../styles/layout.style'
+import { H5 } from '../../styles/title.style'
+import { Body, Caption } from '../../styles/body.style'
+import { DEVICE_QUERY_MOBILE } from '../../config'
 
 export const Main = styled(Container)`
   padding: 56px 0;
@@ -15,7 +15,7 @@ export const Main = styled(Container)`
     display: block;
     padding: 0;
   }
-`;
+`
 
 export const Start = styled.div`
   padding-left: 120px;
@@ -36,15 +36,7 @@ export const Start = styled.div`
     border-right: none;
     border-left: none;
   }
-`;
-
-export const StartLink = styled(Link)`
-  display: block;
-  padding: 16px 0 8px;
-  @media ${DEVICE_QUERY_MOBILE} {
-    padding: 0;
-  }
-`;
+`
 
 export const StartIcon = styled.div`
   position: relative;
@@ -64,7 +56,7 @@ export const StartIcon = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const StartTitle = styled(H5)`
   margin: 36px 0 12px;
@@ -82,7 +74,7 @@ export const StartTitle = styled(H5)`
   @media ${DEVICE_QUERY_MOBILE} {
     margin-top: 0;
   }
-`;
+`
 
 export const StartArrow = styled(ArrowWireRight)`
   color: var(--color-fg-subtle);
@@ -93,11 +85,11 @@ export const StartArrow = styled(ArrowWireRight)`
   @media ${DEVICE_QUERY_MOBILE} {
     display: inline-block;
   }
-`;
+`
 
 export const StartDesc = styled(Caption)`
   color: var(--color-fg-subtle);
-`;
+`
 
 export const Grid = styled(Body)`
   display: grid;
@@ -110,7 +102,7 @@ export const Grid = styled(Body)`
     height: auto;
     gap: 16px;
   }
-`;
+`
 
 export const Item = styled.div`
   width: 100%;
@@ -139,7 +131,7 @@ export const Item = styled.div`
       width: 100%;
     }
   }
-`;
+`
 
 export const ItemIcon = styled.img`
   width: 48px;
@@ -148,7 +140,7 @@ export const ItemIcon = styled.img`
   @media ${DEVICE_QUERY_MOBILE} {
     margin-right: 16px;
   }
-`;
+`
 
 export const ResourceLink = styled(Link)`
   display: flex;
@@ -170,4 +162,4 @@ export const ResourceLink = styled(Link)`
     font-size: 16px;
     height: 24px;
   }
-`;
+`
