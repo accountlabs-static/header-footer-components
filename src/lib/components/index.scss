@@ -1,28 +1,5 @@
 @import url('./styles/font.css');
 
-:root {
-  font-family: 'Montserrat', -apple-system, 'PingFang SC', 'Microsoft Yahei',
-    微软雅黑, 'MicrosoftJhengHei', BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --transition: all 0.25s ease-in-out;
-
-  --height-header: 64px;
-  --header-computed-height: 64px;
-  --transition-duration: 0.25s;
-  background-color: #111214;
-}
-
 $d-bd-primary: #3d71ff;
 $d-bd-pink: #e0516e;
 $d-bd-oranger: #e07f3f;
@@ -94,24 +71,32 @@ $bg-btc: linear-gradient(90deg, #ffa440 15%, #f66537 100%);
   --color-border-default: #757985;
   --color-border-subtle: #2f3033;
   --color-border-slight: #272829;
+
+  font-family: 'Montserrat', -apple-system, 'PingFang SC', 'Microsoft Yahei',
+  微软雅黑, 'MicrosoftJhengHei', BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --transition: all 0.25s ease-in-out;
+
+  --height-header: 64px;
+  --header-computed-height: 64px;
+  --transition-duration: 0.25s;
+
+  a {
+    text-decoration: inherit;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
-a {
-  text-decoration: inherit;
-}
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
 
 

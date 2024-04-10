@@ -13,14 +13,13 @@ export const HeaderStickyBox = styled.div`
   top: 0;
   z-index: 1100;
   width: 100vw;
+  background-color: var(--color-bg-default);
 `
 
 export const HeaderBox = styled.header`
   background-color: rgba(17, 18, 20, 0);
   transition: var(--transition);
   nav {
-    backdrop-filter: var(--backdrop-filter);
-    background-color: var(--background-color);
     transition: var(--transition);
     z-index: 1200;
   }

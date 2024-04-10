@@ -1,5 +1,13 @@
+import { Footer } from '../../Footer'
+import { Header } from './Header'
+
 function Card() {
-  return <div>Card</div>
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  )
 }
 
 export default Card

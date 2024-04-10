@@ -123,10 +123,10 @@ export const Header = () => {
 
   return (
     <>
-      <HeaderStickyBox>
+      <HeaderStickyBox className="theme-dark">
         <HeaderBox
           ref={dom}
-          className={classNames('page-header theme-dark', {
+          className={classNames('page-header', {
             active: isHover || activeMenu,
             'active-mobile': isMobileMenuOpen,
             'active-menu': activeMenu,
