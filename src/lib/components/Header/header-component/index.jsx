@@ -27,6 +27,7 @@ import LogoIcon from '../../assets/images/logo.png'
 import LogoMobileIcon from '../../Footer/images/logo.svg'
 import Partnerships from '../Partnerships'
 import WalletsAndAssets from '../WalletsAndAssets'
+import '../../index.scss'
 
 export const Header = () => {
   const intl = useIntl()
