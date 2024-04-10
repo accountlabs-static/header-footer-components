@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
-import { createPortal } from 'react-dom';
-import { Body, CloseIcon, Container, Footer, Header, Main } from './style';
-import { useVisibleTransition } from '../../hooks';
-import { isBrowser } from '../../utils';
-import Close from '../../assets/images/Close';
+import React, { useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
+import { Body, CloseIcon, Container, Footer, Header, Main } from './style'
+import { useVisibleTransition } from '../../hooks'
+import { isBrowser } from '../../utils'
+import Close from '../../assets/images/Close'
 
 export default function Modal({
   open,
@@ -28,12 +28,12 @@ export default function Modal({
   disableMaskClose,
   getContainer = document && document.getElementById('root'),
 }) {
-  const containerRef = useRef();
+  const containerRef = useRef()
 
-  const hostElement = getContainer;
+  const hostElement = getContainer
 
   function stopPropagation(ev) {
-    ev.stopPropagation();
+    ev.stopPropagation()
   }
 
   const { visible, className: transitionClassName } = useVisibleTransition({
@@ -42,24 +42,24 @@ export default function Modal({
     containerRef,
     onClose,
     defaultVisible: defaultOpen,
-  });
+  })
 
   function onMaskClick() {
-    if (disableMaskClose) return;
-    onClose && onClose();
+    if (disableMaskClose) return
+    onClose && onClose()
   }
 
   useEffect(() => {
     if (open) {
-      document.body.classList.add('modal-mobile');
+      document && document.body.classList.add('modal-mobile')
     } else {
-      document.body.classList.remove('modal-mobile');
+      document && document.body.classList.remove('modal-mobile')
     }
-  }, [open]);
+  }, [open])
 
   const content = (
     <Main
-      render={document.body}
+      render={document?.body}
       visible={open}
       className={`${open ? 'visible' : ''} ${className}`}
       onClick={onMaskClick}
@@ -82,10 +82,7 @@ export default function Modal({
         {closeIcon &&
           (typeof closeIcon === 'boolean' ? (
             <CloseIcon theme={theme} type={closeIconType} onClick={onClose}>
-              <Close
-                width={closeIconType === 'inner' ? '26' : '24'}
-                height={closeIconType === 'inner' ? '26' : '24'}
-              />
+              <Close width={closeIconType === 'inner' ? '26' : '24'} height={closeIconType === 'inner' ? '26' : '24'} />
             </CloseIcon>
           ) : (
             closeIcon
@@ -100,16 +97,14 @@ export default function Modal({
         )}
       </Container>
     </Main>
-  );
+  )
 
   if (hostElement && isBrowser()) {
-    return createPortal(content, hostElement);
+    return createPortal(content, hostElement)
   }
 
   /* fallback to inline rendering */
-  console.warn(
-    'Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.',
-  );
+  console.warn('Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.')
 
-  return content;
+  return content
 }

@@ -103,9 +103,9 @@ export const Header = () => {
 
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.classList.add('menu-header-mobile')
+      document && document.body.classList.add('menu-header-mobile')
     } else {
-      document.body.classList.remove('menu-header-mobile')
+      document && document.body.classList.remove('menu-header-mobile')
     }
   }, [isMobileMenuOpen])
 
