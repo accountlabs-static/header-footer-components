@@ -29,6 +29,21 @@ import { Container } from '../../styles/layout.style'
 import ArrowUp from '../../assets/images/ArrowUp'
 import ship from '../images/ship.svg'
 import orderTrack from '../images/orderTrack.svg'
+import discord from '../images/discord.png'
+import discordC from '../images/discord_c.png'
+import twitter from '../images/x.png'
+import twitterC from '../images/x_c.png'
+import medium from '../images/medium.png'
+import mediumC from '../images/medium_c.png'
+import youtube from '../images/youtube.png'
+import youtubeC from '../images/youtube_c.png'
+import telegram from '../images/telegram.png'
+import telegramC from '../images/telegram_c.png'
+import jike from '../images/jike.png'
+import jikeC from '../images/jike_c.png'
+import reddit from '../images/reddit.png'
+import redditC from '../images/reddit_c.png'
+import logo from '../images/logo.png'
 
 const menuList = [
   [
@@ -204,50 +219,50 @@ const mobileMenuOrder = ['keystone', 'partnership', 'legal']
 export const Footer = () => {
   const intl = useIntl()
   const isZh = useMemo(() => intl.locale === 'zh', [intl.locale])
-  // const icons = [
-  //   {
-  //     title: 'Discord',
-  //     icon: new URL('../images/discord.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/discord_c.png', import.meta.url).href,
-  //     link: 'https://keyst.one/discord',
-  //   },
-  //   {
-  //     title: 'Twitter',
-  //     icon: new URL('../images/x.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/x_c.png', import.meta.url).href,
-  //     link: isZh ? 'https://twitter.com/KeystoneCN' : 'https://twitter.com/KeystoneWallet',
-  //   },
-  //   {
-  //     title: 'Medium',
-  //     icon: new URL('../images/medium.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/medium_c.png', import.meta.url).href,
-  //     link: 'https://blog.keyst.one',
-  //   },
-  //   {
-  //     title: 'YouTube',
-  //     icon: new URL('../images/youtube.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/youtube_c.png', import.meta.url).href,
-  //     link: 'https://www.youtube.com/channel/UCaReIdawwYPPcyWGoNunF7g',
-  //   },
-  //   {
-  //     title: 'Telegram',
-  //     icon: new URL('../images/telegram.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/telegram_c.png', import.meta.url).href,
-  //     link: isZh ? 'https://t.me/KeystoneWalletCN' : 'https://t.me/KeystoneWallet',
-  //   },
-  //   {
-  //     title: '即刻',
-  //     icon: new URL('../images/jike.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/jike_c.png', import.meta.url).href,
-  //     link: 'https://web.okjike.com/u/370FC219-7DFC-4774-BC01-3AE19347D1E7',
-  //   },
-  //   {
-  //     title: 'Reddit',
-  //     icon: new URL('../images/reddit.png', import.meta.url).href,
-  //     activeIcon: new URL('../images/reddit_c.png', import.meta.url).href,
-  //     link: 'https://www.reddit.com/r/KeystoneWallet/',
-  //   },
-  // ]
+  const icons = [
+    {
+      title: 'Discord',
+      icon: discord,
+      activeIcon: discordC,
+      link: 'https://keyst.one/discord',
+    },
+    {
+      title: 'Twitter',
+      icon: twitter,
+      activeIcon: twitterC,
+      link: isZh ? 'https://twitter.com/KeystoneCN' : 'https://twitter.com/KeystoneWallet',
+    },
+    {
+      title: 'Medium',
+      icon: medium,
+      activeIcon: mediumC,
+      link: 'https://blog.keyst.one',
+    },
+    {
+      title: 'YouTube',
+      icon: youtube,
+      activeIcon: youtubeC,
+      link: 'https://www.youtube.com/channel/UCaReIdawwYPPcyWGoNunF7g',
+    },
+    {
+      title: 'Telegram',
+      icon: telegram,
+      activeIcon: telegramC,
+      link: isZh ? 'https://t.me/KeystoneWalletCN' : 'https://t.me/KeystoneWallet',
+    },
+    {
+      title: '即刻',
+      icon: jike,
+      activeIcon: jikeC,
+      link: 'https://web.okjike.com/u/370FC219-7DFC-4774-BC01-3AE19347D1E7',
+    },
+    {
+      title: 'Reddit',
+      icon: reddit,
+      activeIcon: redditC,
+      link: 'https://www.reddit.com/r/KeystoneWallet/',
+    },
+  ]
 
   const isMobile = useIsMobile()
   const menu = useMemo(() => {
@@ -263,23 +278,23 @@ export const Footer = () => {
     })
   }
 
-  // const medias = icons.map((e) => (
-  //   <Media
-  //     target="_blank"
-  //     href={e.link}
-  //     key={e.title}
-  //     className={`media-${e.title}`}
-  //     data-background-color="var(--color-bg-slight)"
-  //     data-text-color="var(--color-fg-default)"
-  //     data-mixpanel-id={e.title}
-  //     data-mixpanel-pos="footer"
-  //     data-mixpanel-to={e.link}
-  //   >
-  //     <img src={e.icon} className="default" alt={e.title} loading="lazy" />
-  //     <img src={e.activeIcon} className="active" alt={e.title} loading="lazy" />
-  //     <Tooltip anchorSelect={`.media-${e.title}`} content={e.title} />
-  //   </Media>
-  // ))
+  const medias = icons.map((e) => (
+    <Media
+      target="_blank"
+      href={e.link}
+      key={e.title}
+      className={`media-${e.title}`}
+      data-background-color="var(--color-bg-slight)"
+      data-text-color="var(--color-fg-default)"
+      data-mixpanel-id={e.title}
+      data-mixpanel-pos="footer"
+      data-mixpanel-to={e.link}
+    >
+      <img src={e.icon} className="default" alt={e.title} loading="lazy" />
+      <img src={e.activeIcon} className="active" alt={e.title} loading="lazy" />
+      <Tooltip anchorSelect={`.media-${e.title}`} content={e.title} />
+    </Media>
+  ))
 
   const categories = menu.map((it) =>
     it.map((col) => ({
@@ -305,7 +320,7 @@ export const Footer = () => {
       <Container>
         <Main>
           <MainLeft>
-            {/* <Logo src={new URL('../images/logo.png', import.meta.url).href} loading="lazy" /> */}
+            <Logo src={logo} loading="lazy" />
             <Slogan>
               <FormattedMessage {...messages.slogan} values={{ br: <br /> }} />
             </Slogan>
@@ -353,7 +368,7 @@ export const Footer = () => {
               <FormattedMessage {...messages.orderTrack} />
             </FooterLinkItem>
           </UtilsAreaLeft>
-          {/* <MediaList>{medias}</MediaList> */}
+          <MediaList>{medias}</MediaList>
         </UtilsArea>
         <Copyright>Keystone © All rights reserved 2018 - {new Date().getFullYear()}</Copyright>
       </Container>
