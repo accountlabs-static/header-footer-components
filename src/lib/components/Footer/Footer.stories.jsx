@@ -1,15 +1,8 @@
 import React from 'react'
-import App from '../App'
-import { Footer as FooterComponent } from './footer-component/index'
-
+import { Footer } from './footer-component/Footer'
 export default {
-  title: 'Footer',
-  component: App,
+  title: 'example/Footer',
+  component: Footer,
 }
 
-const Template = (args) => <App {...args} />
-
-export const Footer = Template.bind({})
-Footer.args = {
-  children: <FooterComponent />,
-}
+export const Default = () => <Footer />

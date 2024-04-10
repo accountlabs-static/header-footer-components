@@ -44,10 +44,6 @@ const app = async (): Promise<UserConfigExport> => {
         },
       },
     },
-    test: {
-      globals: true,
-      environment: 'jsdom',
-    },
   })
 }
 // https://vitejs.dev/config/

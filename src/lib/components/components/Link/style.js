@@ -1,16 +1,14 @@
-import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
-import { DEVICE_QUERY_MOBILE } from '../../config';
+import styled, { css } from 'styled-components'
+import { DEVICE_QUERY_MOBILE } from '../../config'
 
-export const LinkWrapper = styled(Link)
+export const LinkWrapper = styled.div
   .attrs({
     className: 'link-wrapper',
   })
   .withConfig({
-    shouldForwardProp: (prop) =>
-      !['hoverColor'].includes(prop),
+    shouldForwardProp: (prop) => !['hoverColor'].includes(prop),
   })`
-  color: ${props => props.color};
+  color: ${(props) => props.color};
   .link-text {
     transition: var(--transition);
     cursor: pointer;
@@ -21,7 +19,7 @@ export const LinkWrapper = styled(Link)
       }
     }
   }
-  ${props =>
+  ${(props) =>
     props.underline
       ? css`
           .link-text {
@@ -62,9 +60,9 @@ export const LinkWrapper = styled(Link)
   }
 
   &:hover {
-    color: ${props => props.hoverColor};
+    color: ${(props) => props.hoverColor};
     .link-arrow {
       transform: translateX(6px);
     }
   }
-`;
+`

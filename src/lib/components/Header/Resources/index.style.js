@@ -1,5 +1,4 @@
 import ArrowWireRight from '../../assets/images/ArrowWireRight'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { Container } from '../../styles/layout.style'
 import { H5 } from '../../styles/title.style'
@@ -142,7 +141,7 @@ export const ItemIcon = styled.img`
   }
 `
 
-export const ResourceLink = styled(Link)`
+export const ResourceLink = styled.a`
   display: flex;
   align-items: center;
   color: var(--color-fg-muted);

@@ -1,11 +1,10 @@
-import styled from 'styled-components';
-import ArrowLeft from '../assets/images/ArrowLeft';
-import { Link } from 'react-router-dom';
-import { H6 } from '../styles/title.style';
-import Drop from '../assets/images/Drop';
-import { Container as Con } from '../styles/layout.style';
-import Button from '../components/Button';
-import { DEVICE_QUERY_MOBILE } from '../config';
+import styled from 'styled-components'
+import ArrowLeft from '../assets/images/ArrowLeft'
+import { H6 } from '../styles/title.style'
+import Drop from '../assets/images/Drop'
+import { Container as Con } from '../styles/layout.style'
+import Button from '../components/Button'
+import { DEVICE_QUERY_MOBILE } from '../config'
 
 export const HeaderStickyBox = styled.div`
   position: sticky;
@@ -14,7 +13,7 @@ export const HeaderStickyBox = styled.div`
   top: 0;
   z-index: 1100;
   width: 100vw;
-`;
+`
 
 export const HeaderBox = styled.header`
   background-color: rgba(17, 18, 20, 0);
@@ -60,7 +59,7 @@ export const HeaderBox = styled.header`
       }
     }
   }
-`;
+`
 
 export const Container = styled(Con)`
   display: flex;
@@ -71,26 +70,26 @@ export const Container = styled(Con)`
   @media ${DEVICE_QUERY_MOBILE} {
     padding: 0 16px;
   }
-`;
+`
 
 export const LogoBox = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-`;
+`
 
-export const LogoLink = styled(Link)`
+export const LogoLink = styled.a`
   position: relative;
   display: flex;
   align-items: center;
-`;
+`
 
 export const Logo = styled.img`
   height: 32px;
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const LogoMobile = styled.img.attrs({
   className: 'header-logo-mobile',
@@ -101,7 +100,7 @@ export const LogoMobile = styled.img.attrs({
   @media ${DEVICE_QUERY_MOBILE} {
     display: inline-block;
   }
-`;
+`
 
 export const Menus = styled.ul.attrs({
   className: 'header-menus',
@@ -120,7 +119,7 @@ export const Menus = styled.ul.attrs({
     justify-content: flex-start;
     padding-top: 24px;
   }
-`;
+`
 
 export const MenuTitle = styled(H6)`
   color: var(--color-fg-muted);
@@ -153,7 +152,7 @@ export const MenuTitle = styled(H6)`
       background: var(--color-bg-slight);
     }
   }
-`;
+`
 
 export const Menu = styled.li`
   display: flex;
@@ -178,7 +177,7 @@ export const Menu = styled.li`
       margin-top: 48px;
     }
   }
-`;
+`
 
 export const MenuEntryMobile = styled.div`
   display: none;
@@ -190,7 +189,7 @@ export const MenuEntryMobile = styled.div`
     align-items: center;
     gap: 0 16px;
   }
-`;
+`
 
 export const MenuBackMobile = styled(ArrowLeft).attrs({
   width: '24',
@@ -210,12 +209,12 @@ export const MenuBackMobile = styled(ArrowLeft).attrs({
     opacity: 0;
     transition: var(--transition);
   }
-`;
+`
 
 export const DropIcon = styled(Drop)`
   margin-left: 4px;
   color: var(--color-fg-subtle);
-`;
+`
 
 export const Entries = styled.div`
   display: flex;
@@ -226,7 +225,7 @@ export const Entries = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const EntryIcon = styled.a`
   color: var(--color-fg-muted);
@@ -234,7 +233,7 @@ export const EntryIcon = styled.a`
   &:last-child {
     margin-right: 28px;
   }
-`;
+`
 
 export const Submenu = styled.div.attrs({
   className: 'theme-dark',
@@ -252,12 +251,12 @@ export const Submenu = styled.div.attrs({
   box-sizing: border-box;
   height: 0;
   opacity: 0;
-  transform: translateY(-${props => props.height / 2}px);
+  transform: translateY(-${(props) => props.height / 2}px);
   overflow: hidden;
   transition: all var(--transition-duration) ease-out;
   &.active {
     opacity: 1;
-    height: ${props => props.height}px;
+    height: ${(props) => props.height}px;
     transform: translateY(0);
   }
   @media ${DEVICE_QUERY_MOBILE} {
@@ -274,7 +273,7 @@ export const Submenu = styled.div.attrs({
       height: var(--height);
     }
   }
-`;
+`
 
 export const SubmenuTitle = styled(H6).attrs({
   className: 'header-submenu-title',
@@ -287,10 +286,10 @@ export const SubmenuTitle = styled(H6).attrs({
     opacity: 0;
     transition: var(--transition);
   }
-`;
+`
 
 export const BuyButton = styled(Button)`
-  display: ${props => (props.show ? 'none' : 'block')};
+  display: ${(props) => (props.show ? 'none' : 'block')};
   height: 32px;
   padding: 0 16px;
   color: var(--color-fg-default);
@@ -299,7 +298,7 @@ export const BuyButton = styled(Button)`
   line-height: 22px;
   background: transparent;
   border-image: var(--color-gd-primary) 1;
-`;
+`
 
 export const ProductQuantity = styled.div`
   display: flex;
@@ -329,11 +328,11 @@ export const ProductQuantity = styled.div`
     top: -3px;
     left: 14px;
   }
-`;
+`
 
 export const CartIconBox = styled.div`
   cursor: pointer;
   svg {
     color: var(--color-fg-muted);
   }
-`;
+`
