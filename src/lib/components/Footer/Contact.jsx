@@ -74,7 +74,7 @@ export default function Contact() {
           <ArrowRight className="right-arrow" />
         </Button>
       </Popover>
-      <Modal
+      {/* <Modal
         open={showRegisteredInfo}
         centered
         closeIcon
@@ -89,7 +89,7 @@ export default function Contact() {
           <Body as="p">Registered number：14447777</Body>
           <Body as="p">Address：Level 1, Devonshire House, 1 Mayfair Place, London, England, W1J 8AJ, UK</Body>
         </RegisteredInfoContainer>
-      </Modal>
+      </Modal> */}
     </ContactButton>
   )
 }
