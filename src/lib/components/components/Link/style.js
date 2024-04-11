@@ -12,6 +12,9 @@ export const LinkWrapper = styled.div
   .link-text {
     transition: var(--transition);
     cursor: pointer;
+    & > img {
+      display: inline;
+    }
     @media ${DEVICE_QUERY_MOBILE} {
       & > span {
         font-size: 12px;

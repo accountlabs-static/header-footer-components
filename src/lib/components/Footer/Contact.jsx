@@ -11,11 +11,13 @@ import Select from '../components/Select'
 import Mail from '../assets/images/Mail'
 import ArrowRight from '../assets/images/ArrowRight'
 import Popover from '../components/Popover'
+import { useRef } from 'react'
 
 export default function Contact() {
   const intl = useIntl()
   const [open, setOpen] = useState(false)
   const [showRegisteredInfo, setShowRegisteredInfo] = useState(false)
+  const modalContainerRef = useRef()
 
   const onChange = useCallback((data) => {
     setOpen(data)
@@ -57,11 +59,11 @@ export default function Contact() {
         },
       },
     ],
-    [intl],
+    [intl, setShowRegisteredInfo],
   )
 
   return (
-    <ContactButton target="_blank" popoverIsOpen={open}>
+    <ContactButton target="_blank" popoverIsOpen={open} ref={modalContainerRef}>
       <Popover
         placement="top"
         transition="slide bottom-10"
@@ -82,6 +84,7 @@ export default function Contact() {
         onClose={() => {
           setShowRegisteredInfo(false)
         }}
+        container={modalContainerRef}
       >
         <RegisteredInfoContainer>
           <H4>Registered Info</H4>

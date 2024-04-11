@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { Container } from '../../styles/layout.style';
-import { DEVICE_QUERY_MOBILE } from '../../config';
-import { H5, H7A } from '../../styles/title.style';
-import { PopoverContainer } from '../../components/Popover/style';
-import { Body } from '../../styles/body.style';
-import Link from '../../components/Link';
+import styled from 'styled-components'
+import { Container } from '../../styles/layout.style'
+import { DEVICE_QUERY_MOBILE } from '../../config'
+import { H5, H7A } from '../../styles/title.style'
+import { PopoverContainer } from '../../components/Popover/style'
+import { Body } from '../../styles/body.style'
+import Link from '../../components/Link'
 
 export const WalletsAndAssetsWrapper = styled(Container)`
   display: flex;
@@ -14,7 +14,7 @@ export const WalletsAndAssetsWrapper = styled(Container)`
     margin: 0;
     width: 100%;
   }
-`;
+`
 
 export const Wallets = styled.div`
   color: var(--color-fg-muted);
@@ -31,7 +31,7 @@ export const Wallets = styled.div`
     margin-top: 0;
     width: 100%;
   }
-`;
+`
 
 export const Wallet = styled.div`
   width: 260px;
@@ -51,11 +51,11 @@ export const Wallet = styled.div`
     justify-content: space-between;
     padding: 12px 24px;
   }
-`;
+`
 
 export const WalletIcon = styled.span`
   margin-right: 18px;
-`;
+`
 
 export const WalletName = styled(H5)`
   display: flex;
@@ -79,7 +79,7 @@ export const WalletName = styled(H5)`
       margin-right: 16px;
     }
   }
-`;
+`
 
 export const Coins = styled.ul`
   @media ${DEVICE_QUERY_MOBILE} {
@@ -88,7 +88,7 @@ export const Coins = styled.ul`
     gap: 4px;
     align-items: center;
   }
-`;
+`
 
 export const Coin = styled.li`
   display: flex;
@@ -102,7 +102,7 @@ export const Coin = styled.li`
     }
     padding: 0;
   }
-`;
+`
 
 export const MoreCoins = styled(Coin)`
   display: block;
@@ -115,24 +115,20 @@ export const MoreCoins = styled(Coin)`
     justify-content: center;
     align-items: center;
   }
-`;
+`
 
 export const CoinName = styled(Body)`
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const WalletsAndAssetsLink = styled(Link)`
   display: inline-block;
   margin-top: 40px;
   margin-bottom: 28px;
-  color: var(--color-fg-subtle);
-  ${H7A}
-  &:hover {
-    color: var(--color-bd-pink);
-  }
+  font-weight: 600;
   @media ${DEVICE_QUERY_MOBILE} {
     margin-left: 24px;
   }
-`;
+`

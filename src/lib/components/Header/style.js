@@ -81,6 +81,9 @@ export const LogoLink = styled.a`
   position: relative;
   display: flex;
   align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 export const Logo = styled.img`

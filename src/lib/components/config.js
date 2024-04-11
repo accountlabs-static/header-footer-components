@@ -84,7 +84,7 @@ export const ProductsConfigProduct = {
   },
   k3Pro6thAnniversary: {
     path: '/shop/products/keystone-3pro-6th-anniversary',
-    id: 'gid://shopify/Product/7826748571801'
+    id: 'gid://shopify/Product/7826748571801',
   },
   k3ProBundle2Pack: {
     path: '/shop/products/keystone-3pro-bundle-2pack',
@@ -124,11 +124,10 @@ export const ProductsConfigProduct = {
     path: '/shop/products/keystone-tablet-punch',
     id: 'gid://shopify/Product/5430293495961',
   },
-};
+}
 
 export const LINKS = {
-  keystoneSupportServiceDesk:
-    'https://keystonewallet.atlassian.net/servicedesk/customer/portal/1',
+  keystoneSupportServiceDesk: 'https://keystonewallet.atlassian.net/servicedesk/customer/portal/1',
   metamaskTutorial: 'https://www.youtube.com/embed/ixRIoGfbmTI',
   hackedSlowmist: 'https://hacked.slowmist.io/',
   suggestWalletAssets:
@@ -137,8 +136,7 @@ export const LINKS = {
   trustpilotRate: 'https://www.trustpilot.com/review/keyst.one',
   trackOrder: 'https://shop.keyst.one/apps/17TRACK',
   ensDatabase: 'https://github.com/KeystoneHQ/ENS-meta-repo/releases',
-  abiPack:
-    'https://github.com/KeystoneHQ/Smart-Contract-Metadata-Registry/releases',
+  abiPack: 'https://github.com/KeystoneHQ/Smart-Contract-Metadata-Registry/releases',
   shop: '/shop',
   shopProducts: {
     k3: '/shop/products/keystone-3',
@@ -161,32 +159,25 @@ export const LINKS = {
   firmware: '/firmware',
   metamask: '/metamask',
   usbUpgrade: '/usb-upgrade',
-  sdCardStore:
-    'https://www.westerndigital.com/products/memory-cards/sandisk-ultra-uhs-i-microsd#SDSQUNC-016G-AN6MA',
-  aaaBatteryStore:
-    'https://www.panasonic.com/global/energy/products/eneloop/en/lineup/eneloop.html',
+  sdCardStore: 'https://www.westerndigital.com/products/memory-cards/sandisk-ultra-uhs-i-microsd#SDSQUNC-016G-AN6MA',
+  aaaBatteryStore: 'https://www.panasonic.com/global/energy/products/eneloop/en/lineup/eneloop.html',
   fromLedgerToKeystoneVideo: 'https://www.youtube.com/watch?v=jGIlie9W5Qg',
   fromLedgerToKeystoneVideoEmbed: 'https://www.youtube.com/embed/jGIlie9W5Qg',
   mall: {
     CN: 'https://shop112715941.m.youzan.com/wscgoods/detail/1y5nbkfn5l5f1zc',
-    HK:
-      'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
-    MO:
-      'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
-    TW:
-      'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
+    HK: 'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
+    MO: 'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
+    TW: 'https://www.amazon.com/Keystone-Cryptocurrency-Hardware-Air-gapped-Securely/dp/B0CCRP4Z59?ref_=ast_sto_dp&th=1',
     KR: 'https://smartstore.naver.com/cryptowallet/products/9316549729',
     RU: 'https://sunscrypt.ru/catalog/keystone/keystone-3-pro/',
-    TR:
-      'https://www.amazon.de/-/en/Keystone-Air-gapped-Cryptocurrency-Hardware-Fingerprint-3-Pro/dp/B0CCRP4Z59/ref=sr_1_3',
+    TR: 'https://www.amazon.de/-/en/Keystone-Air-gapped-Cryptocurrency-Hardware-Fingerprint-3-Pro/dp/B0CCRP4Z59/ref=sr_1_3',
   },
   browsers: {
     chrome: 'https://www.google.com/chrome',
     edge: 'https://www.microsoft.com/edge',
   },
   mdn: {
-    webusb:
-      'https://developer.mozilla.org/en-US/docs/Web/API/USB#browser_compatibility',
+    webusb: 'https://developer.mozilla.org/en-US/docs/Web/API/USB#browser_compatibility',
   },
   discord: 'https://keyst.one/discord',
   telegram: 'https://t.me/KeystoneWallet',
@@ -199,7 +190,7 @@ export const LINKS = {
   blog: {},
   coBranded: '/co-branded',
   roadmap: '/roadmap',
-};
+  officialSite: 'https://keyst.one',
+}
 
-export const DEVICE_QUERY_MOBILE = `(max-width: 1000px)`;
-
+export const DEVICE_QUERY_MOBILE = `(max-width: 1000px)`

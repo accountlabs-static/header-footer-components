@@ -1,17 +1,10 @@
-import styled from "styled-components";
-import {
-  BodyMStyle,
-  BodyPlusM,
-  BodyStyle,
-  Caption,
-  CaptionStyle,
-  OpenSansFontStyle,
-} from "../styles/body.style";
-import CompLink from "../components/Link";
-import GithubIcon from "../assets/images/Github";
-import { DEVICE_QUERY_MOBILE } from "../config";
-import { H6 } from "../styles/title.style";
-import { FadeUp, FadeUpActive } from "../styles/animate";
+import styled from 'styled-components'
+import { BodyMStyle, BodyPlusM, BodyStyle, Caption, CaptionStyle, OpenSansFontStyle } from '../styles/body.style'
+import CompLink from '../components/Link'
+import GithubIcon from '../assets/images/Github'
+import { DEVICE_QUERY_MOBILE } from '../config'
+import { H6 } from '../styles/title.style'
+import { FadeUp, FadeUpActive } from '../styles/animate'
 
 export const FooterBox = styled.footer`
   background: var(--color-bg-default);
@@ -22,7 +15,7 @@ export const FooterBox = styled.footer`
     padding-right: 24px;
     z-index: 99;
   }
-`;
+`
 
 export const Main = styled.div`
   display: flex;
@@ -31,39 +24,39 @@ export const Main = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     flex-direction: column;
   }
-`;
+`
 
 export const MainLeft = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-`;
+`
 
 export const Logo = styled.img`
   width: 48px;
   height: 48px;
-`;
+`
 
 export const Slogan = styled(H6)`
   color: var(--color-fg-default);
   margin-top: 24px;
-`;
+`
 
 export const ContactButton = styled.a`
   margin-top: 30px;
   display: inline-block;
-`;
+`
 
-export const Category = styled.div.attrs({ as: "li" })`
+export const Category = styled.div.attrs({ as: 'li' })`
   margin-right: 80px;
   @media ${DEVICE_QUERY_MOBILE} {
     margin-right: 34px;
     margin-top: 48px;
   }
-`;
+`
 
-export const Categories = styled.div.attrs({ as: "ul" })`
+export const Categories = styled.div.attrs({ as: 'ul' })`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -74,7 +67,7 @@ export const Categories = styled.div.attrs({ as: "ul" })`
     justify-content: space-between;
     margin-top: 16px;
   }
-`;
+`
 
 export const CategoryTitle = styled(BodyPlusM)`
   margin-bottom: 24px;
@@ -82,7 +75,7 @@ export const CategoryTitle = styled(BodyPlusM)`
   @media ${DEVICE_QUERY_MOBILE} {
     ${BodyMStyle}
   }
-`;
+`
 
 export const Link = styled(CompLink).attrs({
   arrow: false,
@@ -110,12 +103,12 @@ export const Link = styled(CompLink).attrs({
   @media ${DEVICE_QUERY_MOBILE} {
     ${CaptionStyle}
   }
-`;
+`
 
 export const Github = styled(GithubIcon)`
   color: var(--color-fg-muted);
   margin-left: 4px;
-`;
+`
 
 export const UtilsArea = styled.div`
   display: flex;
@@ -129,7 +122,7 @@ export const UtilsArea = styled.div`
     flex-direction: column;
     height: auto;
   }
-`;
+`
 
 export const MediaList = styled.div`
   display: flex;
@@ -138,7 +131,7 @@ export const MediaList = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     margin-top: 48px;
   }
-`;
+`
 
 export const Media = styled.a`
   position: relative;
@@ -175,11 +168,12 @@ export const Media = styled.a`
     font-size: 14px;
     line-height: 22px;
   }
-`;
+`
 
 export const FixedBtn = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 100;
   right: 24px;
@@ -199,7 +193,7 @@ export const FixedBtn = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const Top = styled(FixedBtn)`
   ${FadeUp}
@@ -209,7 +203,7 @@ export const Top = styled(FixedBtn)`
   &.active {
     ${FadeUpActive}
   }
-`;
+`
 
 export const Contact = styled(FixedBtn)`
   ${FadeUp}
@@ -237,7 +231,7 @@ export const Contact = styled(FixedBtn)`
   &.active {
     ${FadeUpActive}
   }
-`;
+`
 
 export const Copyright = styled(Caption)`
   color: var(--color-fg-subtle);
@@ -246,13 +240,10 @@ export const Copyright = styled(Caption)`
   @media ${DEVICE_QUERY_MOBILE} {
     margin-top: 24px;
   }
-`;
+`
 
 export const UtilsAreaLeft = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 24px;
   @media ${DEVICE_QUERY_MOBILE} {
     div:first-child {
@@ -260,7 +251,7 @@ export const UtilsAreaLeft = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 export const FooterLinkItem = styled.p`
   margin: 0;
@@ -272,14 +263,14 @@ export const FooterLinkItem = styled.p`
   & > span > svg {
     fill: var(--color-fg-subtle);
   }
-`;
+`
 
 export const LinkIcon = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 8px;
   vertical-align: text-bottom;
-`;
+`
 
 export const RegisteredInfoContainer = styled.div`
   display: flex;
@@ -308,4 +299,4 @@ export const RegisteredInfoContainer = styled.div`
       ${CaptionStyle}
     }
   }
-`;
+`

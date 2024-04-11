@@ -26,11 +26,11 @@ export default function Modal({
   mask = true,
   centered = false,
   disableMaskClose,
-  getContainer = document && document.getElementById('root'),
+  container,
 }) {
   const containerRef = useRef()
 
-  const hostElement = getContainer
+  const hostElement = container.current
 
   function stopPropagation(ev) {
     ev.stopPropagation()
@@ -49,13 +49,13 @@ export default function Modal({
     onClose && onClose()
   }
 
-  useEffect(() => {
-    if (open) {
-      document && document.body.classList.add('modal-mobile')
-    } else {
-      document && document.body.classList.remove('modal-mobile')
-    }
-  }, [open])
+  // useEffect(() => {
+  //   if (open) {
+  //     document && document.body.classList.add('modal-mobile')
+  //   } else {
+  //     document && document.body.classList.remove('modal-mobile')
+  //   }
+  // }, [open])
 
   const content = (
     <Main
