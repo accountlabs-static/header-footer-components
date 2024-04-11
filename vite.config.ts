@@ -2,7 +2,6 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
-import tailwindcss from 'tailwindcss'
 import { UserConfigExport } from 'vite'
 import { name } from './package.json'
 
@@ -21,11 +20,6 @@ const app = async (): Promise<UserConfigExport> => {
         insertTypesEntry: true,
       }),
     ],
-    css: {
-      postcss: {
-        plugins: [tailwindcss],
-      },
-    },
     build: {
       lib: {
         entry: path.resolve(__dirname, 'src/lib/index.ts'),
@@ -34,12 +28,11 @@ const app = async (): Promise<UserConfigExport> => {
         fileName: (format) => `${formattedName}.${format}.js`,
       },
       rollupOptions: {
-        external: ['react', 'react/jsx-runtime', 'tailwindcss'],
+        external: ['react', 'react/jsx-runtime'],
         output: {
           globals: {
             react: 'React',
             'react/jsx-runtime': 'react/jsx-runtime',
-            tailwindcss: 'tailwindcss',
           },
         },
       },
