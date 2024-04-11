@@ -44,6 +44,8 @@ export default function Modal({
     defaultVisible: defaultOpen,
   })
 
+  console.log(visible, '-------visible------')
+
   function onMaskClick() {
     if (disableMaskClose) return
     onClose && onClose()
@@ -57,9 +59,8 @@ export default function Modal({
   //   }
   // }, [open])
 
-  const content = (
+  return (
     <Main
-      render={document?.body}
       visible={open}
       className={`${open ? 'visible' : ''} ${className}`}
       onClick={onMaskClick}
@@ -99,12 +100,10 @@ export default function Modal({
     </Main>
   )
 
-  if (hostElement && isBrowser()) {
-    return createPortal(content, hostElement)
-  }
+  // if (hostElement && isBrowser()) {
+  //   return createPortal(content, hostElement)
+  // }
 
   /* fallback to inline rendering */
-  console.warn('Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.')
-
-  return content
+  // console.warn('Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.')
 }
