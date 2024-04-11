@@ -253,7 +253,7 @@ export const UtilsAreaLeft = styled.div`
   }
 `
 
-export const FooterLinkItem = styled.p`
+export const FooterLinkItem = styled.div`
   margin: 0;
   color: var(--color-fg-muted);
   ${OpenSansFontStyle}

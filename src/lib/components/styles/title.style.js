@@ -129,7 +129,7 @@ export const H6 = styled.h6`
   }
 `
 
-export const H7 = styled.p`
+export const H7 = styled.div`
   ${montserratFontStyle}
   font-size: 14px;
   font-weight: 600;
