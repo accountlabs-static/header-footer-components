@@ -68,6 +68,7 @@ export const Container = styled(Con)`
   z-index: 1200;
   @media ${DEVICE_QUERY_MOBILE} {
     padding: 0 16px;
+    box-sizing: border-box;
   }
 `
 
