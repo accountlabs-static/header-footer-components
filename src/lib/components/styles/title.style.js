@@ -1,19 +1,43 @@
-import styled, { css } from 'styled-components';
-import { DEVICE_QUERY_MOBILE } from '../config';
+import styled, { css } from 'styled-components'
+import { DEVICE_QUERY_MOBILE } from '../config'
 
 export const montFontStyle = css`
   font-style: normal;
-  font-family: 'Mont', -apple-system, 'Microsoft Yahei', '微软雅黑',
-    'MicrosoftJhengHei', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-`;
+  font-family:
+    'Mont',
+    -apple-system,
+    'Microsoft Yahei',
+    '微软雅黑',
+    'MicrosoftJhengHei',
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+`
 
 export const montserratFontStyle = css`
   font-style: normal;
-  font-family: 'Montserrat', -apple-system, 'Microsoft Yahei', 微软雅黑,
-    'MicrosoftJhengHei', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-`;
+  font-family:
+    'Montserrat',
+    -apple-system,
+    'Microsoft Yahei',
+    微软雅黑,
+    'MicrosoftJhengHei',
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+`
 
 export const H1 = styled.h1`
   ${montFontStyle}
@@ -26,7 +50,7 @@ export const H1 = styled.h1`
     line-height: 44px;
     letter-spacing: 0.6px;
   }
-`;
+`
 
 export const H2 = styled.h2`
   ${montFontStyle}
@@ -38,11 +62,11 @@ export const H2 = styled.h2`
     line-height: 36px;
     letter-spacing: 0.52px;
   }
-`;
+`
 
 export const H2A = styled(H2)`
   text-transform: uppercase;
-`;
+`
 
 export const H3 = styled.h3`
   ${montFontStyle}
@@ -54,11 +78,11 @@ export const H3 = styled.h3`
     line-height: 32px;
     letter-spacing: 0.48px;
   }
-`;
+`
 
 export const H3A = styled(H3)`
   text-transform: uppercase;
-`;
+`
 
 export const H4 = styled.h4`
   ${montFontStyle}
@@ -70,11 +94,11 @@ export const H4 = styled.h4`
     line-height: 30px;
     letter-spacing: 0.4px;
   }
-`;
+`
 
 export const H4A = styled(H4)`
   text-transform: uppercase;
-`;
+`
 
 export const H5 = styled.h5`
   ${montFontStyle}
@@ -85,13 +109,14 @@ export const H5 = styled.h5`
     font-size: 18px;
     line-height: 28px;
   }
-`;
+`
 
 export const H5A = styled(H5)`
   text-transform: uppercase;
-`;
+`
 
 export const H6 = styled.h6`
+  margin: 0;
   ${montserratFontStyle}
   font-size: 16px;
   font-weight: 600;
@@ -102,7 +127,7 @@ export const H6 = styled.h6`
     line-height: 22px;
     letter-spacing: 0.56px;
   }
-`;
+`
 
 export const H7 = styled.p`
   ${montserratFontStyle}
@@ -114,8 +139,8 @@ export const H7 = styled.p`
     font-size: 12px;
     line-height: 18px;
   }
-`;
+`
 
 export const H7A = styled(H7)`
   text-transform: uppercase;
-`;
+`
