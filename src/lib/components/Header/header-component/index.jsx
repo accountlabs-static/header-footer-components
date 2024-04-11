@@ -101,14 +101,6 @@ export const Header = () => {
     }
   }, [activeMenu, isMobile])
 
-  // useEffect(() => {
-  //   if (isMobileMenuOpen) {
-  //     document && document.body.classList.add('menu-header-mobile')
-  //   } else {
-  //     document && document.body.classList.remove('menu-header-mobile')
-  //   }
-  // }, [isMobileMenuOpen])
-
   const handleOnMouseArgs = useCallback(
     (name) => {
       return (

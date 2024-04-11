@@ -1,8 +1,6 @@
-import React, { useRef, useEffect } from 'react'
-import { createPortal } from 'react-dom'
+import React, { useRef } from 'react'
 import { Body, CloseIcon, Container, Footer, Header, Main } from './style'
 import { useVisibleTransition } from '../../hooks'
-import { isBrowser } from '../../utils'
 import Close from '../../assets/images/Close'
 
 export default function Modal({
@@ -44,20 +42,10 @@ export default function Modal({
     defaultVisible: defaultOpen,
   })
 
-  console.log(visible, '-------visible------')
-
   function onMaskClick() {
     if (disableMaskClose) return
     onClose && onClose()
   }
-
-  // useEffect(() => {
-  //   if (open) {
-  //     document && document.body.classList.add('modal-mobile')
-  //   } else {
-  //     document && document.body.classList.remove('modal-mobile')
-  //   }
-  // }, [open])
 
   return (
     <Main
@@ -99,11 +87,4 @@ export default function Modal({
       </Container>
     </Main>
   )
-
-  // if (hostElement && isBrowser()) {
-  //   return createPortal(content, hostElement)
-  // }
-
-  /* fallback to inline rendering */
-  // console.warn('Modal: Could not find {hostElement} node.\n Switched to inline rendering mode.')
 }
