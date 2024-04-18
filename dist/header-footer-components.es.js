@@ -38651,7 +38651,6 @@ const LL = re(qh)`
   }
 `,
   $4 = re.span`
-  font-family: Open Sans;
   font-weight: 600;
   display: inline-block;
   padding: 2px 6px;

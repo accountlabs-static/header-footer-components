@@ -36100,7 +36100,6 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
   }
 `,
     n2 = ie.span`
-  font-family: Open Sans;
   font-weight: 600;
   display: inline-block;
   padding: 2px 6px;

@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components';
-import Link from '../../components/Link';
-import { Container as BaseContainer } from '../../styles/layout.style';
-import { DEVICE_QUERY_MOBILE } from '../../config';
-import { H7 } from '../../styles/title.style';
-import { Body } from '../../styles/body.style';
+import styled, { css } from 'styled-components'
+import Link from '../../components/Link'
+import { Container as BaseContainer } from '../../styles/layout.style'
+import { DEVICE_QUERY_MOBILE } from '../../config'
+import { H7 } from '../../styles/title.style'
+import { Body } from '../../styles/body.style'
 
 export const Container = styled(BaseContainer)`
   display: flex;
@@ -13,7 +13,7 @@ export const Container = styled(BaseContainer)`
   @media ${DEVICE_QUERY_MOBILE} {
     padding: 12px 24px;
   }
-`;
+`
 
 export const Groups = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export const Groups = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     flex-direction: column;
   }
-`;
+`
 
 export const Group = styled.div`
   margin-right: 120px;
@@ -34,12 +34,12 @@ export const Group = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     margin: 0 0 40px;
   }
-`;
+`
 
 export const Title = styled(H7)`
   color: var(--color-fg-subtle);
   margin-bottom: 32px;
-`;
+`
 
 export const List = styled(Body)`
   align-items: flex-start;
@@ -51,26 +51,28 @@ export const List = styled(Body)`
   @media ${DEVICE_QUERY_MOBILE} {
     height: auto;
   }
-`;
+`
 
 export const Item = styled.div`
   margin-bottom: 16px;
-`;
+`
 
 const ProductLinkCssGenerator = ({ disabled }) => {
-  return disabled ? null : css`
-    color: var(--color-fg-muted);
-    &:hover {
-      color: var(--color-fg-emphasis);
-      .link-arrow {
-        opacity: 1;
-        color: var(--color-bd-pink);
-      }
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  `;
+  return disabled
+    ? null
+    : css`
+        color: var(--color-fg-muted);
+        &:hover {
+          color: var(--color-fg-emphasis);
+          .link-arrow {
+            opacity: 1;
+            color: var(--color-bd-pink);
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      `
 }
 
 export const ProductLink = styled(Link)`
@@ -85,10 +87,9 @@ export const ProductLink = styled(Link)`
   @media ${DEVICE_QUERY_MOBILE} {
     font-size: 16px;
   }
-`;
+`
 
 export const Tag = styled.span`
-  font-family: Open Sans;
   font-weight: 600;
   display: inline-block;
   padding: 2px 6px;
@@ -96,11 +97,11 @@ export const Tag = styled.span`
   text-align: center;
   border-radius: 4px;
   font-size: 12px;
-  background-color: ${props => `var(--color-bd-${props.color || 'pink'}-trans)`};
-  color: ${props => `var(--color-bd-${props.color || 'pink'})`};
+  background-color: ${(props) => `var(--color-bd-${props.color || 'pink'}-trans)`};
+  color: ${(props) => `var(--color-bd-${props.color || 'pink'})`};
   margin-left: 6px;
   text-transform: uppercase;
-`;
+`
 
 export const AllProducts = styled(H7)`
   margin-top: 30px;
@@ -109,7 +110,7 @@ export const AllProducts = styled(H7)`
     flex-direction: column;
     margin-top: 0;
   }
-`;
+`
 
 export const AllProductsLink = styled(Link)`
   padding: 4px 0;
@@ -118,7 +119,7 @@ export const AllProductsLink = styled(Link)`
     position: relative;
     top: -1px;
   }
-`;
+`
 
 export const KeystoneAppLink = styled(AllProductsLink)`
   margin-left: 78px;
@@ -140,7 +141,7 @@ export const KeystoneAppLink = styled(AllProductsLink)`
   @media ${DEVICE_QUERY_MOBILE} {
     margin: 30px 0 0 24px;
   }
-`;
+`
 
 export const AppImg = styled.img`
   position: absolute;
@@ -149,7 +150,7 @@ export const AppImg = styled.img`
   width: 24px;
   height: 24px;
   margin-right: 6px;
-`;
+`
 
 export const Preview = styled.div`
   position: absolute;
@@ -161,11 +162,11 @@ export const Preview = styled.div`
   @media ${DEVICE_QUERY_MOBILE} {
     display: none;
   }
-`;
+`
 
 export const Img = styled.img`
   width: 480px;
-`;
+`
 
 export const FooterMask = styled.div`
   position: absolute;
@@ -174,4 +175,4 @@ export const FooterMask = styled.div`
   width: 100%;
   height: 60px;
   background: linear-gradient(180deg, rgba(26, 27, 31, 0) 0%, #1a1b1f 100%);
-`;
+`

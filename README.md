@@ -28,3 +28,10 @@ Always prepending pnpm:
 - `build:lib`: Builds the component library into the **dist** folder.
 - `lint:fix`: Applies linting based on the rules defined in **.eslintrc.js**.
 - `format:prettier`: Formats files using the prettier rules defined in **.prettierrc**.
+
+## Develop
+
+1. Run `pnpm dev` to start the server
+2. Develop on the local
+3. Run `pnpm build:lib` to build after developing
+4. Push changes to the remote repo
