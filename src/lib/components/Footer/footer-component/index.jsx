@@ -43,6 +43,10 @@ import jike from '../images/jike.png'
 import jikeC from '../images/jike_c.png'
 import reddit from '../images/reddit.png'
 import redditC from '../images/reddit_c.png'
+import warpcast from '../images/warpcast.png'
+import warpcastC from '../images/warpcast_c.png'
+import primal from '../images/primal.png'
+import primalC from '../images/primal_c.png'
 import logo from '../images/logo.png'
 
 const menuList = [
@@ -54,45 +58,45 @@ const menuList = [
       index: 1,
     },
     {
+      id: 'Btc-only',
+      type: 'link',
+      link: LINKS.btcOnly,
+      text: messages.btcOnly,
+    },
+    {
       id: 'Blog',
       type: 'link',
-      target: '_blank',
-      link: messages.blog.link,
+      link: '/',
       text: messages.blog,
     },
     {
       id: 'PrivacyPromises',
       type: 'link',
-      linkUse: 'to',
-      link: '/privacy-promises',
+      link: LINKS.privacyPolicy,
       text: messages.privacyPromises,
     },
     {
       id: 'Support',
       type: 'link',
-      target: '_blank',
-      link: messages.support.link,
+      link: LINKS.support,
       text: messages.support,
     },
     {
       id: 'SuggestWalletOrAssets',
       type: 'link',
-      target: '_blank',
       link: LINKS.suggestWalletAssets,
       text: messages.suggestWalletOrAssets,
     },
     {
       id: 'ImportNft',
       type: 'link',
-      linkUse: 'to',
-      link: '/nft',
+      link: LINKS.nft,
       text: messages.importNft,
     },
     {
       id: 'GitHubRepo​',
       type: 'link',
-      target: '_blank',
-      link: 'https://github.com/KeystoneHQ',
+      link: LINKS.githubRepo,
       text: messages.githubRepo,
       icon: <Github />,
     },
@@ -100,14 +104,12 @@ const menuList = [
       id: 'ENSDatabase',
       type: 'link',
       link: LINKS.ensDatabase,
-      target: '_blank',
       text: messages.ensDatabase,
     },
     {
       id: 'ABIPack',
       type: 'link',
       link: LINKS.abiPack,
-      target: '_blank',
       text: messages.abiPack,
     },
   ],
@@ -121,50 +123,43 @@ const menuList = [
     {
       id: 'SalesTermsAndConditons',
       type: 'link',
-      linkUse: 'to',
-      link: '/sales-terms-and-conditions',
+      link: LINKS.salesTermsAndConditions,
       text: messages.termsAndConditions,
     },
     {
       id: 'WebsiteTermsofUse',
       type: 'link',
-      linkUse: 'to',
-      link: '/website-terms-of-use',
+      link: LINKS.termsOfUse,
       text: messages.website,
     },
     {
       id: 'KeystoneTermsOfUse',
       type: 'link',
-      linkUse: 'to',
-      link: '/keystone-terms-of-use',
+      link: LINKS.keystoneTermsOfUse,
       text: messages.appTerms,
     },
     {
       id: 'PrivacyPolicy',
       type: 'link',
-      linkUse: 'to',
-      link: '/privacy-policy',
+      link: LINKS.privacyPolicy,
       text: messages.privacyPolicy,
     },
     {
       id: 'CookiePolicy',
       type: 'link',
-      linkUse: 'to',
-      link: '/cookie-policy',
+      link: LINKS.cookiePolicy,
       text: messages.cookiePolicy,
     },
     {
       id: 'ShippingPolicy',
       type: 'link',
-      linkUse: 'to',
-      link: '/shipping-policy',
+      link: LINKS.shippingPolicy,
       text: messages.shippingPolicy,
     },
     {
       id: 'RefundPolicy',
       type: 'link',
-      linkUse: 'to',
-      link: '/refund-policy',
+      link: LINKS.refundPolicy,
       text: messages.refundPolicy,
     },
   ],
@@ -178,28 +173,24 @@ const menuList = [
     {
       id: 'Resellers',
       type: 'link',
-      linkUse: 'to',
-      link: '/resellers',
+      link: LINKS.resellars,
       text: messages.resellers,
     },
     {
       id: 'Affiliate',
       type: 'link',
-      linkUse: 'to',
-      link: '/affiliates',
+      link: LINKS.affiliates,
       text: messages.affiliates,
     },
     {
       id: 'BountyProgram',
       type: 'link',
-      linkUse: 'to',
-      link: '/bug-bounty-program',
+      link: LINKS.bugBountyProgram,
       text: messages.bountyProgram,
     },
     {
       id: 'MediaKit',
       type: 'link',
-      target: '_blank',
       link: 'https://drive.google.com/drive/folders/1MqffY73AbWE3ItSE6s_YP8SD7k1Gbz8r',
       text: messages.mediaKit,
     },
@@ -207,7 +198,6 @@ const menuList = [
       id: 'MetaMask',
       type: 'link',
       link: LINKS.metamask,
-      linkUse: 'to',
       text: messages.metamask,
     },
   ],
@@ -261,6 +251,18 @@ export const Footer = () => {
       icon: reddit,
       activeIcon: redditC,
       link: 'https://www.reddit.com/r/KeystoneWallet/',
+    },
+    {
+      title: 'Warpcast',
+      icon: warpcast,
+      activeIcon: warpcastC,
+      link: 'https://warpcast.com/keystonewallet',
+    },
+    {
+      title: 'Primal',
+      icon: primal,
+      activeIcon: primalC,
+      link: 'https://primal.net/p/npub16s4cnphx2k7ndmlt9qmurkdrrulcammg3jxnz0f9c7dhepqg38zqpp4p24',
     },
   ]
 
@@ -359,7 +361,7 @@ export const Footer = () => {
         </Main>
         <UtilsArea>
           <UtilsAreaLeft>
-            <FooterLinkItem as={Link} to={LINKS.shippingRegions}>
+            <FooterLinkItem as={Link} href={LINKS.shippingRegions}>
               <LinkIcon src={ship} />
               <FormattedMessage {...messages.shippingRegions} />
             </FooterLinkItem>

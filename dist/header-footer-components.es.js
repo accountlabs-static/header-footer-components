@@ -38625,18 +38625,18 @@ const LL = re(qh)`
     n
       ? null
       : Nn`
-    color: var(--color-fg-muted);
-    &:hover {
-      color: var(--color-fg-emphasis);
-      .link-arrow {
-        opacity: 1;
-        color: var(--color-bd-pink);
-      }
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  `,
+        color: var(--color-fg-muted);
+        &:hover {
+          color: var(--color-fg-emphasis);
+          .link-arrow {
+            opacity: 1;
+            color: var(--color-bd-pink);
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      `,
   WL = re(hl)`
   display: inline-block;
   padding: 4px 0;

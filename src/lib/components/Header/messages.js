@@ -1,6 +1,6 @@
-import { defineMessages } from 'react-intl';
+import { defineMessages } from 'react-intl'
 
-export const scope = 'keystone.header';
+export const scope = 'keystone.header'
 
 export default defineMessages({
   currentLanguage: {
@@ -88,16 +88,8 @@ export default defineMessages({
       id: `${scope}.products.list.t3`,
       defaultMessage: '',
     },
-    familyBundle: {
-      id: `${scope}.products.list.familyBundle`,
-      defaultMessage: '',
-    },
-    familyBundle2Pack: {
-      id: `${scope}.products.list.familyBundle2Pack`,
-      defaultMessage: '',
-    },
-    familyBundle3Pack: {
-      id: `${scope}.products.list.familyBundle3Pack`,
+    bundlePack: {
+      id: `${scope}.products.list.bundlePack`,
       defaultMessage: '',
     },
     t4: {
@@ -249,4 +241,4 @@ export default defineMessages({
       defaultMessage: '',
     },
   },
-});
+})

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Submenu } from '../style';
+import React from 'react'
+import { Submenu } from '../style'
 import {
   Wallets,
   Wallet,
@@ -8,13 +8,13 @@ import {
   WalletInfo,
   PartnershipsWrapper,
   AllPartnershipsLink,
-} from './index.style';
-import MetaMask from '../../assets/images/MetaMask';
-import OKX from '../../assets/images/OKX';
-import messages from '../messages';
-import { FormattedMessage } from 'react-intl';
-import { LINKS } from '../../config';
-import Link from '../../components/Link';
+} from './index.style'
+import MetaMask from '../../assets/images/MetaMask'
+import OKX from '../../assets/images/OKX'
+import messages from '../messages'
+import { FormattedMessage } from 'react-intl'
+import { LINKS } from '../../config'
+import Link from '../../components/Link'
 
 const Partnerships = ({ open, ...args }) => {
   return (
@@ -23,7 +23,7 @@ const Partnerships = ({ open, ...args }) => {
         <Wallets>
           <Link
             arrow={false}
-            to={LINKS.metamask}
+            href={LINKS.metamask}
             data-mixpanel-id={'partnerships metamask'}
             data-mixpanel-pos={'header'}
             data-mixpanel-to={LINKS.metamask}
@@ -35,16 +35,14 @@ const Partnerships = ({ open, ...args }) => {
                   <FormattedMessage {...messages.partnershipsMetaMaskName} />
                 </WalletName>
                 <WalletDescription>
-                  <FormattedMessage
-                    {...messages.partnershipsMetaMaskDescription}
-                  />
+                  <FormattedMessage {...messages.partnershipsMetaMaskDescription} />
                 </WalletDescription>
               </WalletInfo>
             </Wallet>
           </Link>
           <Link
             arrow={false}
-            to={LINKS.okxCollabs}
+            href={LINKS.okxCollabs}
             data-mixpanel-id={'partnerships okx'}
             data-mixpanel-pos={'header'}
             data-mixpanel-to={LINKS.okx}
@@ -67,13 +65,13 @@ const Partnerships = ({ open, ...args }) => {
           data-mixpanel-po={'header'}
           data-mixpanel-to={LINKS.coBranded}
         >
-          <Link to={LINKS.coBranded}>
+          <Link href={LINKS.coBranded}>
             <FormattedMessage {...messages.partnershipsLink} />
           </Link>
         </AllPartnershipsLink>
       </PartnershipsWrapper>
     </Submenu>
-  );
-};
+  )
+}
 
-export default Partnerships;
+export default Partnerships

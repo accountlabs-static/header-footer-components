@@ -1,8 +1,8 @@
-import { animated, useSpringRef, useTransition } from '@react-spring/web';
-import { ProductsConfigProduct } from '../../config';
-import { useEffect, useState } from 'react';
-import { useIntl } from 'react-intl';
-import messages from '../messages';
+import { animated, useSpringRef, useTransition } from '@react-spring/web'
+import { DOMAIN, LINKS, ProductsConfigProduct } from '../../config'
+import { useEffect, useState } from 'react'
+import { useIntl } from 'react-intl'
+import messages from '../messages'
 import {
   AllProducts,
   Group,
@@ -17,15 +17,14 @@ import {
   Img,
   Tag,
   FooterMask,
-} from './index.style';
-import { Submenu } from '../style';
-import g3Pro from '../../assets/images/keystone-g3-pro.jpg';
-import bundle2Pack from '../../assets/images/keystone-g3-pro-2pack.jpg';
-import bundle3Pack from '../../assets/images/keystone-g3-pro-3pack.jpg';
-import tablet from '../../assets/images/kt002.jpg';
-import tabletPlus from '../../assets/images/kt003.jpg';
-import tabletPunch from '../../assets/images/kt004.jpg';
-import pouch from '../../assets/images/pouch.jpg';
+} from './index.style'
+import { Submenu } from '../style'
+import g3Pro from '../../assets/images/keystone-g3-pro.jpg'
+import K3Bundle from '../../assets/images/keystone-bundle.jpg'
+import tablet from '../../assets/images/kt002.jpg'
+import tabletPlus from '../../assets/images/kt003.jpg'
+import tabletPunch from '../../assets/images/kt004.jpg'
+import pouch from '../../assets/images/pouch.jpg'
 
 const menuGroups = [
   {
@@ -34,34 +33,21 @@ const menuGroups = [
     list: [
       {
         id: 'g3-pro',
-        href: ProductsConfigProduct.k3Pro.path,
+        href: `${DOMAIN}${ProductsConfigProduct.k3Pro.path}`,
         title: messages.productList.g3Pro,
         tag: true,
         img: g3Pro,
         blank: false,
       },
       {
-        id: 'bundle-2pack',
-        href: ProductsConfigProduct.k3ProBundle2Pack.path,
-        title: messages.productList.familyBundle2Pack,
-        img: bundle2Pack,
+        id: 'bundle-pack',
+        href: `${DOMAIN}${ProductsConfigProduct.k3ProBundlePack.path}`,
+        title: messages.productList.bundlePack,
+        img: K3Bundle,
         blank: false,
         tag: true,
         tagColor: 'oranger',
-        tagText: messages.productStatus.saleOff,
-        tagVariant: {
-          discount: 5,
-        },
-      },
-      {
-        id: 'bundle-3pack',
-        href: ProductsConfigProduct.k3ProBundle3Pack.path,
-        title: messages.productList.familyBundle3Pack,
-        img: bundle3Pack,
-        blank: false,
-        tag: true,
-        tagColor: 'oranger',
-        tagText: messages.productStatus.saleOff,
+        tagText: messages.productStatus.dollarOff,
         tagVariant: {
           discount: 10,
         },
@@ -74,7 +60,7 @@ const menuGroups = [
     list: [
       {
         id: 'tablet',
-        href: ProductsConfigProduct.tablet.path,
+        href: `${DOMAIN}${ProductsConfigProduct.tablet.path}`,
         title: messages.productList.t3,
         tag: true,
         img: tablet,
@@ -82,7 +68,7 @@ const menuGroups = [
       },
       {
         id: 'tabletPlus',
-        href: ProductsConfigProduct.tabletPlus.path,
+        href: `${DOMAIN}${ProductsConfigProduct.tabletPlus.path}`,
         title: messages.productList.t4,
         tag: false,
         img: tabletPlus,
@@ -90,7 +76,7 @@ const menuGroups = [
       },
       {
         id: 'tabletPunch',
-        href: ProductsConfigProduct.tabletPunch.path,
+        href: `${DOMAIN}/${ProductsConfigProduct.tabletPunch.path}`,
         title: messages.productList.t5,
         tag: false,
         img: tabletPunch,
@@ -98,7 +84,7 @@ const menuGroups = [
       },
       {
         id: 'pouch',
-        href: ProductsConfigProduct.pouch.path,
+        href: `${DOMAIN}${ProductsConfigProduct.pouch.path}`,
         title: messages.productList.t6,
         tag: false,
         img: pouch,
@@ -110,33 +96,33 @@ const menuGroups = [
     id: 'all',
     list: [
       {
-        to: '/shop',
+        href: LINKS.shop,
         title: messages.productsAll,
       },
     ],
   },
-];
+]
 export default function Products({ open, ...args }) {
-  const intl = useIntl();
-  const [product, setProduct] = useState('g3-pro');
+  const intl = useIntl()
+  const [product, setProduct] = useState('g3-pro')
 
   const groups = menuGroups
-    .filter(it => it.id !== 'all')
-    .map(it => ({
+    .filter((it) => it.id !== 'all')
+    .map((it) => ({
       ...it,
       ...(it.list && {
-        list: it.list.map(lIt => ({
+        list: it.list.map((lIt) => ({
           ...lIt,
           title: intl.formatMessage(lIt.title),
         })),
       }),
       title: intl.formatMessage(it.title),
-    }));
+    }))
 
   const productsImg = groups
-    .map(it => it.list.map(c => c))
+    .map((it) => it.list.map((c) => c))
     .flat()
-    .map(it => ({
+    .map((it) => ({
       id: it.id,
       element: ({ style }) => (
         <animated.div
@@ -151,9 +137,9 @@ export default function Products({ open, ...args }) {
           {it.img && <Img src={it.img} alt={it.title} />}
         </animated.div>
       ),
-    }));
+    }))
 
-  const transRef = useSpringRef();
+  const transRef = useSpringRef()
 
   const transitions = useTransition(product, {
     ref: transRef,
@@ -166,32 +152,32 @@ export default function Products({ open, ...args }) {
       friction: 26,
     },
     delay: 200,
-  });
+  })
 
   useEffect(() => {
-    transRef.start();
-  }, [product, transRef]);
+    transRef.start()
+  }, [product, transRef])
 
   const footAllProduct = menuGroups
-    .find(it => it.id === 'all')
-    .list.map(it => ({
+    .find((it) => it.id === 'all')
+    .list.map((it) => ({
       ...it,
       title: intl.formatMessage(it.title),
-    }))[0];
+    }))[0]
 
   return (
     <Submenu height={400} className={open ? 'active' : ''} {...args}>
       <Container>
         <Groups>
-          {groups.map(group => (
+          {groups.map((group) => (
             <Group key={group.id}>
               <Title>{group.title}</Title>
               <List>
-                {group.list.map(item => (
+                {group.list.map((item) => (
                   <Item key={item.title}>
                     <ProductLink
                       disabled={item.disabled}
-                      to={item.href}
+                      href={item.href}
                       data-mixpanel-id={`products ${group.id} ${item.title}`}
                       data-mixpanel-pos="header"
                       data-mixpanel-to={item.href}
@@ -201,10 +187,7 @@ export default function Products({ open, ...args }) {
                       {item.title}
                       {item.tag && (
                         <Tag color={item.tagColor}>
-                          {intl.formatMessage(
-                            item.tagText || messages.productStatus.hot,
-                            item?.tagVariant,
-                          )}
+                          {intl.formatMessage(item.tagText || messages.productStatus.hot, item?.tagVariant)}
                         </Tag>
                       )}
                     </ProductLink>
@@ -216,7 +199,7 @@ export default function Products({ open, ...args }) {
         </Groups>
         <AllProducts>
           <AllProductsLink
-            to={footAllProduct.to}
+            href={footAllProduct.href}
             arrow
             color="var(--color-fg-subtle)"
             hoverColor="var(--color-bd-pink)"
@@ -230,11 +213,11 @@ export default function Products({ open, ...args }) {
       </Container>
       <Preview>
         {transitions((style, id) => {
-          const Page = productsImg.find(it => it.id === id).element;
-          return <Page style={style} />;
+          const Page = productsImg.find((it) => it.id === id).element
+          return <Page style={style} />
         })}
         <FooterMask />
       </Preview>
     </Submenu>
-  );
+  )
 }

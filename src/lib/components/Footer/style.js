@@ -128,14 +128,15 @@ export const MediaList = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   @media ${DEVICE_QUERY_MOBILE} {
     margin-top: 48px;
+    gap: 12px;
   }
 `
 
 export const Media = styled.a`
   position: relative;
-  margin-left: 24px;
   &:first-child {
     margin-left: 0;
   }

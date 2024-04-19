@@ -1,13 +1,7 @@
-import React, {
-  cloneElement,
-  createElement,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from 'react';
-import PropTypes from 'prop-types';
-import { useVisibleTransition } from '../../hooks';
-import { Container, PopoverContainer } from './style';
+import React, { Children, cloneElement, createElement, useLayoutEffect, useRef, useState } from 'react'
+import PropTypes from 'prop-types'
+import { useVisibleTransition } from '../../hooks'
+import { Container, PopoverContainer } from './style'
 
 function Popover({
   content,
@@ -19,49 +13,49 @@ function Popover({
   defaultOpen = false,
   ...args
 }) {
-  const popoverRef = useRef();
+  const popoverRef = useRef()
 
-  const [popoverOpen, setPopoverOpen] = useState(defaultOpen);
+  const [popoverOpen, setPopoverOpen] = useState(defaultOpen)
 
   const { visible, className: transitionClassName } = useVisibleTransition({
     open: popoverOpen,
     transition,
     containerRef: popoverRef,
-  });
+  })
 
   function toggleVisible() {
-    setPopoverOpen(!visible);
-    onChange && onChange(!visible);
+    setPopoverOpen(!visible)
+    onChange && onChange(!visible)
   }
 
   function onClose() {
     if (visible) {
-      toggleVisible(false);
+      toggleVisible(false)
     }
   }
 
-  const [width, setWidth] = useState(160);
+  const [width, setWidth] = useState(160)
 
   useLayoutEffect(() => {
     if (popoverRef.current) {
-      setWidth(popoverRef.current.offsetWidth);
+      setWidth(popoverRef.current.offsetWidth)
     }
-  }, [visible]);
+  }, [visible])
 
   function onHiddenPopover() {
     if (visible) {
       maskTimer = setTimeout(() => {
-        onClose();
-      }, 100);
+        onClose()
+      }, 100)
     }
   }
 
   function onShowPopover() {
-    clearTimeout(maskTimer);
-    toggleVisible();
+    clearTimeout(maskTimer)
+    toggleVisible()
   }
 
-  let maskTimer = null;
+  let maskTimer = null
 
   return (
     <>
@@ -76,13 +70,13 @@ function Popover({
               width,
               placement,
               [{ hover: 'onMouseEnter', click: 'onBlur' }[trigger]]() {
-                clearTimeout(maskTimer);
+                clearTimeout(maskTimer)
               },
               [{ click: 'onFocus' }[trigger]]() {
-                onHiddenPopover();
+                onHiddenPopover()
               },
               [{ hover: 'onMouseLeave' }[trigger]]() {
-                onHiddenPopover();
+                onHiddenPopover()
               },
             },
             content,
@@ -92,25 +86,25 @@ function Popover({
           [{ hover: 'onMouseEnter', click: 'onClick' }[trigger]]() {
             if (trigger === 'click') {
               if (visible) {
-                onHiddenPopover();
+                onHiddenPopover()
               } else {
-                onShowPopover();
+                onShowPopover()
               }
             } else if (trigger === 'hover') {
-              onShowPopover();
+              onShowPopover()
             }
           },
           [{ hover: 'onMouseLeave', click: 'onBlur' }[trigger]]() {
-            onHiddenPopover();
+            onHiddenPopover()
           },
         })}
       </Container>
     </>
-  );
+  )
 }
 
 Popover.propTypes = {
   children: PropTypes.element.isRequired,
-};
+}
 
-export default Popover;
+export default Popover

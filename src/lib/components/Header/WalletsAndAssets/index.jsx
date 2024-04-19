@@ -143,7 +143,7 @@ const WalletsAndAssets = ({ open, ...args }) => {
         <Fragment key={wallet.id}>
           <Link
             arrow={false}
-            to={`${LINKS.supportAssetsAndWallets}?type=wallets&id=${wallet.walletName.toLowerCase()}`}
+            href={`${LINKS.supportAssetsAndWallets}?type=wallets&id=${wallet.walletName.toLowerCase()}`}
             data-mixpanel-id={`walletsAndAssets ${wallet.walletName}`}
             data-mixpanel-pos="header"
             data-mixpanel-to={`${LINKS.supportAssetsAndWallets}?type=wallets&id=${wallet.walletName.toLowerCase()}`}
@@ -184,7 +184,7 @@ const WalletsAndAssets = ({ open, ...args }) => {
         <WalletsAndAssetsLink
           color="var(--color-fg-subtle)"
           hoverColor="var(--color-bd-pink)"
-          to={LINKS.supportAssetsAndWallets}
+          href={LINKS.supportAssetsAndWallets}
           onClick={onClose}
           data-mixpanel-id={'walletsAndAssets allWalletsAndAssetslink'}
           data-mixpanel-pos={'header'}

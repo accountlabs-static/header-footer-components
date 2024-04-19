@@ -1,34 +1,20 @@
-import React from 'react';
-import propTypes from 'prop-types';
-import ArrowRight from '../../assets/images/ArrowRight';
-import ExitLink from '../../assets/images/ExitLink';
-import { LinkWrapper } from './style';
+import React from 'react'
+import propTypes from 'prop-types'
+import ArrowRight from '../../assets/images/ArrowRight'
+import ExitLink from '../../assets/images/ExitLink'
+import { LinkWrapper } from './style'
 
-export default function Link({
-  arrow = true,
-  exit,
-  to = '',
-  children,
-  blank,
-  href,
-  onClick,
-  ...args
-}) {
-  const hrefOrToArgs = href ? { as: 'a', href } : to ? { to } : { as: 'div' };
+export default function Link({ arrow = true, exit, to = '', children, blank, href, onClick, ...args }) {
+  const hrefOrToArgs = href ? { as: 'a', href } : to ? { to } : { as: 'div' }
   const toArgs = {
     ...(!onClick ? hrefOrToArgs : { onClick, ...hrefOrToArgs }),
-  };
+  }
   return (
-    <LinkWrapper {...toArgs} target={blank ? '_blank' : '_self'} {...args}>
+    <LinkWrapper {...toArgs} {...args}>
       <span className="link-text">{children}</span>
-      {arrow &&
-        (exit ? (
-          <ExitLink className="link-arrow" />
-        ) : (
-          <ArrowRight className="link-arrow" />
-        ))}
+      {arrow && (exit ? <ExitLink className="link-arrow" /> : <ArrowRight className="link-arrow" />)}
     </LinkWrapper>
-  );
+  )
 }
 
 Link.propTypes = {
@@ -40,4 +26,4 @@ Link.propTypes = {
   href: propTypes.string,
   to: propTypes.string,
   blank: propTypes.bool,
-};
+}

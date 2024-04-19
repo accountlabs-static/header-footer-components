@@ -36074,18 +36074,18 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
       n
         ? null
         : xn`
-    color: var(--color-fg-muted);
-    &:hover {
-      color: var(--color-fg-emphasis);
-      .link-arrow {
-        opacity: 1;
-        color: var(--color-bd-pink);
-      }
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  `,
+        color: var(--color-fg-muted);
+        &:hover {
+          color: var(--color-fg-emphasis);
+          .link-arrow {
+            opacity: 1;
+            color: var(--color-bd-pink);
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      `,
     q6 = ie(To)`
   display: inline-block;
   padding: 4px 0;

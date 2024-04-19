@@ -1,7 +1,7 @@
-import { defineMessages } from 'react-intl';
+import { defineMessages } from 'react-intl'
 
-const FOOTER = 'keystone.footer.';
-const REMIND = 'cookie.remind.';
+const FOOTER = 'keystone.footer.'
+const REMIND = 'cookie.remind.'
 
 export default defineMessages({
   slogan: {
@@ -12,21 +12,17 @@ export default defineMessages({
     id: `${FOOTER}aboutUs`,
     defaultMessage: '',
   },
+  btcOnly: {
+    id: `${FOOTER}btcOnly`,
+    defaultMessage: '',
+  },
   blog: {
     id: `${FOOTER}blog`,
     defaultMessage: '',
-    link: {
-      id: 'keystone.blog',
-      defaultMessage: '',
-    },
   },
   support: {
     id: `${FOOTER}support`,
     defaultMessage: '',
-    link: {
-      id: 'keystone.support',
-      defaultMessage: '',
-    },
   },
   suggestWalletOrAssets: {
     id: `${FOOTER}suggestWalletOrAssets`,
@@ -179,4 +175,4 @@ export default defineMessages({
     id: `${FOOTER}metamask`,
     defaultMessage: '',
   },
-});
+})
