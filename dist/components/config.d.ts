@@ -14,7 +14,7 @@ export namespace ProductsConfigProduct {
     let id_1: string
     export { id_1 as id }
   }
-  namespace k3ProBundle2Pack {
+  namespace k3ProBundlePack {
     let path_2: string
     export { path_2 as path }
     let id_2: string
@@ -22,57 +22,50 @@ export namespace ProductsConfigProduct {
     let variantId_1: string
     export { variantId_1 as variantId }
   }
-  namespace k3ProBundle3Pack {
-    let path_3: string
-    export { path_3 as path }
+  namespace k3ProPresale {
     let id_3: string
     export { id_3 as id }
     let variantId_2: string
     export { variantId_2 as variantId }
   }
-  namespace k3ProPresale {
+  namespace k3ProBundle2PackPresale {
     let id_4: string
     export { id_4 as id }
     let variantId_3: string
     export { variantId_3 as variantId }
   }
-  namespace k3ProBundle2PackPresale {
+  namespace k3ProBundle3PackPresale {
     let id_5: string
     export { id_5 as id }
     let variantId_4: string
     export { variantId_4 as variantId }
   }
-  namespace k3ProBundle3PackPresale {
+  namespace pouch {
+    let path_3: string
+    export { path_3 as path }
     let id_6: string
     export { id_6 as id }
-    let variantId_5: string
-    export { variantId_5 as variantId }
   }
-  namespace pouch {
+  namespace tablet {
     let path_4: string
     export { path_4 as path }
     let id_7: string
     export { id_7 as id }
   }
-  namespace tablet {
+  namespace tabletPlus {
     let path_5: string
     export { path_5 as path }
     let id_8: string
     export { id_8 as id }
   }
-  namespace tabletPlus {
+  namespace tabletPunch {
     let path_6: string
     export { path_6 as path }
     let id_9: string
     export { id_9 as id }
   }
-  namespace tabletPunch {
-    let path_7: string
-    export { path_7 as path }
-    let id_10: string
-    export { id_10 as id }
-  }
 }
+export const DOMAIN: 'https://keyst.one'
 export namespace LINKS {
   let keystoneSupportServiceDesk: string
   let metamaskTutorial: string
@@ -88,10 +81,8 @@ export namespace LINKS {
     export let k3: string
     let k3Pro_1: string
     export { k3Pro_1 as k3Pro }
-    let k3ProBundle2Pack_1: string
-    export { k3ProBundle2Pack_1 as k3ProBundle2Pack }
-    let k3ProBundle3Pack_1: string
-    export { k3ProBundle3Pack_1 as k3ProBundle3Pack }
+    let k3ProBundlePack_1: string
+    export { k3ProBundlePack_1 as k3ProBundlePack }
     export let k3ProOkx: string
     let tablet_1: string
     export { tablet_1 as tablet }
@@ -101,7 +92,15 @@ export namespace LINKS {
   let shippingRegions: string
   let supportAssetsAndWallets: string
   let salesTermsAndConditions: string
+  let termsOfUse: string
+  let keystoneTermsOfUse: string
+  let privacyPolicy: string
+  let cookiePolicy: string
+  let shippingPolicy: string
+  let refundPolicy: string
   let resellars: string
+  let affiliates: string
+  let bugBountyProgram: string
   let whyKeystone: string
   let expertReviews: string
   let web3Compatible: string
@@ -109,6 +108,8 @@ export namespace LINKS {
   let firmware: string
   let metamask: string
   let usbUpgrade: string
+  let btcOnly: string
+  let nft: string
   let sdCardStore: string
   let aaaBatteryStore: string
   let fromLedgerToKeystoneVideo: string
@@ -141,5 +142,8 @@ export namespace LINKS {
   let coBranded: string
   let roadmap: string
   let officialSite: string
+  let getStarted: string
+  let authentication: string
+  let tutorial: string
 }
 export const DEVICE_QUERY_MOBILE: '(max-width: 1000px)'
