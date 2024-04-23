@@ -6,9 +6,7 @@ import Bnb from '../../assets/images/Bnb'
 import Matic from '../../assets/images/Matic'
 import OKX from '../../assets/images/OKX'
 import Btc from '../../assets/images/Btc'
-import ImToken from '../../assets/images/ImToken'
-import Ada from '../../assets/images/Ada'
-import Eternl from '../../assets/images/Eternl.png'
+import Keplr from '../../assets/images/Keplr'
 import {
   Wallets,
   Wallet,
@@ -29,6 +27,10 @@ import More from '../../assets/images/More'
 import Popover from '../../components/Popover'
 import Tron from '../../assets/images/Tron'
 import { useIsMobile } from '../../hooks'
+import Atom from '../../assets/images/Atom'
+import Cro from '../../assets/images/Cro'
+import Dym from '../../assets/images/Dym'
+import NunchukLight from '../../assets/images/NunchukLight'
 
 const walletsAndAssets = [
   {
@@ -81,38 +83,40 @@ const walletsAndAssets = [
     shouldShowEvmHoverTip: false,
   },
   {
-    id: 'im-token',
-    walletName: 'imToken',
-    icon: <ImToken width="48px" height="48px" />,
+    id: 'keplr',
+    walletName: 'Keplr',
+    icon: <Keplr width="48px" height="48px" />,
     coins: [
       {
-        id: 'eth',
-        coinName: 'ETH',
-        icon: <Eth width="32px" height="32px" />,
+        id: 'atom',
+        coinName: 'ATOM',
+        icon: <Atom width={'32px'} height={'32px'} />,
       },
       {
-        id: 'bnb',
-        coinName: 'BNB',
-        icon: <Bnb width="32px" height="32px" />,
+        id: 'cro',
+        coinName: 'CRO',
+        icon: <Cro width={'32px'} height={'32px'} />,
       },
       {
-        id: 'matic',
-        coinName: 'MATIC',
-        icon: <Matic width="32px" height="32px" />,
+        id: 'dym',
+        coinName: 'DYM',
+        icon: <Dym width={'32px'} height={'32px'} />,
+        tag: 'new',
       },
     ],
     supportAllEvmChains: true,
     shouldShowEvmHoverTip: false,
   },
   {
-    id: 'eternl',
-    walletName: 'Eternl',
-    icon: <img src={Eternl} alt="Eternl" />,
+    id: 'nunchuk',
+    walletName: 'Nunchuk',
+    icon: <NunchukLight width="48px" height="48px" />,
+    tag: 'new',
     coins: [
       {
-        id: 'ada',
-        coinName: 'ADA',
-        icon: <Ada width="32px" height="32px" />,
+        id: 'btc',
+        coinName: 'BTC',
+        icon: <Btc width="32px" height="32px" />,
       },
     ],
     supportAllEvmChains: false,

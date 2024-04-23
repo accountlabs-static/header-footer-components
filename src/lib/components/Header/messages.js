@@ -181,6 +181,10 @@ export default defineMessages({
     id: `${scope}.resources.expertReviews`,
     defaultMessage: '',
   },
+  resourcesBtcOnly: {
+    id: `${scope}.resources.btcOnly`,
+    defaultMessage: '',
+  },
   buy: {
     id: `${scope}.buy`,
     defaultMessage: '',

@@ -24,6 +24,10 @@ export default defineMessages({
     id: `${FOOTER}support`,
     defaultMessage: '',
   },
+  roadmap: {
+    id: `${FOOTER}roadmap`,
+    defaultMessage: '',
+  },
   suggestWalletOrAssets: {
     id: `${FOOTER}suggestWalletOrAssets`,
     defaultMessage: '',

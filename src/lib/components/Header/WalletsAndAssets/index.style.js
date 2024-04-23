@@ -61,7 +61,7 @@ export const WalletName = styled(H5)`
   display: flex;
   align-items: center;
   font-weight: 600;
-  margin: 0 auto;
+  margin: 0;
   svg,
   img {
     width: 48px;

@@ -76,7 +76,7 @@ const menuGroups = [
       },
       {
         id: 'tabletPunch',
-        href: `${DOMAIN}/${ProductsConfigProduct.tabletPunch.path}`,
+        href: `${DOMAIN}${ProductsConfigProduct.tabletPunch.path}`,
         title: messages.productList.t5,
         tag: false,
         img: tabletPunch,

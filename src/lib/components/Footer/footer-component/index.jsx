@@ -78,8 +78,14 @@ const menuList = [
     {
       id: 'Support',
       type: 'link',
-      link: LINKS.support,
+      link: LINKS.tutorial,
       text: messages.support,
+    },
+    {
+      id: 'Roadmap',
+      type: 'link',
+      link: LINKS.roadmap,
+      text: messages.roadmap,
     },
     {
       id: 'SuggestWalletOrAssets',

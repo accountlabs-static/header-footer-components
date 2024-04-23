@@ -12,6 +12,7 @@ import roadmap from '../../assets/images/roadmap.svg'
 import tutorial from '../../assets/images/scan.svg'
 import blog from '../../assets/images/blog.svg'
 import expertReviews from '../../assets/images/user.svg'
+import btcOnly from '../../assets/images/btc-only.svg'
 
 const menuList = [
   {
@@ -57,6 +58,12 @@ const menuList = [
     href: LINKS.expertReviews,
     icon: expertReviews,
     title: messages.resourcesExpertReviews,
+  },
+  {
+    id: 'btc-only',
+    href: LINKS.btcOnly,
+    icon: btcOnly,
+    title: messages.resourcesBtcOnly,
   },
 ]
 
