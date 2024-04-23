@@ -240,5 +240,9 @@ export default defineMessages({
       id: 'keystone.saleOff',
       defaultMessage: '',
     },
+    dollarOff: {
+      id: 'keystone.dollarOff',
+      defaultMessage: '',
+    },
   },
 })

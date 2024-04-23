@@ -94,15 +94,15 @@
       h = n ? Symbol.for('react.strict_mode') : 60108,
       v = n ? Symbol.for('react.profiler') : 60114,
       p = n ? Symbol.for('react.provider') : 60109,
-      w = n ? Symbol.for('react.context') : 60110,
+      C = n ? Symbol.for('react.context') : 60110,
       x = n ? Symbol.for('react.async_mode') : 60111,
-      C = n ? Symbol.for('react.concurrent_mode') : 60111,
+      w = n ? Symbol.for('react.concurrent_mode') : 60111,
       M = n ? Symbol.for('react.forward_ref') : 60112,
       T = n ? Symbol.for('react.suspense') : 60113,
       D = n ? Symbol.for('react.suspense_list') : 60120,
       N = n ? Symbol.for('react.memo') : 60115,
       U = n ? Symbol.for('react.lazy') : 60116,
-      L = n ? Symbol.for('react.block') : 60121,
+      j = n ? Symbol.for('react.block') : 60121,
       Y = n ? Symbol.for('react.fundamental') : 60117,
       J = n ? Symbol.for('react.responder') : 60118,
       ee = n ? Symbol.for('react.scope') : 60119
@@ -113,7 +113,7 @@
           case o:
             switch (((Q = Q.type), Q)) {
               case x:
-              case C:
+              case w:
               case c:
               case v:
               case h:
@@ -121,7 +121,7 @@
                 return Q
               default:
                 switch (((Q = Q && Q.$$typeof), Q)) {
-                  case w:
+                  case C:
                   case M:
                   case U:
                   case N:
@@ -137,12 +137,12 @@
       }
     }
     function te(Q) {
-      return G(Q) === C
+      return G(Q) === w
     }
     return (
       (en.AsyncMode = x),
-      (en.ConcurrentMode = C),
-      (en.ContextConsumer = w),
+      (en.ConcurrentMode = w),
+      (en.ContextConsumer = C),
       (en.ContextProvider = p),
       (en.Element = o),
       (en.ForwardRef = M),
@@ -158,7 +158,7 @@
       }),
       (en.isConcurrentMode = te),
       (en.isContextConsumer = function (Q) {
-        return G(Q) === w
+        return G(Q) === C
       }),
       (en.isContextProvider = function (Q) {
         return G(Q) === p
@@ -195,7 +195,7 @@
           typeof Q == 'string' ||
           typeof Q == 'function' ||
           Q === c ||
-          Q === C ||
+          Q === w ||
           Q === v ||
           Q === h ||
           Q === T ||
@@ -205,12 +205,12 @@
             (Q.$$typeof === U ||
               Q.$$typeof === N ||
               Q.$$typeof === p ||
-              Q.$$typeof === w ||
+              Q.$$typeof === C ||
               Q.$$typeof === M ||
               Q.$$typeof === Y ||
               Q.$$typeof === J ||
               Q.$$typeof === ee ||
-              Q.$$typeof === L))
+              Q.$$typeof === j))
         )
       }),
       (en.typeOf = G),
@@ -239,15 +239,15 @@
               h = n ? Symbol.for('react.strict_mode') : 60108,
               v = n ? Symbol.for('react.profiler') : 60114,
               p = n ? Symbol.for('react.provider') : 60109,
-              w = n ? Symbol.for('react.context') : 60110,
+              C = n ? Symbol.for('react.context') : 60110,
               x = n ? Symbol.for('react.async_mode') : 60111,
-              C = n ? Symbol.for('react.concurrent_mode') : 60111,
+              w = n ? Symbol.for('react.concurrent_mode') : 60111,
               M = n ? Symbol.for('react.forward_ref') : 60112,
               T = n ? Symbol.for('react.suspense') : 60113,
               D = n ? Symbol.for('react.suspense_list') : 60120,
               N = n ? Symbol.for('react.memo') : 60115,
               U = n ? Symbol.for('react.lazy') : 60116,
-              L = n ? Symbol.for('react.block') : 60121,
+              j = n ? Symbol.for('react.block') : 60121,
               Y = n ? Symbol.for('react.fundamental') : 60117,
               J = n ? Symbol.for('react.responder') : 60118,
               ee = n ? Symbol.for('react.scope') : 60119
@@ -256,7 +256,7 @@
                 typeof pe == 'string' ||
                 typeof pe == 'function' ||
                 pe === c ||
-                pe === C ||
+                pe === w ||
                 pe === v ||
                 pe === h ||
                 pe === T ||
@@ -266,12 +266,12 @@
                   (pe.$$typeof === U ||
                     pe.$$typeof === N ||
                     pe.$$typeof === p ||
-                    pe.$$typeof === w ||
+                    pe.$$typeof === C ||
                     pe.$$typeof === M ||
                     pe.$$typeof === Y ||
                     pe.$$typeof === J ||
                     pe.$$typeof === ee ||
-                    pe.$$typeof === L))
+                    pe.$$typeof === j))
               )
             }
             function te(pe) {
@@ -282,7 +282,7 @@
                     var jt = pe.type
                     switch (jt) {
                       case x:
-                      case C:
+                      case w:
                       case c:
                       case v:
                       case h:
@@ -291,7 +291,7 @@
                       default:
                         var Kn = jt && jt.$$typeof
                         switch (Kn) {
-                          case w:
+                          case C:
                           case M:
                           case U:
                           case N:
@@ -307,8 +307,8 @@
               }
             }
             var Q = x,
-              se = C,
-              $ = w,
+              se = w,
+              $ = C,
               et = p,
               Xe = o,
               lt = M,
@@ -331,10 +331,10 @@
               )
             }
             function F(pe) {
-              return te(pe) === C
+              return te(pe) === w
             }
             function Ae(pe) {
-              return te(pe) === w
+              return te(pe) === C
             }
             function ge(pe) {
               return te(pe) === p
@@ -597,11 +597,11 @@
       var v = h[c],
         p = v.split('/')
       if (p.length === 0) throw new Error('Invalid number skeleton')
-      for (var w = p[0], x = p.slice(1), C = 0, M = x; C < M.length; C++) {
-        var T = M[C]
+      for (var C = p[0], x = p.slice(1), w = 0, M = x; w < M.length; w++) {
+        var T = M[w]
         if (T.length === 0) throw new Error('Invalid number skeleton')
       }
-      s.push({ stem: w, options: x })
+      s.push({ stem: C, options: x })
     }
     return s
   }
@@ -720,16 +720,16 @@
         case 'scientific':
           o = Ie(
             Ie(Ie({}, o), { notation: 'scientific' }),
-            h.options.reduce(function (x, C) {
-              return Ie(Ie({}, x), QC(C))
+            h.options.reduce(function (x, w) {
+              return Ie(Ie({}, x), QC(w))
             }, {}),
           )
           continue
         case 'engineering':
           o = Ie(
             Ie(Ie({}, o), { notation: 'engineering' }),
-            h.options.reduce(function (x, C) {
-              return Ie(Ie({}, x), QC(C))
+            h.options.reduce(function (x, w) {
+              return Ie(Ie({}, x), QC(w))
             }, {}),
           )
           continue
@@ -774,8 +774,8 @@
           continue
         case 'integer-width':
           if (h.options.length > 1) throw new RangeError('integer-width stems only accept a single optional option')
-          h.options[0].replace(lR, function (x, C, M, T, D, N) {
-            if (C) o.minimumIntegerDigits = M.length
+          h.options[0].replace(lR, function (x, w, M, T, D, N) {
+            if (w) o.minimumIntegerDigits = M.length
             else {
               if (T && D) throw new Error('We currently do not support maximum integer digits')
               if (N) throw new Error('We currently do not support exact integer digits')
@@ -790,15 +790,15 @@
       }
       if (NC.test(h.stem)) {
         if (h.options.length > 1) throw new RangeError('Fraction-precision stems only accept a single optional option')
-        h.stem.replace(NC, function (x, C, M, T, D, N) {
+        h.stem.replace(NC, function (x, w, M, T, D, N) {
           return (
             M === '*'
-              ? (o.minimumFractionDigits = C.length)
+              ? (o.minimumFractionDigits = w.length)
               : T && T[0] === '#'
               ? (o.maximumFractionDigits = T.length)
               : D && N
               ? ((o.minimumFractionDigits = D.length), (o.maximumFractionDigits = D.length + N.length))
-              : ((o.minimumFractionDigits = C.length), (o.maximumFractionDigits = C.length)),
+              : ((o.minimumFractionDigits = w.length), (o.maximumFractionDigits = w.length)),
             ''
           )
         })
@@ -812,8 +812,8 @@
       }
       var p = jC(h.stem)
       p && (o = Ie(Ie({}, o), p))
-      var w = AR(h.stem)
-      w && (o = Ie(Ie({}, o), w))
+      var C = AR(h.stem)
+      C && (o = Ie(Ie({}, o), C))
     }
     return o
   }
@@ -1098,11 +1098,11 @@
       if (h === 'j') {
         for (var v = 0; c + 1 < n.length && n.charAt(c + 1) === h; ) v++, c++
         var p = 1 + (v & 1),
-          w = v < 2 ? 1 : 3 + (v >> 1),
+          C = v < 2 ? 1 : 3 + (v >> 1),
           x = 'a',
-          C = cR(o)
-        for ((C == 'H' || C == 'k') && (w = 0); w-- > 0; ) s += x
-        for (; p-- > 0; ) s = C + s
+          w = cR(o)
+        for ((w == 'H' || w == 'k') && (C = 0); C-- > 0; ) s += x
+        for (; p-- > 0; ) s = w + s
       } else h === 'J' ? (s += 'H') : (s += h)
     }
     return s
@@ -1177,8 +1177,8 @@
           for (var s = {}, c = 0, h = o; c < h.length; c++) {
             var v = h[c],
               p = v[0],
-              w = v[1]
-            s[p] = w
+              C = v[1]
+            s[p] = C
           }
           return s
         },
@@ -1256,8 +1256,8 @@
           } else {
             if (v === 125 && o > 0) break
             if (v === 35 && (s === 'plural' || s === 'selectordinal')) {
-              var w = this.clonePosition()
-              this.bump(), h.push({ type: Cn.pound, location: Vt(w, this.clonePosition()) })
+              var C = this.clonePosition()
+              this.bump(), h.push({ type: Cn.pound, location: Vt(C, this.clonePosition()) })
             } else if (v === 60 && !this.ignoreTag && this.peek() === 47) {
               if (c) break
               return this.error(Lt.UNMATCHED_CLOSING_TAG, Vt(this.clonePosition(), this.clonePosition()))
@@ -1287,17 +1287,17 @@
           var v = this.parseMessage(o + 1, s, !0)
           if (v.err) return v
           var p = v.val,
-            w = this.clonePosition()
+            C = this.clonePosition()
           if (this.bumpIf('</')) {
-            if (this.isEOF() || !$y(this.char())) return this.error(Lt.INVALID_TAG, Vt(w, this.clonePosition()))
+            if (this.isEOF() || !$y(this.char())) return this.error(Lt.INVALID_TAG, Vt(C, this.clonePosition()))
             var x = this.clonePosition(),
-              C = this.parseTagName()
-            return h !== C
+              w = this.parseTagName()
+            return h !== w
               ? this.error(Lt.UNMATCHED_CLOSING_TAG, Vt(x, this.clonePosition()))
               : (this.bumpSpace(),
                 this.bumpIf('>')
                   ? { val: { type: Cn.tag, value: h, children: p, location: Vt(c, this.clonePosition()) }, err: null }
-                  : this.error(Lt.INVALID_TAG, Vt(w, this.clonePosition())))
+                  : this.error(Lt.INVALID_TAG, Vt(C, this.clonePosition())))
           } else return this.error(Lt.UNCLOSED_TAG, Vt(c, this.clonePosition()))
         } else return this.error(Lt.INVALID_TAG, Vt(c, this.clonePosition()))
       }),
@@ -1318,9 +1318,9 @@
             h += p
             continue
           }
-          var w = this.tryParseLeftAngleBracket()
-          if (w) {
-            h += w
+          var C = this.tryParseLeftAngleBracket()
+          if (C) {
+            h += C
             continue
           }
           break
@@ -1410,16 +1410,16 @@
       (n.prototype.parseArgumentOptions = function (o, s, c, h) {
         var v,
           p = this.clonePosition(),
-          w = this.parseIdentifierIfPossible().value,
+          C = this.parseIdentifierIfPossible().value,
           x = this.clonePosition()
-        switch (w) {
+        switch (C) {
           case '':
             return this.error(Lt.EXPECT_ARGUMENT_TYPE, Vt(p, x))
           case 'number':
           case 'date':
           case 'time': {
             this.bumpSpace()
-            var C = null
+            var w = null
             if (this.bumpIf(',')) {
               this.bumpSpace()
               var M = this.clonePosition(),
@@ -1429,36 +1429,36 @@
               if (D.length === 0)
                 return this.error(Lt.EXPECT_ARGUMENT_STYLE, Vt(this.clonePosition(), this.clonePosition()))
               var N = Vt(M, this.clonePosition())
-              C = { style: D, styleLocation: N }
+              w = { style: D, styleLocation: N }
             }
             var U = this.tryParseArgumentClose(h)
             if (U.err) return U
-            var L = Vt(h, this.clonePosition())
-            if (C && HC(C == null ? void 0 : C.style, '::', 0)) {
-              var Y = CR(C.style.slice(2))
-              if (w === 'number') {
-                var T = this.parseNumberSkeletonFromString(Y, C.styleLocation)
-                return T.err ? T : { val: { type: Cn.number, value: c, location: L, style: T.val }, err: null }
+            var j = Vt(h, this.clonePosition())
+            if (w && HC(w == null ? void 0 : w.style, '::', 0)) {
+              var Y = CR(w.style.slice(2))
+              if (C === 'number') {
+                var T = this.parseNumberSkeletonFromString(Y, w.styleLocation)
+                return T.err ? T : { val: { type: Cn.number, value: c, location: j, style: T.val }, err: null }
               } else {
-                if (Y.length === 0) return this.error(Lt.EXPECT_DATE_TIME_SKELETON, L)
+                if (Y.length === 0) return this.error(Lt.EXPECT_DATE_TIME_SKELETON, j)
                 var J = Y
                 this.locale && (J = uR(Y, this.locale))
                 var D = {
                     type: Vu.dateTime,
                     pattern: J,
-                    location: C.styleLocation,
+                    location: w.styleLocation,
                     parsedOptions: this.shouldParseSkeletons ? rR(J) : {},
                   },
-                  ee = w === 'date' ? Cn.date : Cn.time
-                return { val: { type: ee, value: c, location: L, style: D }, err: null }
+                  ee = C === 'date' ? Cn.date : Cn.time
+                return { val: { type: ee, value: c, location: j, style: D }, err: null }
               }
             }
             return {
               val: {
-                type: w === 'number' ? Cn.number : w === 'date' ? Cn.date : Cn.time,
+                type: C === 'number' ? Cn.number : C === 'date' ? Cn.date : Cn.time,
                 value: c,
-                location: L,
-                style: (v = C == null ? void 0 : C.style) !== null && v !== void 0 ? v : null,
+                location: j,
+                style: (v = w == null ? void 0 : w.style) !== null && v !== void 0 ? v : null,
               },
               err: null,
             }
@@ -1472,7 +1472,7 @@
             this.bumpSpace()
             var te = this.parseIdentifierIfPossible(),
               Q = 0
-            if (w !== 'select' && te.value === 'offset') {
+            if (C !== 'select' && te.value === 'offset') {
               if (!this.bumpIf(':'))
                 return this.error(
                   Lt.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE,
@@ -1486,12 +1486,12 @@
               if (T.err) return T
               this.bumpSpace(), (te = this.parseIdentifierIfPossible()), (Q = T.val)
             }
-            var se = this.tryParsePluralOrSelectOptions(o, w, s, te)
+            var se = this.tryParsePluralOrSelectOptions(o, C, s, te)
             if (se.err) return se
             var U = this.tryParseArgumentClose(h)
             if (U.err) return U
             var $ = Vt(h, this.clonePosition())
-            return w === 'select'
+            return C === 'select'
               ? { val: { type: Cn.select, value: c, options: VC(se.val), location: $ }, err: null }
               : {
                   val: {
@@ -1499,7 +1499,7 @@
                     value: c,
                     options: VC(se.val),
                     offset: Q,
-                    pluralType: w === 'plural' ? 'cardinal' : 'ordinal',
+                    pluralType: C === 'plural' ? 'cardinal' : 'ordinal',
                     location: $,
                   },
                   err: null,
@@ -1555,8 +1555,8 @@
         }
       }),
       (n.prototype.tryParsePluralOrSelectOptions = function (o, s, c, h) {
-        for (var v, p = !1, w = [], x = new Set(), C = h.value, M = h.location; ; ) {
-          if (C.length === 0) {
+        for (var v, p = !1, C = [], x = new Set(), w = h.value, M = h.location; ; ) {
+          if (w.length === 0) {
             var T = this.clonePosition()
             if (s !== 'select' && this.bumpIf('=')) {
               var D = this.tryParseDecimalInteger(
@@ -1564,15 +1564,15 @@
                 Lt.INVALID_PLURAL_ARGUMENT_SELECTOR,
               )
               if (D.err) return D
-              ;(M = Vt(T, this.clonePosition())), (C = this.message.slice(T.offset, this.offset()))
+              ;(M = Vt(T, this.clonePosition())), (w = this.message.slice(T.offset, this.offset()))
             } else break
           }
-          if (x.has(C))
+          if (x.has(w))
             return this.error(
               s === 'select' ? Lt.DUPLICATE_SELECT_ARGUMENT_SELECTOR : Lt.DUPLICATE_PLURAL_ARGUMENT_SELECTOR,
               M,
             )
-          C === 'other' && (p = !0), this.bumpSpace()
+          w === 'other' && (p = !0), this.bumpSpace()
           var N = this.clonePosition()
           if (!this.bumpIf('{'))
             return this.error(
@@ -1583,31 +1583,31 @@
             )
           var U = this.parseMessage(o + 1, s, c)
           if (U.err) return U
-          var L = this.tryParseArgumentClose(N)
-          if (L.err) return L
-          w.push([C, { value: U.val, location: Vt(N, this.clonePosition()) }]),
-            x.add(C),
+          var j = this.tryParseArgumentClose(N)
+          if (j.err) return j
+          C.push([w, { value: U.val, location: Vt(N, this.clonePosition()) }]),
+            x.add(w),
             this.bumpSpace(),
             (v = this.parseIdentifierIfPossible()),
-            (C = v.value),
+            (w = v.value),
             (M = v.location)
         }
-        return w.length === 0
+        return C.length === 0
           ? this.error(
               s === 'select' ? Lt.EXPECT_SELECT_ARGUMENT_SELECTOR : Lt.EXPECT_PLURAL_ARGUMENT_SELECTOR,
               Vt(this.clonePosition(), this.clonePosition()),
             )
           : this.requiresOtherClause && !p
           ? this.error(Lt.MISSING_OTHER_CLAUSE, Vt(this.clonePosition(), this.clonePosition()))
-          : { val: w, err: null }
+          : { val: C, err: null }
       }),
       (n.prototype.tryParseDecimalInteger = function (o, s) {
         var c = 1,
           h = this.clonePosition()
         this.bumpIf('+') || (this.bumpIf('-') && (c = -1))
         for (var v = !1, p = 0; !this.isEOF(); ) {
-          var w = this.char()
-          if (w >= 48 && w <= 57) (v = !0), (p = p * 10 + (w - 48)), this.bump()
+          var C = this.char()
+          if (C >= 48 && C <= 57) (v = !0), (p = p * 10 + (C - 48)), this.bump()
           else break
         }
         var x = Vt(h, this.clonePosition())
@@ -2101,14 +2101,14 @@
   }
   function Jh(n, o, s, c, h, v, p) {
     if (n.length === 1 && xC(n[0])) return [{ type: Ei.literal, value: n[0].value }]
-    for (var w = [], x = 0, C = n; x < C.length; x++) {
-      var M = C[x]
+    for (var C = [], x = 0, w = n; x < w.length; x++) {
+      var M = w[x]
       if (xC(M)) {
-        w.push({ type: Ei.literal, value: M.value })
+        C.push({ type: Ei.literal, value: M.value })
         continue
       }
       if (tR(M)) {
-        typeof v == 'number' && w.push({ type: Ei.literal, value: s.getNumberFormat(o).format(v) })
+        typeof v == 'number' && C.push({ type: Ei.literal, value: s.getNumberFormat(o).format(v) })
         continue
       }
       var T = M.value
@@ -2117,29 +2117,29 @@
       if (eR(M)) {
         ;(!D || typeof D == 'string' || typeof D == 'number') &&
           (D = typeof D == 'string' || typeof D == 'number' ? String(D) : ''),
-          w.push({ type: typeof D == 'string' ? Ei.literal : Ei.object, value: D })
+          C.push({ type: typeof D == 'string' ? Ei.literal : Ei.object, value: D })
         continue
       }
       if (TC(M)) {
         var N = typeof M.style == 'string' ? c.date[M.style] : Py(M.style) ? M.style.parsedOptions : void 0
-        w.push({ type: Ei.literal, value: s.getDateTimeFormat(o, N).format(D) })
+        C.push({ type: Ei.literal, value: s.getDateTimeFormat(o, N).format(D) })
         continue
       }
       if (IC(M)) {
         var N = typeof M.style == 'string' ? c.time[M.style] : Py(M.style) ? M.style.parsedOptions : c.time.medium
-        w.push({ type: Ei.literal, value: s.getDateTimeFormat(o, N).format(D) })
+        C.push({ type: Ei.literal, value: s.getDateTimeFormat(o, N).format(D) })
         continue
       }
       if (bC(M)) {
         var N = typeof M.style == 'string' ? c.number[M.style] : DC(M.style) ? M.style.parsedOptions : void 0
-        N && N.scale && (D = D * (N.scale || 1)), w.push({ type: Ei.literal, value: s.getNumberFormat(o, N).format(D) })
+        N && N.scale && (D = D * (N.scale || 1)), C.push({ type: Ei.literal, value: s.getNumberFormat(o, N).format(D) })
         continue
       }
       if (kC(M)) {
         var U = M.children,
-          L = M.value,
-          Y = h[L]
-        if (!PC(Y)) throw new LR(L, 'function', p)
+          j = M.value,
+          Y = h[j]
+        if (!PC(Y)) throw new LR(j, 'function', p)
         var J = Jh(U, o, s, c, h, v),
           ee = Y(
             J.map(function (Q) {
@@ -2147,8 +2147,8 @@
             }),
           )
         Array.isArray(ee) || (ee = [ee]),
-          w.push.apply(
-            w,
+          C.push.apply(
+            C,
             ee.map(function (Q) {
               return { type: typeof Q == 'string' ? Ei.literal : Ei.object, value: Q }
             }),
@@ -2157,7 +2157,7 @@
       if (MC(M)) {
         var G = M.options[D] || M.options.other
         if (!G) throw new JC(M.value, D, Object.keys(M.options), p)
-        w.push.apply(w, Jh(G.value, o, s, c, h))
+        C.push.apply(C, Jh(G.value, o, s, c, h))
         continue
       }
       if (RC(M)) {
@@ -2175,11 +2175,11 @@ Try polyfilling it using "@formatjs/intl-pluralrules"
           G = M.options[te] || M.options.other
         }
         if (!G) throw new JC(M.value, D, Object.keys(M.options), p)
-        w.push.apply(w, Jh(G.value, o, s, c, h, D - (M.offset || 0)))
+        C.push.apply(C, Jh(G.value, o, s, c, h, D - (M.offset || 0)))
         continue
       }
     }
-    return QR(w)
+    return QR(C)
   }
   function HR(n, o) {
     return o
@@ -2250,9 +2250,9 @@ Try polyfilling it using "@formatjs/intl-pluralrules"
           (s === void 0 && (s = n.defaultLocale),
           (this.formatterCache = { number: {}, dateTime: {}, pluralRules: {} }),
           (this.format = function (x) {
-            var C = v.formatToParts(x)
-            if (C.length === 1) return C[0].value
-            var M = C.reduce(function (T, D) {
+            var w = v.formatToParts(x)
+            if (w.length === 1) return w[0].value
+            var M = w.reduce(function (T, D) {
               return (
                 !T.length || D.type !== Ei.literal || typeof T[T.length - 1] != 'string'
                   ? T.push(D.value)
@@ -2284,8 +2284,8 @@ Try polyfilling it using "@formatjs/intl-pluralrules"
             throw new TypeError('IntlMessageFormat.__parse must be set to process `message` of type `string`')
           var p = h || {}
           p.formatters
-          var w = Hu(p, ['formatters'])
-          this.ast = n.__parse(o, Ie(Ie({}, w), { locale: this.resolvedLocale }))
+          var C = Hu(p, ['formatters'])
+          this.ast = n.__parse(o, Ie(Ie({}, C), { locale: this.resolvedLocale }))
         } else this.ast = o
         if (!Array.isArray(this.ast)) throw new TypeError('A message must be provided as a String or AST.')
         ;(this.formats = VR(n.formats, c)), (this.formatters = (h && h.formatters) || FR(this.formatterCache))
@@ -2533,22 +2533,22 @@ Description: `,
       c = Intl.DisplayNames,
       h = bo(
         function () {
-          for (var w, x = [], C = 0; C < arguments.length; C++) x[C] = arguments[C]
-          return new ((w = Intl.DateTimeFormat).bind.apply(w, Kr([void 0], x, !1)))()
+          for (var C, x = [], w = 0; w < arguments.length; w++) x[w] = arguments[w]
+          return new ((C = Intl.DateTimeFormat).bind.apply(C, Kr([void 0], x, !1)))()
         },
         { cache: Ss(n.dateTime), strategy: To.variadic },
       ),
       v = bo(
         function () {
-          for (var w, x = [], C = 0; C < arguments.length; C++) x[C] = arguments[C]
-          return new ((w = Intl.NumberFormat).bind.apply(w, Kr([void 0], x, !1)))()
+          for (var C, x = [], w = 0; w < arguments.length; w++) x[w] = arguments[w]
+          return new ((C = Intl.NumberFormat).bind.apply(C, Kr([void 0], x, !1)))()
         },
         { cache: Ss(n.number), strategy: To.variadic },
       ),
       p = bo(
         function () {
-          for (var w, x = [], C = 0; C < arguments.length; C++) x[C] = arguments[C]
-          return new ((w = Intl.PluralRules).bind.apply(w, Kr([void 0], x, !1)))()
+          for (var C, x = [], w = 0; w < arguments.length; w++) x[w] = arguments[w]
+          return new ((C = Intl.PluralRules).bind.apply(C, Kr([void 0], x, !1)))()
         },
         { cache: Ss(n.pluralRules), strategy: To.variadic },
       )
@@ -2556,11 +2556,11 @@ Description: `,
       getDateTimeFormat: h,
       getNumberFormat: v,
       getMessageFormat: bo(
-        function (w, x, C, M) {
+        function (C, x, w, M) {
           return new zC(
-            w,
-            x,
             C,
+            x,
+            w,
             Ie({ formatters: { getNumberFormat: v, getDateTimeFormat: h, getPluralRules: p } }, M || {}),
           )
         },
@@ -2568,23 +2568,23 @@ Description: `,
       ),
       getRelativeTimeFormat: bo(
         function () {
-          for (var w = [], x = 0; x < arguments.length; x++) w[x] = arguments[x]
-          return new (o.bind.apply(o, Kr([void 0], w, !1)))()
+          for (var C = [], x = 0; x < arguments.length; x++) C[x] = arguments[x]
+          return new (o.bind.apply(o, Kr([void 0], C, !1)))()
         },
         { cache: Ss(n.relativeTime), strategy: To.variadic },
       ),
       getPluralRules: p,
       getListFormat: bo(
         function () {
-          for (var w = [], x = 0; x < arguments.length; x++) w[x] = arguments[x]
-          return new (s.bind.apply(s, Kr([void 0], w, !1)))()
+          for (var C = [], x = 0; x < arguments.length; x++) C[x] = arguments[x]
+          return new (s.bind.apply(s, Kr([void 0], C, !1)))()
         },
         { cache: Ss(n.list), strategy: To.variadic },
       ),
       getDisplayNames: bo(
         function () {
-          for (var w = [], x = 0; x < arguments.length; x++) w[x] = arguments[x]
-          return new (c.bind.apply(c, Kr([void 0], w, !1)))()
+          for (var C = [], x = 0; x < arguments.length; x++) C[x] = arguments[x]
+          return new (c.bind.apply(c, Kr([void 0], C, !1)))()
         },
         { cache: Ss(n.displayNames), strategy: To.variadic },
       ),
@@ -2618,29 +2618,29 @@ Description: `,
   var o0 = function (n, o, s, c, h) {
       var v = n.locale,
         p = n.formats,
-        w = n.messages,
+        C = n.messages,
         x = n.defaultLocale,
-        C = n.defaultFormats,
+        w = n.defaultFormats,
         M = n.fallbackOnEmptyString,
         T = n.onError,
         D = n.timeZone,
         N = n.defaultRichTextElements
       s === void 0 && (s = { id: '' })
       var U = s.id,
-        L = s.defaultMessage
+        j = s.defaultMessage
       CC(
         !!U,
         '[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.io/docs/tooling/linter#enforce-id)\nto autofix this issue',
       )
       var Y = String(U),
-        J = w && Object.prototype.hasOwnProperty.call(w, Y) && w[Y]
+        J = C && Object.prototype.hasOwnProperty.call(C, Y) && C[Y]
       if (Array.isArray(J) && J.length === 1 && J[0].type === Cn.literal) return J[0].value
       if (!c && J && typeof J == 'string' && !N) return J.replace(/'\{(.*?)\}'/gi, '{$1}')
-      if (((c = Ie(Ie({}, N), c || {})), (p = ex(p, D)), (C = ex(C, D)), !J)) {
+      if (((c = Ie(Ie({}, N), c || {})), (p = ex(p, D)), (w = ex(w, D)), !J)) {
         if (M === !1 && J === '') return J
-        if (((!L || (v && v.toLowerCase() !== x.toLowerCase())) && T(new YR(s, v)), L))
+        if (((!j || (v && v.toLowerCase() !== x.toLowerCase())) && T(new YR(s, v)), j))
           try {
-            var ee = o.getMessageFormat(L, x, C, h)
+            var ee = o.getMessageFormat(j, x, w, h)
             return ee.format(c)
           } catch (G) {
             return (
@@ -2652,7 +2652,7 @@ Description: `,
                   G,
                 ),
               ),
-              typeof L == 'string' ? L : Y
+              typeof j == 'string' ? j : Y
             )
           }
         return Y
@@ -2663,21 +2663,21 @@ Description: `,
       } catch (G) {
         T(
           new i0(
-            'Error formatting message: "'.concat(Y, '", using ').concat(L ? 'default message' : 'id', ' as fallback.'),
+            'Error formatting message: "'.concat(Y, '", using ').concat(j ? 'default message' : 'id', ' as fallback.'),
             v,
             s,
             G,
           ),
         )
       }
-      if (L)
+      if (j)
         try {
-          var ee = o.getMessageFormat(L, x, C, h)
+          var ee = o.getMessageFormat(j, x, w, h)
           return ee.format(c)
         } catch (G) {
           T(new i0('Error formatting the default message for: "'.concat(Y, '", rendering message verbatim'), v, s, G))
         }
-      return typeof J == 'string' ? J : typeof L == 'string' ? L : Y
+      return typeof J == 'string' ? J : typeof j == 'string' ? j : Y
     },
     tx = [
       'formatMatcher',
@@ -2703,11 +2703,11 @@ Description: `,
     var h = n.locale,
       v = n.formats,
       p = n.onError,
-      w = n.timeZone
+      C = n.timeZone
     c === void 0 && (c = {})
     var x = c.format,
-      C = Ie(Ie({}, w && { timeZone: w }), x && a0(v, o, x, p)),
-      M = Es(c, tx, C)
+      w = Ie(Ie({}, C && { timeZone: C }), x && a0(v, o, x, p)),
+      M = Es(c, tx, w)
     return (
       o === 'time' &&
         !M.hour &&
@@ -2724,39 +2724,39 @@ Description: `,
     var h = s[0],
       v = s[1],
       p = v === void 0 ? {} : v,
-      w = typeof h == 'string' ? new Date(h || 0) : h
+      C = typeof h == 'string' ? new Date(h || 0) : h
     try {
-      return zh(n, 'date', o, p).format(w)
+      return zh(n, 'date', o, p).format(C)
     } catch (x) {
       n.onError(new ba('Error formatting date.', n.locale, x))
     }
-    return String(w)
+    return String(C)
   }
   function zR(n, o) {
     for (var s = [], c = 2; c < arguments.length; c++) s[c - 2] = arguments[c]
     var h = s[0],
       v = s[1],
       p = v === void 0 ? {} : v,
-      w = typeof h == 'string' ? new Date(h || 0) : h
+      C = typeof h == 'string' ? new Date(h || 0) : h
     try {
-      return zh(n, 'time', o, p).format(w)
+      return zh(n, 'time', o, p).format(C)
     } catch (x) {
       n.onError(new ba('Error formatting time.', n.locale, x))
     }
-    return String(w)
+    return String(C)
   }
   function ZR(n, o) {
     for (var s = [], c = 2; c < arguments.length; c++) s[c - 2] = arguments[c]
     var h = s[0],
       v = s[1],
       p = s[2],
-      w = p === void 0 ? {} : p,
+      C = p === void 0 ? {} : p,
       x = n.timeZone,
-      C = n.locale,
+      w = n.locale,
       M = n.onError,
-      T = Es(w, tx, x ? { timeZone: x } : {})
+      T = Es(C, tx, x ? { timeZone: x } : {})
     try {
-      return o(C, T).formatRange(h, v)
+      return o(w, T).formatRange(h, v)
     } catch (D) {
       M(new ba('Error formatting date time range.', n.locale, D))
     }
@@ -2767,9 +2767,9 @@ Description: `,
     var h = s[0],
       v = s[1],
       p = v === void 0 ? {} : v,
-      w = typeof h == 'string' ? new Date(h || 0) : h
+      C = typeof h == 'string' ? new Date(h || 0) : h
     try {
-      return zh(n, 'date', o, p).formatToParts(w)
+      return zh(n, 'date', o, p).formatToParts(C)
     } catch (x) {
       n.onError(new ba('Error formatting date.', n.locale, x))
     }
@@ -2780,9 +2780,9 @@ Description: `,
     var h = s[0],
       v = s[1],
       p = v === void 0 ? {} : v,
-      w = typeof h == 'string' ? new Date(h || 0) : h
+      C = typeof h == 'string' ? new Date(h || 0) : h
     try {
-      return zh(n, 'time', o, p).formatToParts(w)
+      return zh(n, 'time', o, p).formatToParts(C)
     } catch (x) {
       n.onError(new ba('Error formatting time.', n.locale, x))
     }
@@ -2802,9 +2802,9 @@ Try polyfilling it using "@formatjs/intl-displaynames"
           Io.MISSING_INTL_API,
         ),
       )
-    var w = Es(c, $R)
+    var C = Es(c, $R)
     try {
-      return o(h, w).of(s)
+      return o(h, C).of(s)
     } catch (x) {
       v(new ba('Error formatting display name.', h, x))
     }
@@ -2817,9 +2817,9 @@ Try polyfilling it using "@formatjs/intl-displaynames"
   function rk(n, o, s, c) {
     c === void 0 && (c = {})
     var h = rx(n, o, s, c).reduce(function (v, p) {
-      var w = p.value
+      var C = p.value
       return (
-        typeof w != 'string' ? v.push(w) : typeof v[v.length - 1] == 'string' ? (v[v.length - 1] += w) : v.push(w), v
+        typeof C != 'string' ? v.push(C) : typeof v[v.length - 1] == 'string' ? (v[v.length - 1] += C) : v.push(C), v
       )
     }, [])
     return h.length === 1 ? h[0] : h.length === 0 ? '' : h
@@ -2838,18 +2838,18 @@ Try polyfilling it using "@formatjs/intl-listformat"
           Io.MISSING_INTL_API,
         ),
       )
-    var w = Es(c, tk)
+    var C = Es(c, tk)
     try {
       var x = {},
-        C = s.map(function (M, T) {
+        w = s.map(function (M, T) {
           if (typeof M == 'object') {
             var D = nk(T)
             return (x[D] = M), D
           }
           return String(M)
         })
-      return o(h, w)
-        .formatToParts(C)
+      return o(h, C)
+        .formatToParts(w)
         .map(function (M) {
           return M.type === 'literal' ? M : Ie(Ie({}, M), { value: x[M.value] || M.value })
         })
@@ -2875,8 +2875,8 @@ Try polyfilling it using "@formatjs/intl-pluralrules"
     var p = Es(c, ik)
     try {
       return o(h, p).select(s)
-    } catch (w) {
-      v(new ba('Error formatting plural.', h, w))
+    } catch (C) {
+      v(new ba('Error formatting plural.', h, C))
     }
     return 'other'
   }
@@ -2887,8 +2887,8 @@ Try polyfilling it using "@formatjs/intl-pluralrules"
       v = n.onError
     s === void 0 && (s = {})
     var p = s.format,
-      w = (!!p && a0(h, 'relative', p, v)) || {},
-      x = Es(s, ok, w)
+      C = (!!p && a0(h, 'relative', p, v)) || {},
+      x = Es(s, ok, C)
     return o(c, x)
   }
   function Ak(n, o, s, c, h) {
@@ -2940,8 +2940,8 @@ Try polyfilling it using "@formatjs/intl-relativetimeformat"
       v = n.onError
     s === void 0 && (s = {})
     var p = s.format,
-      w = (p && a0(h, 'number', p, v)) || {},
-      x = Es(s, sk, w)
+      C = (p && a0(h, 'number', p, v)) || {},
+      x = Es(s, sk, C)
     return o(c, x)
   }
   function uk(n, o, s, c) {
@@ -3093,8 +3093,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         h = s.value,
         v = s.children,
         p = Hu(s, ['value', 'children']),
-        w = typeof h == 'string' ? new Date(h || 0) : h,
-        x = n === 'formatDate' ? c.formatDateToParts(w, p) : c.formatTimeToParts(w, p)
+        C = typeof h == 'string' ? new Date(h || 0) : h,
+        x = n === 'formatDate' ? c.formatDateToParts(C, p) : c.formatTimeToParts(C, p)
       return v(x)
     }
     return (o.displayName = u0[n]), o
@@ -3105,10 +3105,10 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         h = s.value,
         v = s.children,
         p = Hu(s, ['value', 'children']),
-        w = c[n](h, p)
-      if (typeof v == 'function') return v(w)
+        C = c[n](h, p)
+      if (typeof v == 'function') return v(C)
       var x = c.textComponent || Yn.Fragment
-      return Yn.createElement(x, null, w)
+      return Yn.createElement(x, null, C)
     }
     return (o.displayName = s0[n]), o
   }
@@ -3124,8 +3124,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   var sx = function (n, o, s, c) {
       for (var h = [], v = 4; v < arguments.length; v++) h[v - 4] = arguments[v]
       var p = Ax(c),
-        w = o0.apply(void 0, Kr([n, o, s, p], h, !1))
-      return Array.isArray(w) ? Yn.Children.toArray(w) : w
+        C = o0.apply(void 0, Kr([n, o, s, p], h, !1))
+      return Array.isArray(C) ? Yn.Children.toArray(C) : C
     },
     ux = function (n, o) {
       var s = n.defaultRichTextElements,
@@ -3199,16 +3199,16 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       h = c === void 0 ? Yn.Fragment : c,
       v = n.id,
       p = n.description,
-      w = n.defaultMessage,
+      C = n.defaultMessage,
       x = n.values,
-      C = n.children,
+      w = n.children,
       M = n.tagName,
       T = M === void 0 ? h : M,
       D = n.ignoreTag,
-      N = { id: v, description: p, defaultMessage: w },
+      N = { id: v, description: p, defaultMessage: C },
       U = s(N, x, { ignoreTag: D })
-    return typeof C == 'function'
-      ? C(Array.isArray(U) ? U : [U])
+    return typeof w == 'function'
+      ? w(Array.isArray(U) ? U : [U])
       : T
       ? Yn.createElement(T, null, Yn.Children.toArray(U))
       : Yn.createElement(Yn.Fragment, null, U)
@@ -3322,6 +3322,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       'keystone.footer.metamask': 'MetaMask Compatibility',
       'keystone.hot': 'Hot',
       'keystone.saleOff': '{discount}% OFF',
+      'keystone.dollarOff': '${discount} OFF',
       'keystone.comingSoon': 'Coming soon',
       'keystone.support': 'Support',
       'keystone.blog': 'Blog',
@@ -3408,12 +3409,12 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     let { reference: c, floating: h } = n
     const v = Zh(o),
       p = m0(o),
-      w = h0(p),
+      C = h0(p),
       x = ws(o),
-      C = v === 'y',
+      w = v === 'y',
       M = c.x + c.width / 2 - h.width / 2,
       T = c.y + c.height / 2 - h.height / 2,
-      D = c[w] / 2 - h[w] / 2
+      D = c[C] / 2 - h[C] / 2
     let N
     switch (x) {
       case 'top':
@@ -3433,25 +3434,25 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     }
     switch (tf(o)) {
       case 'start':
-        N[p] -= D * (s && C ? -1 : 1)
+        N[p] -= D * (s && w ? -1 : 1)
         break
       case 'end':
-        N[p] += D * (s && C ? -1 : 1)
+        N[p] += D * (s && w ? -1 : 1)
         break
     }
     return N
   }
   const Rk = async (n, o, s) => {
     const { placement: c = 'bottom', strategy: h = 'absolute', middleware: v = [], platform: p } = s,
-      w = v.filter(Boolean),
+      C = v.filter(Boolean),
       x = await (p.isRTL == null ? void 0 : p.isRTL(o))
-    let C = await p.getElementRects({ reference: n, floating: o, strategy: h }),
-      { x: M, y: T } = mx(C, c, x),
+    let w = await p.getElementRects({ reference: n, floating: o, strategy: h }),
+      { x: M, y: T } = mx(w, c, x),
       D = c,
       N = {},
       U = 0
-    for (let L = 0; L < w.length; L++) {
-      const { name: Y, fn: J } = w[L],
+    for (let j = 0; j < C.length; j++) {
+      const { name: Y, fn: J } = C[j],
         {
           x: ee,
           y: G,
@@ -3464,7 +3465,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           placement: D,
           strategy: h,
           middlewareData: N,
-          rects: C,
+          rects: w,
           platform: p,
           elements: { reference: n, floating: o },
         })
@@ -3473,9 +3474,9 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           typeof Q == 'object' &&
             (Q.placement && (D = Q.placement),
             Q.rects &&
-              (C = Q.rects === !0 ? await p.getElementRects({ reference: n, floating: o, strategy: h }) : Q.rects),
-            ({ x: M, y: T } = mx(C, D, x))),
-          (L = -1)
+              (w = Q.rects === !0 ? await p.getElementRects({ reference: n, floating: o, strategy: h }) : Q.rects),
+            ({ x: M, y: T } = mx(w, D, x))),
+          (j = -1)
         continue
       }
     }
@@ -3484,29 +3485,29 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   async function gx(n, o) {
     var s
     o === void 0 && (o = {})
-    const { x: c, y: h, platform: v, rects: p, elements: w, strategy: x } = n,
+    const { x: c, y: h, platform: v, rects: p, elements: C, strategy: x } = n,
       {
-        boundary: C = 'clippingAncestors',
+        boundary: w = 'clippingAncestors',
         rootBoundary: M = 'viewport',
         elementContext: T = 'floating',
         altBoundary: D = !1,
         padding: N = 0,
       } = ef(o, n),
       U = hx(N),
-      Y = w[D ? (T === 'floating' ? 'reference' : 'floating') : T],
+      Y = C[D ? (T === 'floating' ? 'reference' : 'floating') : T],
       J = _h(
         await v.getClippingRect({
           element:
             (s = await (v.isElement == null ? void 0 : v.isElement(Y))) == null || s
               ? Y
-              : Y.contextElement || (await (v.getDocumentElement == null ? void 0 : v.getDocumentElement(w.floating))),
-          boundary: C,
+              : Y.contextElement || (await (v.getDocumentElement == null ? void 0 : v.getDocumentElement(C.floating))),
+          boundary: w,
           rootBoundary: M,
           strategy: x,
         }),
       ),
       ee = T === 'floating' ? { ...p.floating, x: c, y: h } : p.reference,
-      G = await (v.getOffsetParent == null ? void 0 : v.getOffsetParent(w.floating)),
+      G = await (v.getOffsetParent == null ? void 0 : v.getOffsetParent(C.floating)),
       te = (await (v.isElement == null ? void 0 : v.isElement(G)))
         ? (await (v.getScale == null ? void 0 : v.getScale(G))) || { x: 1, y: 1 }
         : { x: 1, y: 1 },
@@ -3526,23 +3527,23 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       name: 'arrow',
       options: n,
       async fn(o) {
-        const { x: s, y: c, placement: h, rects: v, platform: p, elements: w } = o,
-          { element: x, padding: C = 0 } = ef(n, o) || {}
+        const { x: s, y: c, placement: h, rects: v, platform: p, elements: C } = o,
+          { element: x, padding: w = 0 } = ef(n, o) || {}
         if (x == null) return {}
-        const M = hx(C),
+        const M = hx(w),
           T = { x: s, y: c },
           D = m0(h),
           N = h0(D),
           U = await p.getDimensions(x),
-          L = D === 'y',
-          Y = L ? 'top' : 'left',
-          J = L ? 'bottom' : 'right',
-          ee = L ? 'clientHeight' : 'clientWidth',
+          j = D === 'y',
+          Y = j ? 'top' : 'left',
+          J = j ? 'bottom' : 'right',
+          ee = j ? 'clientHeight' : 'clientWidth',
           G = v.reference[N] + v.reference[D] - T[D] - v.floating[N],
           te = T[D] - v.reference[D],
           Q = await (p.getOffsetParent == null ? void 0 : p.getOffsetParent(x))
         let se = Q ? Q[ee] : 0
-        ;(!se || !(await (p.isElement == null ? void 0 : p.isElement(Q)))) && (se = w.floating[ee] || v.floating[N])
+        ;(!se || !(await (p.isElement == null ? void 0 : p.isElement(Q)))) && (se = C.floating[ee] || v.floating[N])
         const $ = G / 2 - te / 2,
           et = se / 2 - U[N] / 2 - 1,
           Xe = f0(M[Y], et),
@@ -3568,26 +3569,26 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           options: n,
           async fn(o) {
             var s
-            const { placement: c, middlewareData: h, rects: v, initialPlacement: p, platform: w, elements: x } = o,
+            const { placement: c, middlewareData: h, rects: v, initialPlacement: p, platform: C, elements: x } = o,
               {
-                mainAxis: C = !0,
+                mainAxis: w = !0,
                 crossAxis: M = !0,
                 fallbackPlacements: T,
                 fallbackStrategy: D = 'bestFit',
                 fallbackAxisSideDirection: N = 'none',
                 flipAlignment: U = !0,
-                ...L
+                ...j
               } = ef(n, o),
               Y = ws(c),
               J = ws(p) === p,
-              ee = await (w.isRTL == null ? void 0 : w.isRTL(x.floating)),
+              ee = await (C.isRTL == null ? void 0 : C.isRTL(x.floating)),
               G = T || (J || !U ? [Xh(p)] : bk(p))
             !T && N !== 'none' && G.push(...Ik(p, U, N, ee))
             const te = [p, ...G],
-              Q = await gx(o, L),
+              Q = await gx(o, j),
               se = []
             let $ = ((s = h.flip) == null ? void 0 : s.overflows) || []
-            if ((C && se.push(Q[Y]), M)) {
+            if ((w && se.push(Q[Y]), M)) {
               const He = xk(c, v, ee)
               se.push(Q[He[0]], Q[He[1]])
             }
@@ -3630,9 +3631,9 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     const { placement: s, platform: c, elements: h } = n,
       v = await (c.isRTL == null ? void 0 : c.isRTL(h.floating)),
       p = ws(s),
-      w = tf(s),
+      C = tf(s),
       x = Zh(s) === 'y',
-      C = ['left', 'top'].includes(p) ? -1 : 1,
+      w = ['left', 'top'].includes(p) ? -1 : 1,
       M = v && x ? -1 : 1,
       T = ef(o, n)
     let {
@@ -3643,7 +3644,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       ? { mainAxis: T, crossAxis: 0, alignmentAxis: null }
       : { mainAxis: 0, crossAxis: 0, alignmentAxis: null, ...T }
     return (
-      w && typeof U == 'number' && (N = w === 'end' ? U * -1 : U), x ? { x: N * M, y: D * C } : { x: D * C, y: N * M }
+      C && typeof U == 'number' && (N = C === 'end' ? U * -1 : U), x ? { x: N * M, y: D * w } : { x: D * w, y: N * M }
     )
   }
   const Nk = function (n) {
@@ -3671,7 +3672,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               {
                 mainAxis: v = !0,
                 crossAxis: p = !1,
-                limiter: w = {
+                limiter: C = {
                   fn: (Y) => {
                     let { x: J, y: ee } = Y
                     return { x: J, y: ee }
@@ -3679,12 +3680,12 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
                 },
                 ...x
               } = ef(n, o),
-              C = { x: s, y: c },
+              w = { x: s, y: c },
               M = await gx(o, x),
               T = Zh(ws(h)),
               D = px(T)
-            let N = C[D],
-              U = C[T]
+            let N = w[D],
+              U = w[T]
             if (v) {
               const Y = D === 'y' ? 'top' : 'left',
                 J = D === 'y' ? 'bottom' : 'right',
@@ -3699,8 +3700,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
                 G = U - M[J]
               U = p0(ee, U, G)
             }
-            const L = w.fn({ ...o, [D]: N, [T]: U })
-            return { ...L, data: { x: L.x - s, y: L.y - c } }
+            const j = C.fn({ ...o, [D]: N, [T]: U })
+            return { ...j, data: { x: j.x - s, y: j.y - c } }
           },
         }
       )
@@ -3801,8 +3802,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     const h = Mo(n),
       v = h ? n.offsetWidth : s,
       p = h ? n.offsetHeight : c,
-      w = $h(s) !== v || $h(c) !== p
-    return w && ((s = v), (c = p)), { width: s, height: c, $: w }
+      C = $h(s) !== v || $h(c) !== p
+    return C && ((s = v), (c = p)), { width: s, height: c, $: C }
   }
   function S0(n) {
     return yl(n) ? n : n.contextElement
@@ -3813,8 +3814,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     const s = o.getBoundingClientRect(),
       { width: c, height: h, $: v } = Sx(o)
     let p = (v ? $h(s.width) : s.width) / c,
-      w = (v ? $h(s.height) : s.height) / h
-    return (!p || !Number.isFinite(p)) && (p = 1), (!w || !Number.isFinite(w)) && (w = 1), { x: p, y: w }
+      C = (v ? $h(s.height) : s.height) / h
+    return (!p || !Number.isFinite(p)) && (p = 1), (!C || !Number.isFinite(C)) && (C = 1), { x: p, y: C }
   }
   const jk = fA(0)
   function wx(n) {
@@ -3830,26 +3831,26 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       v = S0(n)
     let p = fA(1)
     o && (c ? yl(c) && (p = qu(c)) : (p = qu(n)))
-    const w = Qk(v, s, c) ? wx(v) : fA(0)
-    let x = (h.left + w.x) / p.x,
-      C = (h.top + w.y) / p.y,
+    const C = Qk(v, s, c) ? wx(v) : fA(0)
+    let x = (h.left + C.x) / p.x,
+      w = (h.top + C.y) / p.y,
       M = h.width / p.x,
       T = h.height / p.y
     if (v) {
       const D = ca(v),
         N = c && yl(c) ? ca(c) : c
       let U = D,
-        L = U.frameElement
-      for (; L && c && N !== U; ) {
-        const Y = qu(L),
-          J = L.getBoundingClientRect(),
-          ee = Ta(L),
-          G = J.left + (L.clientLeft + parseFloat(ee.paddingLeft)) * Y.x,
-          te = J.top + (L.clientTop + parseFloat(ee.paddingTop)) * Y.y
-        ;(x *= Y.x), (C *= Y.y), (M *= Y.x), (T *= Y.y), (x += G), (C += te), (U = ca(L)), (L = U.frameElement)
+        j = U.frameElement
+      for (; j && c && N !== U; ) {
+        const Y = qu(j),
+          J = j.getBoundingClientRect(),
+          ee = Ta(j),
+          G = J.left + (j.clientLeft + parseFloat(ee.paddingLeft)) * Y.x,
+          te = J.top + (j.clientTop + parseFloat(ee.paddingTop)) * Y.y
+        ;(x *= Y.x), (w *= Y.y), (M *= Y.x), (T *= Y.y), (x += G), (w += te), (U = ca(j)), (j = U.frameElement)
       }
     }
-    return _h({ width: M, height: T, x, y: C })
+    return _h({ width: M, height: T, x, y: w })
   }
   const Hk = [':popover-open', ':modal']
   function Cx(n) {
@@ -3865,21 +3866,21 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     let { elements: o, rect: s, offsetParent: c, strategy: h } = n
     const v = h === 'fixed',
       p = vl(c),
-      w = o ? Cx(o.floating) : !1
-    if (c === p || (w && v)) return s
+      C = o ? Cx(o.floating) : !1
+    if (c === p || (C && v)) return s
     let x = { scrollLeft: 0, scrollTop: 0 },
-      C = fA(1)
+      w = fA(1)
     const M = fA(0),
       T = Mo(c)
     if ((T || (!T && !v)) && ((pA(c) !== 'body' || nf(p)) && (x = nm(c)), Mo(c))) {
       const D = Cs(c)
-      ;(C = qu(c)), (M.x = D.x + c.clientLeft), (M.y = D.y + c.clientTop)
+      ;(w = qu(c)), (M.x = D.x + c.clientLeft), (M.y = D.y + c.clientTop)
     }
     return {
-      width: s.width * C.x,
-      height: s.height * C.y,
-      x: s.x * C.x - x.scrollLeft * C.x + M.x,
-      y: s.y * C.y - x.scrollTop * C.y + M.y,
+      width: s.width * w.x,
+      height: s.height * w.y,
+      x: s.x * w.x - x.scrollLeft * w.x + M.x,
+      y: s.y * w.y - x.scrollTop * w.y + M.y,
     }
   }
   function Fk(n) {
@@ -3895,8 +3896,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       h = Fu(o.scrollWidth, o.clientWidth, c.scrollWidth, c.clientWidth),
       v = Fu(o.scrollHeight, o.clientHeight, c.scrollHeight, c.clientHeight)
     let p = -s.scrollLeft + xx(n)
-    const w = -s.scrollTop
-    return Ta(c).direction === 'rtl' && (p += Fu(o.clientWidth, c.clientWidth) - h), { width: h, height: v, x: p, y: w }
+    const C = -s.scrollTop
+    return Ta(c).direction === 'rtl' && (p += Fu(o.clientWidth, c.clientWidth) - h), { width: h, height: v, x: p, y: C }
   }
   function qk(n, o) {
     const s = ca(n),
@@ -3904,14 +3905,14 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       h = s.visualViewport
     let v = c.clientWidth,
       p = c.clientHeight,
-      w = 0,
+      C = 0,
       x = 0
     if (h) {
       ;(v = h.width), (p = h.height)
-      const C = E0()
-      ;(!C || (C && o === 'fixed')) && ((w = h.offsetLeft), (x = h.offsetTop))
+      const w = E0()
+      ;(!w || (w && o === 'fixed')) && ((C = h.offsetLeft), (x = h.offsetTop))
     }
-    return { width: v, height: p, x: w, y: x }
+    return { width: v, height: p, x: C, y: x }
   }
   function Yk(n, o) {
     const s = Cs(n, !0, o === 'fixed'),
@@ -3919,10 +3920,10 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       h = s.left + n.clientLeft,
       v = Mo(n) ? qu(n) : fA(1),
       p = n.clientWidth * v.x,
-      w = n.clientHeight * v.y,
+      C = n.clientHeight * v.y,
       x = h * v.x,
-      C = c * v.y
-    return { width: p, height: w, x, y: C }
+      w = c * v.y
+    return { width: p, height: C, x, y: w }
   }
   function bx(n, o, s) {
     let c
@@ -3942,22 +3943,22 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   function Kk(n, o) {
     const s = o.get(n)
     if (s) return s
-    let c = rf(n, [], !1).filter((w) => yl(w) && pA(w) !== 'body'),
+    let c = rf(n, [], !1).filter((C) => yl(C) && pA(C) !== 'body'),
       h = null
     const v = Ta(n).position === 'fixed'
     let p = v ? Gu(n) : n
     for (; yl(p) && !tm(p); ) {
-      const w = Ta(p),
+      const C = Ta(p),
         x = y0(p)
-      !x && w.position === 'fixed' && (h = null),
+      !x && C.position === 'fixed' && (h = null),
         (
           v
             ? !x && !h
-            : (!x && w.position === 'static' && !!h && ['absolute', 'fixed'].includes(h.position)) ||
+            : (!x && C.position === 'static' && !!h && ['absolute', 'fixed'].includes(h.position)) ||
               (nf(p) && !x && Tx(n, p))
         )
           ? (c = c.filter((M) => M !== p))
-          : (h = w),
+          : (h = C),
         (p = Gu(p))
     }
     return o.set(n, c), c
@@ -3965,19 +3966,19 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   function Wk(n) {
     let { element: o, boundary: s, rootBoundary: c, strategy: h } = n
     const p = [...(s === 'clippingAncestors' ? Kk(o, this._c) : [].concat(s)), c],
-      w = p[0],
+      C = p[0],
       x = p.reduce(
-        (C, M) => {
+        (w, M) => {
           const T = bx(o, M, h)
           return (
-            (C.top = Fu(T.top, C.top)),
-            (C.right = v0(T.right, C.right)),
-            (C.bottom = v0(T.bottom, C.bottom)),
-            (C.left = Fu(T.left, C.left)),
-            C
+            (w.top = Fu(T.top, w.top)),
+            (w.right = v0(T.right, w.right)),
+            (w.bottom = v0(T.bottom, w.bottom)),
+            (w.left = Fu(T.left, w.left)),
+            w
           )
         },
-        bx(o, w, h),
+        bx(o, C, h),
       )
     return { width: x.right - x.left, height: x.bottom - x.top, x: x.left, y: x.top }
   }
@@ -3990,16 +3991,16 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       h = vl(o),
       v = s === 'fixed',
       p = Cs(n, !0, v, o)
-    let w = { scrollLeft: 0, scrollTop: 0 }
+    let C = { scrollLeft: 0, scrollTop: 0 }
     const x = fA(0)
     if (c || (!c && !v))
-      if (((pA(o) !== 'body' || nf(h)) && (w = nm(o)), c)) {
+      if (((pA(o) !== 'body' || nf(h)) && (C = nm(o)), c)) {
         const T = Cs(o, !0, v, o)
         ;(x.x = T.x + o.clientLeft), (x.y = T.y + o.clientTop)
       } else h && (x.x = xx(h))
-    const C = p.left + w.scrollLeft - x.x,
-      M = p.top + w.scrollTop - x.y
-    return { x: C, y: M, width: p.width, height: p.height }
+    const w = p.left + C.scrollLeft - x.x,
+      M = p.top + C.scrollTop - x.y
+    return { x: w, y: M, width: p.width, height: p.height }
   }
   function Ix(n, o) {
     return !Mo(n) || Ta(n).position === 'fixed' ? null : o ? o(n) : n.offsetParent
@@ -4039,18 +4040,18 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       c
     const h = vl(n)
     function v() {
-      var w
-      clearTimeout(c), (w = s) == null || w.disconnect(), (s = null)
+      var C
+      clearTimeout(c), (C = s) == null || C.disconnect(), (s = null)
     }
-    function p(w, x) {
-      w === void 0 && (w = !1), x === void 0 && (x = 1), v()
-      const { left: C, top: M, width: T, height: D } = n.getBoundingClientRect()
-      if ((w || o(), !T || !D)) return
+    function p(C, x) {
+      C === void 0 && (C = !1), x === void 0 && (x = 1), v()
+      const { left: w, top: M, width: T, height: D } = n.getBoundingClientRect()
+      if ((C || o(), !T || !D)) return
       const N = em(M),
-        U = em(h.clientWidth - (C + T)),
-        L = em(h.clientHeight - (M + D)),
-        Y = em(C),
-        ee = { rootMargin: -N + 'px ' + -U + 'px ' + -L + 'px ' + -Y + 'px', threshold: Fu(0, v0(1, x)) || 1 }
+        U = em(h.clientWidth - (w + T)),
+        j = em(h.clientHeight - (M + D)),
+        Y = em(w),
+        ee = { rootMargin: -N + 'px ' + -U + 'px ' + -j + 'px ' + -Y + 'px', threshold: Fu(0, v0(1, x)) || 1 }
       let G = !0
       function te(Q) {
         const se = Q[0].intersectionRatio
@@ -4079,22 +4080,22 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         ancestorScroll: h = !0,
         ancestorResize: v = !0,
         elementResize: p = typeof ResizeObserver == 'function',
-        layoutShift: w = typeof IntersectionObserver == 'function',
+        layoutShift: C = typeof IntersectionObserver == 'function',
         animationFrame: x = !1,
       } = c,
-      C = S0(n),
-      M = h || v ? [...(C ? rf(C) : []), ...rf(o)] : []
+      w = S0(n),
+      M = h || v ? [...(w ? rf(w) : []), ...rf(o)] : []
     M.forEach((J) => {
       h && J.addEventListener('scroll', s, { passive: !0 }), v && J.addEventListener('resize', s)
     })
-    const T = C && w ? _k(C, s) : null
+    const T = w && C ? _k(w, s) : null
     let D = -1,
       N = null
     p &&
       ((N = new ResizeObserver((J) => {
         let [ee] = J
         ee &&
-          ee.target === C &&
+          ee.target === w &&
           N &&
           (N.unobserve(o),
           cancelAnimationFrame(D),
@@ -4104,15 +4105,15 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           }))),
           s()
       })),
-      C && !x && N.observe(C),
+      w && !x && N.observe(w),
       N.observe(o))
     let U,
-      L = x ? Cs(n) : null
+      j = x ? Cs(n) : null
     x && Y()
     function Y() {
       const J = Cs(n)
-      L && (J.x !== L.x || J.y !== L.y || J.width !== L.width || J.height !== L.height) && s(),
-        (L = J),
+      j && (J.x !== j.x || J.y !== j.y || J.width !== j.width || J.height !== j.height) && s(),
+        (j = J),
         (U = requestAnimationFrame(Y))
     }
     return (
@@ -4148,8 +4149,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       var o = {}.hasOwnProperty
       function s() {
         for (var v = '', p = 0; p < arguments.length; p++) {
-          var w = arguments[p]
-          w && (v = h(v, c(w)))
+          var C = arguments[p]
+          C && (v = h(v, c(C)))
         }
         return v
       }
@@ -4160,7 +4161,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         if (v.toString !== Object.prototype.toString && !v.toString.toString().includes('[native code]'))
           return v.toString()
         var p = ''
-        for (var w in v) o.call(v, w) && v[w] && (p = h(p, w))
+        for (var C in v) o.call(v, C) && v[C] && (p = h(p, C))
         return p
       }
       function h(v, p) {
@@ -4199,11 +4200,11 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     const { insertAt: p } = c
     if (document.getElementById(o))
       return void console.warn(`[react-tooltip] Element with id '${o}' already exists. Call \`removeStyle()\` first`)
-    const w = document.head || document.getElementsByTagName('head')[0],
+    const C = document.head || document.getElementsByTagName('head')[0],
       x = document.createElement('style')
     ;(x.id = o),
       (x.type = 'text/css'),
-      p === 'top' && w.firstChild ? w.insertBefore(x, w.firstChild) : w.appendChild(x),
+      p === 'top' && C.firstChild ? C.insertBefore(x, C.firstChild) : C.appendChild(x),
       x.styleSheet ? (x.styleSheet.cssText = n) : x.appendChild(document.createTextNode(n)),
       (Dx[s] = !0)
   }
@@ -4215,7 +4216,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       offset: h = 10,
       strategy: v = 'absolute',
       middlewares: p = [Nk(Number(h)), tD({ fallbackAxisSideDirection: 'start' }), eD({ padding: 5 })],
-      border: w,
+      border: C,
     }) => {
       if (!n) return { tooltipStyles: {}, tooltipArrowStyles: {}, place: c }
       if (o === null) return { tooltipStyles: {}, tooltipArrowStyles: {}, place: c }
@@ -4223,23 +4224,23 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       return s
         ? (x.push(nD({ element: s, padding: 5 })),
           Rx(n, o, { placement: c, strategy: v, middleware: x }).then(
-            ({ x: C, y: M, placement: T, middlewareData: D }) => {
+            ({ x: w, y: M, placement: T, middlewareData: D }) => {
               var N, U
-              const L = { left: `${C}px`, top: `${M}px`, border: w },
+              const j = { left: `${w}px`, top: `${M}px`, border: C },
                 { x: Y, y: J } = (N = D.arrow) !== null && N !== void 0 ? N : { x: 0, y: 0 },
                 ee =
                   (U = { top: 'bottom', right: 'left', bottom: 'top', left: 'right' }[T.split('-')[0]]) !== null &&
                   U !== void 0
                     ? U
                     : 'bottom',
-                G = w && { borderBottom: w, borderRight: w }
+                G = C && { borderBottom: C, borderRight: C }
               let te = 0
-              if (w) {
-                const Q = `${w}`.match(/(\d+)px/)
+              if (C) {
+                const Q = `${C}`.match(/(\d+)px/)
                 te = Q != null && Q[1] ? Number(Q[1]) : 1
               }
               return {
-                tooltipStyles: L,
+                tooltipStyles: j,
                 tooltipArrowStyles: {
                   left: Y != null ? `${Y}px` : '',
                   top: J != null ? `${J}px` : '',
@@ -4252,8 +4253,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               }
             },
           ))
-        : Rx(n, o, { placement: 'bottom', strategy: v, middleware: x }).then(({ x: C, y: M, placement: T }) => ({
-            tooltipStyles: { left: `${C}px`, top: `${M}px` },
+        : Rx(n, o, { placement: 'bottom', strategy: v, middleware: x }).then(({ x: w, y: M, placement: T }) => ({
+            tooltipStyles: { left: `${w}px`, top: `${M}px` },
             tooltipArrowStyles: {},
             place: T,
           }))
@@ -4341,15 +4342,15 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       variant: h = 'dark',
       anchorId: v,
       anchorSelect: p,
-      place: w = 'top',
+      place: C = 'top',
       offset: x = 10,
-      events: C = ['hover'],
+      events: w = ['hover'],
       openOnClick: M = !1,
       positionStrategy: T = 'absolute',
       middlewares: D,
       wrapper: N,
       delayShow: U = 0,
-      delayHide: L = 0,
+      delayHide: j = 0,
       float: Y = !1,
       hidden: J = !1,
       noArrow: ee = !1,
@@ -4383,7 +4384,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         be = _.useRef(null),
         ze = _.useRef(null),
         wt = _.useRef(null),
-        [pe, Yt] = _.useState({ tooltipStyles: {}, tooltipArrowStyles: {}, place: w }),
+        [pe, Yt] = _.useState({ tooltipStyles: {}, tooltipArrowStyles: {}, place: C }),
         [jt, Kn] = _.useState(!1),
         [$n, Hn] = _.useState(!1),
         [Qt, Gi] = _.useState(null),
@@ -4393,7 +4394,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         Wr = _.useRef(!1),
         [er, ai] = _.useState([]),
         Bn = _.useRef(!1),
-        ur = M || C.includes('click'),
+        ur = M || w.includes('click'),
         da =
           ur ||
           ($ == null ? void 0 : $.click) ||
@@ -4460,7 +4461,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
                   _e(!0)
                 }, xe))
         },
-        Tn = (xe = L) => {
+        Tn = (xe = j) => {
           ze.current && clearTimeout(ze.current),
             (ze.current = setTimeout(() => {
               Wr.current || _e(!1)
@@ -4474,7 +4475,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           U ? An() : _e(!0), Ae(dt), Ur({ current: dt }), ze.current && clearTimeout(ze.current)
         },
         tr = () => {
-          G ? Tn(L || 100) : L ? Tn() : _e(!1), be.current && clearTimeout(be.current)
+          G ? Tn(j || 100) : j ? Tn() : _e(!1), be.current && clearTimeout(be.current)
         },
         Xt = ({ x: xe, y: it }) => {
           var dt
@@ -4491,7 +4492,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             }),
           }
           Nx({
-            place: (dt = Qt == null ? void 0 : Qt.place) !== null && dt !== void 0 ? dt : w,
+            place: (dt = Qt == null ? void 0 : Qt.place) !== null && dt !== void 0 ? dt : C,
             offset: x,
             elementReference: pn,
             tooltipReference: Ce.current,
@@ -4536,7 +4537,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             : F != null &&
               F.isConnected &&
               Nx({
-                place: (it = Qt == null ? void 0 : Qt.place) !== null && it !== void 0 ? it : w,
+                place: (it = Qt == null ? void 0 : Qt.place) !== null && it !== void 0 ? it : C,
                 offset: x,
                 elementReference: F,
                 tooltipReference: Ce.current,
@@ -4547,7 +4548,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               }).then((pn) => {
                 Bn.current && Ft(pn)
               })
-        }, [jt, F, Ue, He, w, Qt == null ? void 0 : Qt.place, x, T, St, Qt == null ? void 0 : Qt.position, Y])
+        }, [jt, F, Ue, He, C, Qt == null ? void 0 : Qt.place, x, T, St, Qt == null ? void 0 : Qt.position, Y])
       _.useEffect(() => {
         var xe, it
         const dt = new Set(Ci)
@@ -4634,7 +4635,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               })
           }
         )
-      }, [F, It, $n, Ci, er, $, et, Xe, ur, U, L]),
+      }, [F, It, $n, Ci, er, $, et, Xe, ur, U, j]),
         _.useEffect(() => {
           var xe, it
           let dt =
@@ -4811,15 +4812,15 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           html: h,
           render: v,
           className: p,
-          classNameArrow: w,
+          classNameArrow: C,
           variant: x = 'dark',
-          place: C = 'top',
+          place: w = 'top',
           offset: M = 10,
           wrapper: T = 'div',
           children: D = null,
           events: N = ['hover'],
           openOnClick: U = !1,
-          positionStrategy: L = 'absolute',
+          positionStrategy: j = 'absolute',
           middlewares: Y,
           delayShow: J = 0,
           delayHide: ee = 0,
@@ -4851,7 +4852,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       ) => {
         const [Ce, Ye] = _.useState(c),
           [be, ze] = _.useState(h),
-          [wt, pe] = _.useState(C),
+          [wt, pe] = _.useState(w),
           [Yt, jt] = _.useState(x),
           [Kn, $n] = _.useState(M),
           [Hn, Qt] = _.useState(J),
@@ -4860,7 +4861,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           [Ur, Wr] = _.useState(te),
           [er, ai] = _.useState(T),
           [Bn, ur] = _.useState(N),
-          [da, Jr] = _.useState(L),
+          [da, Jr] = _.useState(j),
           [Ee, Ve] = _.useState(null),
           [_e, Ft] = _.useState(null),
           An = _.useRef(le),
@@ -4881,7 +4882,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             const wr = {
               place: (nt) => {
                 var It
-                pe((It = nt) !== null && It !== void 0 ? It : C)
+                pe((It = nt) !== null && It !== void 0 ? It : w)
               },
               content: (nt) => {
                 Ye(nt ?? c)
@@ -4906,7 +4907,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               },
               'position-strategy': (nt) => {
                 var It
-                Jr((It = nt) !== null && It !== void 0 ? It : L)
+                Jr((It = nt) !== null && It !== void 0 ? It : j)
               },
               'delay-show': (nt) => {
                 Qt(nt === null ? J : Number(nt))
@@ -4937,8 +4938,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             ze(h)
           }, [h]),
           _.useEffect(() => {
-            pe(C)
-          }, [C]),
+            pe(w)
+          }, [w]),
           _.useEffect(() => {
             jt(x)
           }, [x]),
@@ -4958,8 +4959,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             Wr(te)
           }, [te]),
           _.useEffect(() => {
-            Jr(L)
-          }, [L]),
+            Jr(j)
+          }, [j]),
           _.useEffect(() => {
             An.current !== le && console.warn('[react-tooltip] Do not change `disableStyleInjection` dynamically.')
           }, [le]),
@@ -5034,7 +5035,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
           anchorId: o,
           anchorSelect: s,
           className: rm(p, Ee),
-          classNameArrow: w,
+          classNameArrow: C,
           content: Sr,
           contentWrapperRef: fn,
           place: wt,
@@ -5156,7 +5157,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
     Ia = 0,
     sr = 0,
     Ju = ''
-  function lm(n, o, s, c, h, v, p, w) {
+  function lm(n, o, s, c, h, v, p, C) {
     return {
       value: n,
       root: o,
@@ -5168,7 +5169,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
       column: Wu,
       length: p,
       return: '',
-      siblings: w,
+      siblings: C,
     }
   }
   function hA(n, o) {
@@ -5274,16 +5275,16 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   function MD(n) {
     return CD(um('', null, null, null, [''], (n = wD(n)), 0, [0], n))
   }
-  function um(n, o, s, c, h, v, p, w, x) {
+  function um(n, o, s, c, h, v, p, C, x) {
     for (
-      var C = 0, M = 0, T = p, D = 0, N = 0, U = 0, L = 1, Y = 1, J = 1, ee = 0, G = '', te = h, Q = v, se = c, $ = G;
+      var w = 0, M = 0, T = p, D = 0, N = 0, U = 0, j = 1, Y = 1, J = 1, ee = 0, G = '', te = h, Q = v, se = c, $ = G;
       Y;
 
     )
       switch (((U = ee), (ee = Ya()))) {
         case 40:
           if (U != 108 && Or($, T - 1) == 58) {
-            am(($ += bt(M0(ee), '&', '&\f')), '&\f', Gx(C ? w[C - 1] : 0)) != -1 && (J = -1)
+            am(($ += bt(M0(ee), '&', '&\f')), '&\f', Gx(w ? C[w - 1] : 0)) != -1 && (J = -1)
             break
           }
         case 34:
@@ -5310,9 +5311,9 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
               $ += '/'
           }
           break
-        case 123 * L:
-          w[C++] = Ro($) * J
-        case 125 * L:
+        case 123 * j:
+          C[w++] = Ro($) * J
+        case 125 * j:
         case 59:
         case 0:
           switch (ee) {
@@ -5328,8 +5329,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
             case 59:
               $ += ';'
             default:
-              if ((of((se = Jx($, o, s, C, M, h, w, G, (te = []), (Q = []), T, v)), v), ee === 123))
-                if (M === 0) um($, o, se, se, te, v, T, w, Q)
+              if ((of((se = Jx($, o, s, w, M, h, C, G, (te = []), (Q = []), T, v)), v), ee === 123))
+                if (M === 0) um($, o, se, se, te, v, T, C, Q)
                 else
                   switch (D === 99 && Or($, 3) === 110 ? 100 : D) {
                     case 100:
@@ -5340,48 +5341,48 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
                         n,
                         se,
                         se,
-                        c && of(Jx(n, se, se, 0, 0, h, w, G, h, (te = []), T, Q), Q),
+                        c && of(Jx(n, se, se, 0, 0, h, C, G, h, (te = []), T, Q), Q),
                         h,
                         Q,
                         T,
-                        w,
+                        C,
                         c ? te : Q,
                       )
                       break
                     default:
-                      um($, se, se, se, [''], Q, 0, w, Q)
+                      um($, se, se, se, [''], Q, 0, C, Q)
                   }
           }
-          ;(C = M = N = 0), (L = J = 1), (G = $ = ''), (T = p)
+          ;(w = M = N = 0), (j = J = 1), (G = $ = ''), (T = p)
           break
         case 58:
           ;(T = 1 + Ro($)), (N = U)
         default:
-          if (L < 1) {
-            if (ee == 123) --L
-            else if (ee == 125 && L++ == 0 && SD() == 125) continue
+          if (j < 1) {
+            if (ee == 123) --j
+            else if (ee == 125 && j++ == 0 && SD() == 125) continue
           }
-          switch ((($ += b0(ee)), ee * L)) {
+          switch ((($ += b0(ee)), ee * j)) {
             case 38:
               J = M > 0 ? 1 : (($ += '\f'), -1)
               break
             case 44:
-              ;(w[C++] = (Ro($) - 1) * J), (J = 1)
+              ;(C[w++] = (Ro($) - 1) * J), (J = 1)
               break
             case 64:
               xs() === 45 && ($ += M0(Ya())), (D = xs()), (M = T = Ro((G = $ += ID(Am())))), ee++
               break
             case 45:
-              U === 45 && Ro($) == 2 && (L = 0)
+              U === 45 && Ro($) == 2 && (j = 0)
           }
       }
     return v
   }
-  function Jx(n, o, s, c, h, v, p, w, x, C, M, T) {
-    for (var D = h - 1, N = h === 0 ? v : [''], U = Yx(N), L = 0, Y = 0, J = 0; L < c; ++L)
-      for (var ee = 0, G = Ku(n, D + 1, (D = Gx((Y = p[L])))), te = n; ee < U; ++ee)
+  function Jx(n, o, s, c, h, v, p, C, x, w, M, T) {
+    for (var D = h - 1, N = h === 0 ? v : [''], U = Yx(N), j = 0, Y = 0, J = 0; j < c; ++j)
+      for (var ee = 0, G = Ku(n, D + 1, (D = Gx((Y = p[j])))), te = n; ee < U; ++ee)
         (te = qx(Y > 0 ? N[ee] + ' ' + G : bt(G, /&\f/g, N[ee]))) && (x[J++] = te)
-    return lm(n, o, s, h === 0 ? im : w, x, C, M, T)
+    return lm(n, o, s, h === 0 ? im : C, x, w, M, T)
   }
   function RD(n, o, s, c) {
     return lm(n, o, s, Vx, b0(ED()), Ku(n, 2, -2), 0, c)
@@ -5532,8 +5533,8 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
         break
       case 5152:
       case 5920:
-        return bt(n, /(.+?):(\d+)(\s*\/\s*(span)?\s*(\d+))?(.*)/, function (c, h, v, p, w, x, C) {
-          return xn + h + ':' + v + C + (p ? xn + h + '-span:' + (w ? x : +x - +v) + C : '') + n
+        return bt(n, /(.+?):(\d+)(\s*\/\s*(span)?\s*(\d+))?(.*)/, function (c, h, v, p, C, x, w) {
+          return xn + h + ':' + v + w + (p ? xn + h + '-span:' + (C ? x : +x - +v) + w : '') + n
         })
       case 4949:
         if (Or(n, o + 6) === 121) return bt(n, ':', ':' + nn) + n
@@ -5584,7 +5585,7 @@ For more details see https://formatjs.io/docs/getting-started/message-distributi
   function DD(n) {
     var o = Yx(n)
     return function (s, c, h, v) {
-      for (var p = '', w = 0; w < o; w++) p += n[w](s, c, h, v) || ''
+      for (var p = '', C = 0; C < o; C++) p += n[C](s, c, h, v) || ''
       return p
     }
   }
@@ -5709,8 +5710,8 @@ To resolve this only create new StyledComponents outside of any render method an
         try {
           var v = !0
           ;(console.error = function (p) {
-            for (var w = [], x = 1; x < arguments.length; x++) w[x - 1] = arguments[x]
-            _x.test(p) ? ((v = !1), fm.delete(c)) : h.apply(void 0, Kr([p], w, !1))
+            for (var C = [], x = 1; x < arguments.length; x++) C[x - 1] = arguments[x]
+            _x.test(p) ? ((v = !1), fm.delete(c)) : h.apply(void 0, Kr([p], C, !1))
           }),
             _.useRef(),
             v && !fm.has(c) && (console.warn(c), fm.add(c))
@@ -5937,12 +5938,12 @@ To resolve this only create new StyledComponents outside of any render method an
       }
       var h = WD(o)
       sb && (h = h.concat(sb(o)))
-      for (var v = Ab(n), p = Ab(o), w = 0; w < h.length; ++w) {
-        var x = h[w]
+      for (var v = Ab(n), p = Ab(o), C = 0; C < h.length; ++C) {
+        var x = h[C]
         if (!(x in qD || (s && s[x]) || (p && x in p) || (v && x in v))) {
-          var C = JD(o, x)
+          var w = JD(o, x)
           try {
-            KD(n, x, C)
+            KD(n, x, w)
           } catch {}
         }
       }
@@ -6074,8 +6075,8 @@ Has styled-components' style tag been unmounted or altered by another script?
             ;(this.groupSizes = new Uint32Array(v)), this.groupSizes.set(c), (this.length = v)
             for (var p = h; p < v; p++) this.groupSizes[p] = 0
           }
-          for (var w = this.indexOfGroup(o + 1), x = ((p = 0), s.length); p < x; p++)
-            this.tag.insertRule(w, s[p]) && (this.groupSizes[o]++, w++)
+          for (var C = this.indexOfGroup(o + 1), x = ((p = 0), s.length); p < x; p++)
+            this.tag.insertRule(C, s[p]) && (this.groupSizes[o]++, C++)
         }),
         (n.prototype.clearGroup = function (o) {
           if (o < this.length) {
@@ -6120,14 +6121,14 @@ Has styled-components' style tag been unmounted or altered by another script?
         v < p;
         v++
       ) {
-        var w = c[v].trim()
-        if (w) {
-          var x = w.match(eB)
+        var C = c[v].trim()
+        if (C) {
+          var x = C.match(eB)
           if (x) {
-            var C = 0 | parseInt(x[1], 10),
+            var w = 0 | parseInt(x[1], 10),
               M = x[2]
-            C !== 0 && (_D(M, C), tB(n, M, x[3]), n.getTag().insertRules(C, h)), (h.length = 0)
-          } else h.push(w)
+            w !== 0 && (_D(M, w), tB(n, M, x[3]), n.getTag().insertRules(w, h)), (h.length = 0)
+          } else h.push(C)
         }
       }
     }
@@ -6138,8 +6139,8 @@ Has styled-components' style tag been unmounted or altered by another script?
       var o = document.head,
         s = n || o,
         c = document.createElement('style'),
-        h = (function (w) {
-          var x = Array.from(w.querySelectorAll('style['.concat(bs, ']')))
+        h = (function (C) {
+          var x = Array.from(C.querySelectorAll('style['.concat(bs, ']')))
           return x[x.length - 1]
         })(s),
         v = h !== void 0 ? h.nextSibling : null
@@ -6232,18 +6233,18 @@ Has styled-components' style tag been unmounted or altered by another script?
             fb &&
             ((fb = !1),
             (function (v) {
-              for (var p = document.querySelectorAll($D), w = 0, x = p.length; w < x; w++) {
-                var C = p[w]
-                C && C.getAttribute(bs) !== Zx && (nB(v, C), C.parentNode && C.parentNode.removeChild(C))
+              for (var p = document.querySelectorAll($D), C = 0, x = p.length; C < x; C++) {
+                var w = p[C]
+                w && w.getAttribute(bs) !== Zx && (nB(v, w), w.parentNode && w.parentNode.removeChild(w))
               }
             })(this)),
           H0(this, function () {
             return (function (v) {
               for (
                 var p = v.getTag(),
-                  w = p.length,
+                  C = p.length,
                   x = '',
-                  C = function (T) {
+                  w = function (T) {
                     var D = (function (J) {
                       return gm.get(J)
                     })(T)
@@ -6251,19 +6252,19 @@ Has styled-components' style tag been unmounted or altered by another script?
                     var N = v.names.get(D),
                       U = p.getGroup(T)
                     if (N === void 0 || U.length === 0) return 'continue'
-                    var L = ''.concat(bs, '.g').concat(T, '[id="').concat(D, '"]'),
+                    var j = ''.concat(bs, '.g').concat(T, '[id="').concat(D, '"]'),
                       Y = ''
                     N !== void 0 &&
                       N.forEach(function (J) {
                         J.length > 0 && (Y += ''.concat(J, ','))
                       }),
-                      (x += ''.concat(U).concat(L, '{content:"').concat(Y, '"}').concat(k0))
+                      (x += ''.concat(U).concat(j, '{content:"').concat(Y, '"}').concat(k0))
                   },
                   M = 0;
-                M < w;
+                M < C;
                 M++
               )
-                C(M)
+                w(M)
               return x
             })(h)
           })
@@ -6339,22 +6340,22 @@ Has styled-components' style tag been unmounted or altered by another script?
       h = n === void 0 ? zu : n,
       v = h.options,
       p = v === void 0 ? zu : v,
-      w = h.plugins,
-      x = w === void 0 ? pm : w,
-      C = function (D, N, U) {
+      C = h.plugins,
+      x = C === void 0 ? pm : C,
+      w = function (D, N, U) {
         return U.startsWith(s) && U.endsWith(s) && U.replaceAll(s, '').length > 0 ? '.'.concat(o) : D
       },
       M = x.slice()
     M.push(function (D) {
-      D.type === im && D.value.includes('&') && (D.props[0] = D.props[0].replace(AB, s).replace(c, C))
+      D.type === im && D.value.includes('&') && (D.props[0] = D.props[0].replace(AB, s).replace(c, w))
     }),
       p.prefix && M.push(ND),
       M.push(kD)
-    var T = function (D, N, U, L) {
+    var T = function (D, N, U, j) {
       N === void 0 && (N = ''),
         U === void 0 && (U = ''),
-        L === void 0 && (L = '&'),
-        (o = L),
+        j === void 0 && (j = '&'),
+        (o = j),
         (s = N),
         (c = new RegExp('\\'.concat(s, '\\b'), 'g'))
       var Y = D.replace(sB, ''),
@@ -6523,24 +6524,24 @@ Has styled-components' style tag been unmounted or altered by another script?
               var v = j0(Ms(this.rules, o, s, c)),
                 p = N0(Ts(this.baseHash, v) >>> 0)
               if (!s.hasNameForId(this.componentId, p)) {
-                var w = c(v, '.'.concat(p), void 0, this.componentId)
-                s.insertRules(this.componentId, p, w)
+                var C = c(v, '.'.concat(p), void 0, this.componentId)
+                s.insertRules(this.componentId, p, C)
               }
               ;(h = Is(h, p)), (this.staticRulesId = p)
             }
           else {
-            for (var x = Ts(this.baseHash, c.hash), C = '', M = 0; M < this.rules.length; M++) {
+            for (var x = Ts(this.baseHash, c.hash), w = '', M = 0; M < this.rules.length; M++) {
               var T = this.rules[M]
-              if (typeof T == 'string') (C += T), process.env.NODE_ENV !== 'production' && (x = Ts(x, T))
+              if (typeof T == 'string') (w += T), process.env.NODE_ENV !== 'production' && (x = Ts(x, T))
               else if (T) {
                 var D = j0(Ms(T, o, s, c))
-                ;(x = Ts(x, D + M)), (C += D)
+                ;(x = Ts(x, D + M)), (w += D)
               }
             }
-            if (C) {
+            if (w) {
               var N = N0(x >>> 0)
               s.hasNameForId(this.componentId, N) ||
-                s.insertRules(this.componentId, N, c(C, '.'.concat(N), void 0, this.componentId)),
+                s.insertRules(this.componentId, N, c(w, '.'.concat(N), void 0, this.componentId)),
                 (h = Is(h, N))
             }
           }
@@ -6558,9 +6559,9 @@ Has styled-components' style tag been unmounted or altered by another script?
       h = n,
       v = !U0(n),
       p = o.attrs,
-      w = p === void 0 ? pm : p,
+      C = p === void 0 ? pm : p,
       x = o.componentId,
-      C =
+      w =
         x === void 0
           ? (function (te, Q) {
               var se = typeof te != 'string' ? 'sc' : $x(te)
@@ -6576,17 +6577,17 @@ Has styled-components' style tag been unmounted or altered by another script?
               return U0(te) ? 'styled.'.concat(te) : 'Styled('.concat(ib(te), ')')
             })(n)
           : M,
-      D = o.displayName && o.componentId ? ''.concat($x(o.displayName), '-').concat(o.componentId) : o.componentId || C,
-      N = c && h.attrs ? h.attrs.concat(w).filter(Boolean) : w,
+      D = o.displayName && o.componentId ? ''.concat($x(o.displayName), '-').concat(o.componentId) : o.componentId || w,
+      N = c && h.attrs ? h.attrs.concat(C).filter(Boolean) : C,
       U = o.shouldForwardProp
     if (c && h.shouldForwardProp) {
-      var L = h.shouldForwardProp
+      var j = h.shouldForwardProp
       if (o.shouldForwardProp) {
         var Y = o.shouldForwardProp
         U = function (te, Q) {
-          return L(te, Q) && Y(te, Q)
+          return j(te, Q) && Y(te, Q)
         }
-      } else U = L
+      } else U = j
     }
     var J = new hB(s, D, c ? h.componentStyle : void 0)
     function ee(te, Q) {
@@ -7032,17 +7033,17 @@ object-assign
         if (!Object.assign) return !1
         var v = new String('abc')
         if (((v[5] = 'de'), Object.getOwnPropertyNames(v)[0] === '5')) return !1
-        for (var p = {}, w = 0; w < 10; w++) p['_' + String.fromCharCode(w)] = w
+        for (var p = {}, C = 0; C < 10; C++) p['_' + String.fromCharCode(C)] = C
         var x = Object.getOwnPropertyNames(p).map(function (M) {
           return p[M]
         })
         if (x.join('') !== '0123456789') return !1
-        var C = {}
+        var w = {}
         return (
           'abcdefghijklmnopqrst'.split('').forEach(function (M) {
-            C[M] = M
+            w[M] = M
           }),
-          Object.keys(Object.assign({}, C)).join('') === 'abcdefghijklmnopqrst'
+          Object.keys(Object.assign({}, w)).join('') === 'abcdefghijklmnopqrst'
         )
       } catch {
         return !1
@@ -7052,12 +7053,12 @@ object-assign
       (J0 = h()
         ? Object.assign
         : function (v, p) {
-            for (var w, x = c(v), C, M = 1; M < arguments.length; M++) {
-              w = Object(arguments[M])
-              for (var T in w) o.call(w, T) && (x[T] = w[T])
+            for (var C, x = c(v), w, M = 1; M < arguments.length; M++) {
+              C = Object(arguments[M])
+              for (var T in C) o.call(C, T) && (x[T] = C[T])
               if (n) {
-                C = n(w)
-                for (var D = 0; D < C.length; D++) s.call(w, C[D]) && (x[C[D]] = w[C[D]])
+                w = n(C)
+                for (var D = 0; D < w.length; D++) s.call(C, w[D]) && (x[w[D]] = C[w[D]])
               }
             }
             return x
@@ -7093,7 +7094,7 @@ object-assign
         } catch {}
       }
     }
-    function h(v, p, w, x, C) {
+    function h(v, p, C, x, w) {
       if (process.env.NODE_ENV !== 'production') {
         for (var M in v)
           if (c(v, M)) {
@@ -7103,7 +7104,7 @@ object-assign
                 var D = Error(
                   (x || 'React class') +
                     ': ' +
-                    w +
+                    C +
                     ' type `' +
                     M +
                     '` is invalid; it must be a function, usually from the `prop-types` package, but received `' +
@@ -7112,7 +7113,7 @@ object-assign
                 )
                 throw ((D.name = 'Invariant Violation'), D)
               }
-              T = v[M](p, M, x, w, null, o)
+              T = v[M](p, M, x, C, null, o)
             } catch (U) {
               T = U
             }
@@ -7122,7 +7123,7 @@ object-assign
                 n(
                   (x || 'React class') +
                     ': type specification of ' +
-                    w +
+                    C +
                     ' `' +
                     M +
                     '` is invalid; the type checker function must return `null` or an `Error` but returned a ' +
@@ -7132,8 +7133,8 @@ object-assign
               T instanceof Error && !(T.message in s))
             ) {
               s[T.message] = !0
-              var N = C ? C() : ''
-              n('Failed ' + w + ' type: ' + T.message + (N ?? ''))
+              var N = w ? w() : ''
+              n('Failed ' + C + ' type: ' + T.message + (N ?? ''))
             }
           }
       }
@@ -7157,8 +7158,8 @@ object-assign
       h = bB(),
       v = function () {}
     process.env.NODE_ENV !== 'production' &&
-      (v = function (w) {
-        var x = 'Warning: ' + w
+      (v = function (C) {
+        var x = 'Warning: ' + C
         typeof console < 'u' && console.error(x)
         try {
           throw new Error(x)
@@ -7168,11 +7169,11 @@ object-assign
       return null
     }
     return (
-      (_0 = function (w, x) {
-        var C = typeof Symbol == 'function' && Symbol.iterator,
+      (_0 = function (C, x) {
+        var w = typeof Symbol == 'function' && Symbol.iterator,
           M = '@@iterator'
         function T(F) {
-          var Ae = F && ((C && F[C]) || F[M])
+          var Ae = F && ((w && F[w]) || F[M])
           if (typeof Ae == 'function') return Ae
         }
         var D = '<<anonymous>>',
@@ -7200,10 +7201,10 @@ object-assign
         function U(F, Ae) {
           return F === Ae ? F !== 0 || 1 / F === 1 / Ae : F !== F && Ae !== Ae
         }
-        function L(F, Ae) {
+        function j(F, Ae) {
           ;(this.message = F), (this.data = Ae && typeof Ae == 'object' ? Ae : {}), (this.stack = '')
         }
-        L.prototype = Error.prototype
+        j.prototype = Error.prototype
         function Y(F) {
           if (process.env.NODE_ENV !== 'production')
             var Ae = {},
@@ -7233,7 +7234,7 @@ object-assign
             return ke[Ce] == null
               ? We
                 ? ke[Ce] === null
-                  ? new L(
+                  ? new j(
                       'The ' +
                         be +
                         ' `' +
@@ -7241,7 +7242,7 @@ object-assign
                         '` is marked as required ' +
                         ('in `' + Ye + '`, but its value is `null`.'),
                     )
-                  : new L(
+                  : new j(
                       'The ' +
                         be +
                         ' `' +
@@ -7261,7 +7262,7 @@ object-assign
               be = Le(Ye)
             if (be !== F) {
               var ze = st(Ye)
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7282,13 +7283,13 @@ object-assign
         function G(F) {
           function Ae(ge, Ke, je, We, ke) {
             if (typeof F != 'function')
-              return new L(
+              return new j(
                 'Property `' + ke + '` of component `' + je + '` has invalid PropType notation inside arrayOf.',
               )
             var Ce = ge[Ke]
             if (!Array.isArray(Ce)) {
               var Ye = Le(Ce)
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7308,9 +7309,9 @@ object-assign
         function te() {
           function F(Ae, ge, Ke, je, We) {
             var ke = Ae[ge]
-            if (!w(ke)) {
+            if (!C(ke)) {
               var Ce = Le(ke)
-              return new L(
+              return new j(
                 'Invalid ' +
                   je +
                   ' `' +
@@ -7328,7 +7329,7 @@ object-assign
             var ke = Ae[ge]
             if (!n.isValidElementType(ke)) {
               var Ce = Le(ke)
-              return new L(
+              return new j(
                 'Invalid ' +
                   je +
                   ' `' +
@@ -7346,7 +7347,7 @@ object-assign
             if (!(ge[Ke] instanceof F)) {
               var Ce = F.name || D,
                 Ye = ye(ge[Ke])
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7379,7 +7380,7 @@ object-assign
               var Yt = st(pe)
               return Yt === 'symbol' ? String(pe) : pe
             })
-            return new L(
+            return new j(
               'Invalid ' +
                 We +
                 ' `' +
@@ -7395,13 +7396,13 @@ object-assign
         function et(F) {
           function Ae(ge, Ke, je, We, ke) {
             if (typeof F != 'function')
-              return new L(
+              return new j(
                 'Property `' + ke + '` of component `' + je + '` has invalid PropType notation inside objectOf.',
               )
             var Ce = ge[Ke],
               Ye = Le(Ce)
             if (Ye !== 'object')
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7447,7 +7448,7 @@ object-assign
               pe.data && c(pe.data, 'expectedType') && be.push(pe.data.expectedType)
             }
             var Yt = be.length > 0 ? ', expected one of type [' + be.join(', ') + ']' : ''
-            return new L('Invalid ' + Ce + ' `' + Ye + '` supplied to ' + ('`' + ke + '`' + Yt + '.'))
+            return new j('Invalid ' + Ce + ' `' + Ye + '` supplied to ' + ('`' + ke + '`' + Yt + '.'))
           }
           return Y(Ke)
         }
@@ -7455,12 +7456,12 @@ object-assign
           function F(Ae, ge, Ke, je, We) {
             return ue(Ae[ge])
               ? null
-              : new L('Invalid ' + je + ' `' + We + '` supplied to ' + ('`' + Ke + '`, expected a ReactNode.'))
+              : new j('Invalid ' + je + ' `' + We + '` supplied to ' + ('`' + Ke + '`, expected a ReactNode.'))
           }
           return Y(F)
         }
         function He(F, Ae, ge, Ke, je) {
-          return new L(
+          return new j(
             (F || 'React class') +
               ': ' +
               Ae +
@@ -7478,7 +7479,7 @@ object-assign
             var Ce = ge[Ke],
               Ye = Le(Ce)
             if (Ye !== 'object')
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7503,7 +7504,7 @@ object-assign
             var Ce = ge[Ke],
               Ye = Le(Ce)
             if (Ye !== 'object')
-              return new L(
+              return new j(
                 'Invalid ' +
                   We +
                   ' `' +
@@ -7518,7 +7519,7 @@ object-assign
               var wt = F[ze]
               if (c(F, ze) && typeof wt != 'function') return He(je, We, ke, ze, st(wt))
               if (!wt)
-                return new L(
+                return new j(
                   'Invalid ' +
                     We +
                     ' `' +
@@ -7550,7 +7551,7 @@ Valid keys: ` +
               return !F
             case 'object':
               if (Array.isArray(F)) return F.every(ue)
-              if (F === null || w(F)) return !0
+              if (F === null || C(F)) return !0
               var Ae = T(F)
               if (Ae) {
                 var ge = Ae.call(F),
@@ -7620,7 +7621,7 @@ Valid keys: ` +
     return (
       (s.resetWarningCache = o),
       ($0 = function () {
-        function c(p, w, x, C, M, T) {
+        function c(p, C, x, w, M, T) {
           if (T !== n) {
             var D = new Error(
               'Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types',
@@ -7768,12 +7769,12 @@ Valid keys: ` +
     }
   }
 `
-  function ko({ arrow: n = !0, exit: o, to: s = '', children: c, blank: h, href: v, onClick: p, ...w }) {
+  function ko({ arrow: n = !0, exit: o, to: s = '', children: c, blank: h, href: v, onClick: p, ...C }) {
     const x = v ? { as: 'a', href: v } : s ? { to: s } : { as: 'div' },
-      C = { ...(p ? { onClick: p, ...x } : x) }
+      w = { ...(p ? { onClick: p, ...x } : x) }
     return k.jsxs(NB, {
-      ...C,
       ...w,
+      ...C,
       children: [
         k.jsx('span', { className: 'link-text', children: c }),
         n && (o ? k.jsx(BB, { className: 'link-arrow' }) : k.jsx(wm, { className: 'link-arrow' })),
@@ -8463,8 +8464,8 @@ Valid keys: ` +
           const v = () => {
             const p = {}
             if (typeof c == 'string') {
-              const w = AN(n, c)
-              ;(p.id = w), (p.defaultMessage = d0[w])
+              const C = AN(n, c)
+              ;(p.id = C), (p.defaultMessage = d0[C])
             } else typeof c == 'object' && Object.assign(p, c)
             return p
           }
@@ -8479,15 +8480,15 @@ Valid keys: ` +
   }
   function Kb({ open: n = !1, transition: o = 'slide bottom', containerRef: s, onClose: c, defaultVisible: h = !1 }) {
     const [v, p] = _.useState(h),
-      [w, x] = _.useState(''),
-      [C, M] = _.useState([])
+      [C, x] = _.useState(''),
+      [w, M] = _.useState([])
     return (
       _.useEffect(() => {
         M(uN(o))
       }, [o]),
       _.useEffect(() => {
-        if (!Array.isArray(C)) return
-        const T = C[n ? 0 : 1]
+        if (!Array.isArray(w)) return
+        const T = w[n ? 0 : 1]
         if ((x(T), n)) p(!0)
         else if (!h) {
           if (!s.current) return
@@ -8497,8 +8498,8 @@ Valid keys: ` +
             p(!1), c && c()
           }, N)
         }
-      }, [s, h, c, n, C]),
-      { visible: v, setVisible: p, className: w }
+      }, [s, h, c, n, w]),
+      { visible: v, setVisible: p, className: C }
     )
   }
   function Wb({ width: n = '24', height: o = '24', color: s = 'currentColor', ...c }) {
@@ -8526,15 +8527,15 @@ Valid keys: ` +
     className: h,
     style: v,
     header: p,
-    body: w,
+    body: C,
     footer: x,
-    closeIcon: C,
+    closeIcon: w,
     closeIconType: M = 'external',
     onClose: T,
     rounded: D,
     transition: N = 'slide bottom',
     theme: U = 'dark',
-    maskTheme: L = 'dark',
+    maskTheme: j = 'dark',
     opacity: Y,
     mask: J = !0,
     centered: ee = !1,
@@ -8555,7 +8556,7 @@ Valid keys: ` +
       className: `${n ? 'visible' : ''} ${h}`,
       onClick: Xe,
       mask: J,
-      theme: L || U,
+      theme: j || U,
       centered: ee,
       children: k.jsxs(nN, {
         ref: Q,
@@ -8569,20 +8570,20 @@ Valid keys: ` +
         opacity: Y,
         centered: ee,
         children: [
-          C &&
-            (typeof C == 'boolean'
+          w &&
+            (typeof w == 'boolean'
               ? k.jsx(oN, {
                   theme: U,
                   type: M,
                   onClick: T,
                   children: k.jsx(Wb, { width: M === 'inner' ? '26' : '24', height: M === 'inner' ? '26' : '24' }),
                 })
-              : C),
+              : w),
           $ &&
             k.jsxs(k.Fragment, {
               children: [
                 p && k.jsx(rN, { children: p }),
-                w && k.jsx(iN, { children: w }),
+                C && k.jsx(iN, { children: C }),
                 s,
                 x && k.jsx(aN, { children: x }),
               ],
@@ -8866,16 +8867,16 @@ Valid keys: ` +
     icon: h,
     arrow: v,
     block: p,
-    tagName: w = 'button',
+    tagName: C = 'button',
     loading: x,
-    disabled: C,
+    disabled: w,
     children: M,
     ...T
   }) {
     const D = o ? `btn-${o}` : '',
       N = s ? `btn-${s}` : '',
       U = c ? 'btn-ellipse' : '',
-      L = _.useRef(),
+      j = _.useRef(),
       Y = 'transparent',
       J = p ? 'btn-block' : '',
       ee = (Q) => {
@@ -8894,11 +8895,11 @@ Valid keys: ` +
         : _.createElement(Q, { className: 'btn-icon btn-left-icon', style: { marginRight: '8px' } })
     }
     return k.jsx(dN, {
-      ref: L,
-      as: w,
+      ref: j,
+      as: C,
       className: `${D} ${N} ${U} ${J} ${n}`,
       ...T,
-      disabled: C || x,
+      disabled: w || x,
       children: x
         ? k.jsx(Jb, { color: 'var(--color-fg-muted)' })
         : k.jsxs(k.Fragment, {
@@ -8907,7 +8908,7 @@ Valid keys: ` +
               M,
               v && k.jsx(wm, { className: 'btn-icon-arrow' }),
               c && k.jsx(wm, { width: '24', height: '24' }),
-              !C && k.jsx(fN, { onMouseMove: ee, onMouseLeave: G }),
+              !w && k.jsx(fN, { onMouseMove: ee, onMouseLeave: G }),
             ],
           }),
     })
@@ -8967,40 +8968,40 @@ Valid keys: ` +
     })
   }
   function Pb({ value: n, options: o, multiple: s = !1, onChange: c, tooltip: h, ...v }) {
-    const [p, w] = _.useState(o.map((C) => ({ ...C, checked: C.value === n })))
-    function x(C) {
+    const [p, C] = _.useState(o.map((w) => ({ ...w, checked: w.value === n })))
+    function x(w) {
       let M = null
       s
-        ? (M = p.map((T) => ({ ...T, checked: T.value === C.value ? !T.checked : T.checked })))
-        : (M = p.map((T) => ({ ...T, checked: T.value === C.value }))),
-        w(M),
-        c && c(s ? M : { ...C, checked: !C.checked })
+        ? (M = p.map((T) => ({ ...T, checked: T.value === w.value ? !T.checked : T.checked })))
+        : (M = p.map((T) => ({ ...T, checked: T.value === w.value }))),
+        C(M),
+        c && c(s ? M : { ...w, checked: !w.checked })
     }
     return k.jsxs(hN, {
       ...v,
       children: [
-        p.map((C) => {
+        p.map((w) => {
           var M, T
           return k.jsxs(
             mN,
             {
               className: 'contact-tooltip-select',
-              onClick: () => x(C),
+              onClick: () => x(w),
               'data-tooltip-content':
-                (T = (M = C.value) == null ? void 0 : M.replace) == null ? void 0 : T.call(M, 'mailto:', ''),
-              'data-tooltip-hidden': !C.value,
+                (T = (M = w.value) == null ? void 0 : M.replace) == null ? void 0 : T.call(M, 'mailto:', ''),
+              'data-tooltip-hidden': !w.value,
               children: [
-                C.name,
-                k.jsx(gN, { className: 'check-icon actived', style: { visibility: C.checked ? 'initial' : 'hidden' } }),
+                w.name,
+                k.jsx(gN, { className: 'check-icon actived', style: { visibility: w.checked ? 'initial' : 'hidden' } }),
               ],
             },
-            C.value,
+            w.value,
           )
         }),
         h &&
           k.jsx(Hx, {
             anchorSelect: '.contact-tooltip-select',
-            render: ({ content: C }) => k.jsx('span', { children: C }),
+            render: ({ content: w }) => k.jsx('span', { children: w }),
           }),
       ],
     })
@@ -9077,18 +9078,18 @@ Valid keys: ` +
     trigger: h = 'hover',
     onChange: v,
     defaultOpen: p = !1,
-    ...w
+    ...C
   }) {
     const x = _.useRef(),
-      [C, M] = _.useState(p),
-      { visible: T, className: D } = Kb({ open: C, transition: c, containerRef: x })
+      [w, M] = _.useState(p),
+      { visible: T, className: D } = Kb({ open: w, transition: c, containerRef: x })
     function N() {
       M(!T), v && v(!T)
     }
     function U() {
       T && N()
     }
-    const [L, Y] = _.useState(160)
+    const [j, Y] = _.useState(160)
     _.useLayoutEffect(() => {
       x.current && Y(x.current.offsetWidth)
     }, [T])
@@ -9104,7 +9105,7 @@ Valid keys: ` +
     let G = null
     return k.jsx(k.Fragment, {
       children: k.jsxs(yN, {
-        ...w,
+        ...C,
         children: [
           T &&
             _.createElement(
@@ -9113,7 +9114,7 @@ Valid keys: ` +
                 tabIndex: 2,
                 ref: x,
                 className: D,
-                width: L,
+                width: j,
                 placement: s,
                 [{ hover: 'onMouseEnter', click: 'onBlur' }[h]]() {
                   clearTimeout(G)
@@ -9146,15 +9147,15 @@ Valid keys: ` +
       [o, s] = _.useState(!1),
       [c, h] = _.useState(!1),
       v = _.useRef(),
-      p = _.useCallback((C) => {
-        s(C)
+      p = _.useCallback((w) => {
+        s(w)
       }, []),
-      w = _.useCallback((C) => {
-        if (C.onClick) {
-          C.onClick()
+      C = _.useCallback((w) => {
+        if (w.onClick) {
+          w.onClick()
           return
         }
-        const M = window.open(C.value, '_blank')
+        const M = window.open(w.value, '_blank')
         M.focus(),
           setTimeout(function () {
             var T
@@ -9189,7 +9190,7 @@ Valid keys: ` +
           transition: 'slide bottom-10',
           trigger: 'click',
           onChange: p,
-          content: k.jsx(Pb, { value: 1, options: x, onChange: w, tooltip: !0 }),
+          content: k.jsx(Pb, { value: 1, options: x, onChange: C, tooltip: !0 }),
           children: k.jsxs(i1, {
             size: 'small',
             icon: k.jsx(vN, { color: 'var(--color-bd-pink)' }),
@@ -9367,7 +9368,7 @@ Valid keys: ` +
           },
         ],
         c = r1(),
-        h = _.useMemo(() => (c ? KN : YN).map((C) => qN.find((M) => M[0].name === C)), [c]),
+        h = _.useMemo(() => (c ? KN : YN).map((w) => qN.find((M) => M[0].name === w)), [c]),
         v = () => {
           window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
         },
@@ -9392,12 +9393,12 @@ Valid keys: ` +
             x.title,
           ),
         ),
-        w = h.map((x) =>
-          x.map((C) => ({
-            ...C,
-            ...(C.title && C.title.id ? { title: n.formatMessage(C.title) } : C.title),
-            ...(C.link && C.link.id ? { link: n.formatMessage(C.link) } : C.link),
-            ...(C.text && { text: n.formatMessage(C.text) }),
+        C = h.map((x) =>
+          x.map((w) => ({
+            ...w,
+            ...(w.title && w.title.id ? { title: n.formatMessage(w.title) } : w.title),
+            ...(w.link && w.link.id ? { link: n.formatMessage(w.link) } : w.link),
+            ...(w.text && { text: n.formatMessage(w.text) }),
           })),
         )
       return k.jsxs(HB, {
@@ -9416,29 +9417,29 @@ Valid keys: ` +
                   }),
                   k.jsx('nav', {
                     children: k.jsx(YB, {
-                      children: w.map((x) =>
+                      children: C.map((x) =>
                         k.jsxs(
                           Fb,
                           {
                             children: [
                               k.jsx(KB, { children: x[0].title }),
                               k.jsx('ul', {
-                                children: x.slice(1).map((C) => {
-                                  const M = { [C.linkUse ? C.linkUse : 'href']: C.link }
+                                children: x.slice(1).map((w) => {
+                                  const M = { [w.linkUse ? w.linkUse : 'href']: w.link }
                                   return k.jsx(
                                     'li',
                                     {
                                       style: { listStyleType: 'none', marginBottom: 8 },
                                       children: k.jsxs(t1, {
                                         ...M,
-                                        'data-mixpanel-id': C.id,
+                                        'data-mixpanel-id': w.id,
                                         'data-mixpanel-pos': 'footer',
-                                        'data-mixpanel-to': C.link,
-                                        target: C.target,
-                                        children: [C.text, C.icon && C.icon],
+                                        'data-mixpanel-to': w.link,
+                                        target: w.target,
+                                        children: [w.text, w.icon && w.icon],
                                       }),
                                     },
-                                    C.id,
+                                    w.id,
                                   )
                                 }),
                               }),
@@ -9880,6 +9881,7 @@ Valid keys: ` +
         hot: { id: 'keystone.hot', defaultMessage: '' },
         comingSoon: { id: 'keystone.comingSoon', defaultMessage: '' },
         saleOff: { id: 'keystone.saleOff', defaultMessage: '' },
+        dollarOff: { id: 'keystone.dollarOff', defaultMessage: '' },
       },
     }
   var uO = Object.defineProperty,
@@ -10306,8 +10308,8 @@ Valid keys: ` +
       h = 2 * s - c,
       v = v1(h, c, n + 1 / 3),
       p = v1(h, c, n),
-      w = v1(h, c, n - 1 / 3)
-    return (Math.round(v * 255) << 24) | (Math.round(p * 255) << 16) | (Math.round(w * 255) << 8)
+      C = v1(h, c, n - 1 / 3)
+    return (Math.round(v * 255) << 24) | (Math.round(p * 255) << 16) | (Math.round(C * 255) << 8)
   }
   function tc(n) {
     const o = parseInt(n, 10)
@@ -10342,22 +10344,22 @@ Valid keys: ` +
       h = c.output,
       v = c.range || [0, 1],
       p = c.extrapolateLeft || c.extrapolate || 'extend',
-      w = c.extrapolateRight || c.extrapolate || 'extend',
-      x = c.easing || ((C) => C)
-    return (C) => {
-      const M = RO(C, v)
-      return MO(C, v[M], v[M + 1], h[M], h[M + 1], x, p, w, c.map)
+      C = c.extrapolateRight || c.extrapolate || 'extend',
+      x = c.easing || ((w) => w)
+    return (w) => {
+      const M = RO(w, v)
+      return MO(w, v[M], v[M + 1], h[M], h[M + 1], x, p, C, c.map)
     }
   }
-  function MO(n, o, s, c, h, v, p, w, x) {
-    let C = x ? x(n) : n
-    if (C < o) {
-      if (p === 'identity') return C
-      p === 'clamp' && (C = o)
+  function MO(n, o, s, c, h, v, p, C, x) {
+    let w = x ? x(n) : n
+    if (w < o) {
+      if (p === 'identity') return w
+      p === 'clamp' && (w = o)
     }
-    if (C > s) {
-      if (w === 'identity') return C
-      w === 'clamp' && (C = s)
+    if (w > s) {
+      if (C === 'identity') return w
+      C === 'clamp' && (w = s)
     }
     return c === h
       ? c
@@ -10365,10 +10367,10 @@ Valid keys: ` +
       ? n <= o
         ? c
         : h
-      : (o === -1 / 0 ? (C = -C) : s === 1 / 0 ? (C = C - o) : (C = (C - o) / (s - o)),
-        (C = v(C)),
-        c === -1 / 0 ? (C = -C) : h === 1 / 0 ? (C = C + c) : (C = C * (h - c) + c),
-        C)
+      : (o === -1 / 0 ? (w = -w) : s === 1 / 0 ? (w = w - o) : (w = (w - o) / (s - o)),
+        (w = v(w)),
+        c === -1 / 0 ? (w = -w) : h === 1 / 0 ? (w = w + c) : (w = w * (h - c) + c),
+        w)
   }
   function RO(n, o) {
     for (var s = 1; s < o.length - 1 && !(o[s] >= n); ++s);
@@ -10511,17 +10513,17 @@ Valid keys: ` +
         s = o.map((v) => v.match(Um).map(Number)),
         h = s[0]
           .map((v, p) =>
-            s.map((w) => {
-              if (!(p in w)) throw Error('The arity of each "output" value must be equal')
-              return w[p]
+            s.map((C) => {
+              if (!(p in C)) throw Error('The arity of each "output" value must be equal')
+              return C[p]
             }),
           )
           .map((v) => hf({ ...n, output: v }))
       return (v) => {
         var x
-        const p = !h2.test(o[0]) && ((x = o.find((C) => h2.test(C))) == null ? void 0 : x.replace(Um, ''))
-        let w = 0
-        return o[0].replace(Um, () => `${h[w++](v)}${p || ''}`).replace(UO, jO)
+        const p = !h2.test(o[0]) && ((x = o.find((w) => h2.test(w))) == null ? void 0 : x.replace(Um, ''))
+        let C = 0
+        return o[0].replace(Um, () => `${h[C++](v)}${p || ''}`).replace(UO, jO)
       }
     },
     E1 = 'react-spring: ',
@@ -10735,12 +10737,12 @@ Valid keys: ` +
               },
               [h],
             ),
-          [w, x] = ZO(c, o),
-          C = y2(),
+          [C, x] = ZO(c, o),
+          w = y2(),
           M = () => {
             const U = v.current
             if (s && !U) return
-            ;(U ? o.applyAnimatedValues(U, w.getValue(!0)) : !1) === !1 && C()
+            ;(U ? o.applyAnimatedValues(U, C.getValue(!0)) : !1) === !1 && w()
           },
           T = new zO(M, x),
           D = _.useRef()
@@ -10756,9 +10758,9 @@ Valid keys: ` +
           _.useEffect(M, []),
           E2(() => () => {
             const U = D.current
-            Ct(U.deps, (L) => vf(L, U))
+            Ct(U.deps, (j) => vf(j, U))
           })
-        const N = o.getComponentProps(w.getValue())
+        const N = o.getComponentProps(C.getValue())
         return Yn.createElement(n, { ...N, ref: p })
       })
     },
@@ -10794,16 +10796,16 @@ Valid keys: ` +
     ) => {
       const h = { applyAnimatedValues: o, createAnimatedStyle: s, getComponentProps: c },
         v = (p) => {
-          const w = b2(p) || 'Anonymous'
+          const C = b2(p) || 'Anonymous'
           return (
             me.str(p) ? (p = v[p] || (v[p] = C2(p, h))) : (p = p[x2] || (p[x2] = C2(p, h))),
-            (p.displayName = `Animated(${w})`),
+            (p.displayName = `Animated(${C})`),
             p
           )
         }
       return (
-        Do(n, (p, w) => {
-          me.arr(n) && (w = b2(p)), (v[w] = v(p))
+        Do(n, (p, C) => {
+          me.arr(n) && (C = b2(p)), (v[C] = v(p))
         }),
         { animated: v }
       )
@@ -10949,9 +10951,9 @@ Valid keys: ` +
       }
     }
   function D2(n, { key: o, props: s, defaultProps: c, state: h, actions: v }) {
-    return new Promise((p, w) => {
+    return new Promise((p, C) => {
       let x,
-        C,
+        w,
         M = wf(s.cancel ?? (c == null ? void 0 : c.cancel), o)
       if (M) N()
       else {
@@ -10962,19 +10964,19 @@ Valid keys: ` +
           U ? (h.resumeQueue.add(D), v.pause()) : (v.resume(), D())
       }
       function T() {
-        h.resumeQueue.add(D), h.timeouts.delete(C), C.cancel(), (x = C.time - Et.now())
+        h.resumeQueue.add(D), h.timeouts.delete(w), w.cancel(), (x = w.time - Et.now())
       }
       function D() {
         x > 0 && !Ka.skipAnimation
-          ? ((h.delayed = !0), (C = Et.setTimeout(N, x)), h.pauseQueue.add(T), h.timeouts.add(C))
+          ? ((h.delayed = !0), (w = Et.setTimeout(N, x)), h.pauseQueue.add(T), h.timeouts.add(w))
           : N()
       }
       function N() {
-        h.delayed && (h.delayed = !1), h.pauseQueue.delete(T), h.timeouts.delete(C), n <= (h.cancelId || 0) && (M = !0)
+        h.delayed && (h.delayed = !1), h.pauseQueue.delete(T), h.timeouts.delete(w), n <= (h.cancelId || 0) && (M = !0)
         try {
           v.start({ ...s, callId: n, cancel: M }, p)
         } catch (U) {
-          w(U)
+          C(U)
         }
       }
     })
@@ -10995,12 +10997,12 @@ Valid keys: ` +
     ac = (n) => ({ value: n, cancelled: !0, finished: !1 })
   function N2(n, o, s, c) {
     const { callId: h, parentId: v, onRest: p } = o,
-      { asyncTo: w, promise: x } = s
-    return !v && n === w && !o.reset
+      { asyncTo: C, promise: x } = s
+    return !v && n === C && !o.reset
       ? x
       : (s.promise = (async () => {
           ;(s.asyncId = h), (s.asyncTo = n)
-          const C = C1(o, (Y, J) => (J === 'onRest' ? void 0 : Y))
+          const w = C1(o, (Y, J) => (J === 'onRest' ? void 0 : Y))
           let M, T
           const D = new Promise((Y, J) => ((M = Y), (T = J))),
             N = (Y) => {
@@ -11015,7 +11017,7 @@ Valid keys: ` +
                 N(ee)
                 const te = me.obj(Y) ? { ...Y } : { ...J, to: Y }
                 ;(te.parentId = h),
-                  Do(C, (se, $) => {
+                  Do(w, (se, $) => {
                     me.und(te[$]) && (te[$] = se)
                   })
                 const Q = await c.start(te)
@@ -11029,7 +11031,7 @@ Valid keys: ` +
                 )
               })()
             }
-          let L
+          let j
           if (Ka.skipAnimation) return xf(s), Ja(c, !1)
           try {
             let Y
@@ -11039,20 +11041,20 @@ Valid keys: ` +
                 })(n))
               : (Y = Promise.resolve(n(U, c.stop.bind(c)))),
               await Promise.all([Y.then(M), D]),
-              (L = Ja(c.get(), !0, !1))
+              (j = Ja(c.get(), !0, !1))
           } catch (Y) {
-            if (Y instanceof O2) L = Y.result
-            else if (Y instanceof U2) L = Y.result
+            if (Y instanceof O2) j = Y.result
+            else if (Y instanceof U2) j = Y.result
             else throw Y
           } finally {
-            h == s.asyncId && ((s.asyncId = v), (s.asyncTo = v ? w : void 0), (s.promise = v ? x : void 0))
+            h == s.asyncId && ((s.asyncId = v), (s.asyncTo = v ? C : void 0), (s.promise = v ? x : void 0))
           }
           return (
             me.fun(p) &&
               Et.batchedUpdates(() => {
-                p(L, c, c.item)
+                p(j, c, c.item)
               }),
-            L
+            j
           )
         })())
   }
@@ -11177,32 +11179,32 @@ Valid keys: ` +
         const { config: v } = c,
           p = Qm(c.to)
         !p && Ra(c.to) && (h = Si(Qi(c.to))),
-          c.values.forEach((C, M) => {
-            if (C.done) return
-            const T = C.constructor == Sf ? 1 : p ? p[M].lastPosition : h[M]
+          c.values.forEach((w, M) => {
+            if (w.done) return
+            const T = w.constructor == Sf ? 1 : p ? p[M].lastPosition : h[M]
             let D = c.immediate,
               N = T
             if (!D) {
-              if (((N = C.lastPosition), v.tension <= 0)) {
-                C.done = !0
+              if (((N = w.lastPosition), v.tension <= 0)) {
+                w.done = !0
                 return
               }
-              let U = (C.elapsedTime += n)
-              const L = c.fromValues[M],
-                Y = C.v0 != null ? C.v0 : (C.v0 = me.arr(v.velocity) ? v.velocity[M] : v.velocity)
+              let U = (w.elapsedTime += n)
+              const j = c.fromValues[M],
+                Y = w.v0 != null ? w.v0 : (w.v0 = me.arr(v.velocity) ? v.velocity[M] : v.velocity)
               let J
-              const ee = v.precision || (L == T ? 0.005 : Math.min(1, Math.abs(T - L) * 0.001))
+              const ee = v.precision || (j == T ? 0.005 : Math.min(1, Math.abs(T - j) * 0.001))
               if (me.und(v.duration))
                 if (v.decay) {
                   const G = v.decay === !0 ? 0.998 : v.decay,
                     te = Math.exp(-(1 - G) * U)
-                  ;(N = L + (Y / (1 - G)) * (1 - te)), (D = Math.abs(C.lastPosition - N) <= ee), (J = Y * te)
+                  ;(N = j + (Y / (1 - G)) * (1 - te)), (D = Math.abs(w.lastPosition - N) <= ee), (J = Y * te)
                 } else {
-                  J = C.lastVelocity == null ? Y : C.lastVelocity
+                  J = w.lastVelocity == null ? Y : w.lastVelocity
                   const G = v.restVelocity || ee / 10,
                     te = v.clamp ? 0 : v.bounce,
                     Q = !me.und(te),
-                    se = L == T ? C.v0 > 0 : L < T
+                    se = j == T ? w.v0 > 0 : j < T
                   let $,
                     et = !1
                   const Xe = 1,
@@ -11224,24 +11226,24 @@ Valid keys: ` +
                 v.duration > 0 &&
                   (this._memoizedDuration !== v.duration &&
                     ((this._memoizedDuration = v.duration),
-                    C.durationProgress > 0 &&
-                      ((C.elapsedTime = v.duration * C.durationProgress), (U = C.elapsedTime += n))),
+                    w.durationProgress > 0 &&
+                      ((w.elapsedTime = v.duration * w.durationProgress), (U = w.elapsedTime += n))),
                   (G = (v.progress || 0) + U / this._memoizedDuration),
                   (G = G > 1 ? 1 : G < 0 ? 0 : G),
-                  (C.durationProgress = G)),
-                  (N = L + v.easing(G) * (T - L)),
-                  (J = (N - C.lastPosition) / n),
+                  (w.durationProgress = G)),
+                  (N = j + v.easing(G) * (T - j)),
+                  (J = (N - w.lastPosition) / n),
                   (D = G == 1)
               }
-              ;(C.lastVelocity = J), Number.isNaN(N) && (console.warn('Got NaN while animating:', this), (D = !0))
+              ;(w.lastVelocity = J), Number.isNaN(N) && (console.warn('Got NaN while animating:', this), (D = !0))
             }
-            p && !p[M].done && (D = !1), D ? (C.done = !0) : (o = !1), C.setValue(N, v.round) && (s = !0)
+            p && !p[M].done && (D = !1), D ? (w.done = !0) : (o = !1), w.setValue(N, v.round) && (s = !0)
           })
-        const w = Bo(this),
-          x = w.getValue()
+        const C = Bo(this),
+          x = C.getValue()
         if (o) {
-          const C = Qi(c.to)
-          ;(x !== C || s) && !v.decay ? (w.setValue(C), this._onChange(C)) : s && v.decay && this._onChange(x),
+          const w = Qi(c.to)
+          ;(x !== w || s) && !v.decay ? (C.setValue(w), this._onChange(w)) : s && v.decay && this._onChange(x),
             this._stop()
         } else s && this._onChange(x)
       }
@@ -11312,7 +11314,7 @@ Valid keys: ` +
         n.default &&
           Object.assign(
             c,
-            C1(n, (p, w) => (/^on/.test(w) ? T2(p, s) : p)),
+            C1(n, (p, C) => (/^on/.test(C) ? T2(p, s) : p)),
           ),
           F2(this, n, 'onProps'),
           If(this, 'onProps', n, this)
@@ -11343,8 +11345,8 @@ Valid keys: ` +
           },
         }).then((p) => {
           if (n.loop && p.finished && !(o && p.noop)) {
-            const w = H2(n)
-            if (w) return this._update(w, !0)
+            const C = H2(n)
+            if (C) return this._update(C, !0)
           }
           return p
         })
@@ -11356,19 +11358,19 @@ Valid keys: ` +
         if (c || h)
           if (o.callId > this._lastToId) this._lastToId = o.callId
           else return s(ac(this))
-        const { key: v, defaultProps: p, animation: w } = this,
-          { to: x, from: C } = w
-        let { to: M = x, from: T = C } = n
+        const { key: v, defaultProps: p, animation: C } = this,
+          { to: x, from: w } = C
+        let { to: M = x, from: T = w } = n
         h && !c && (!o.default || me.und(M)) && (M = T), o.reverse && ([M, T] = [T, M])
-        const D = !Sl(T, C)
-        D && (w.from = T), (T = Qi(T))
+        const D = !Sl(T, w)
+        D && (C.from = T), (T = Qi(T))
         const N = !Sl(M, x)
         N && this._focus(M)
         const U = b1(o.to),
-          { config: L } = w,
-          { decay: Y, velocity: J } = L
-        ;(c || h) && (L.velocity = 0),
-          o.config && !U && lU(L, Hi(o.config, v), o.config !== p.config ? Hi(p.config, v) : void 0)
+          { config: j } = C,
+          { decay: Y, velocity: J } = j
+        ;(c || h) && (j.velocity = 0),
+          o.config && !U && lU(j, Hi(o.config, v), o.config !== p.config ? Hi(p.config, v) : void 0)
         let ee = Bo(this)
         if (!ee || me.und(M)) return s(Ja(this, !0))
         const G = me.und(o.reset) ? h && !o.default : !me.und(T) && wf(o.reset, v),
@@ -11388,26 +11390,26 @@ Valid keys: ` +
         if (!Xe) {
           const He = G || (!B1(this) && D)
           ;(N || He) && ((lt = Sl(Cf(te), Q)), (Xe = !lt)),
-            ((!Sl(w.immediate, $) && !$) || !Sl(L.decay, Y) || !Sl(L.velocity, J)) && (Xe = !0)
+            ((!Sl(C.immediate, $) && !$) || !Sl(j.decay, Y) || !Sl(j.velocity, J)) && (Xe = !0)
         }
         if (
-          (lt && EA(this) && (w.changed && !G ? (Xe = !0) : Xe || this._stop(x)),
+          (lt && EA(this) && (C.changed && !G ? (Xe = !0) : Xe || this._stop(x)),
           !U &&
-            ((Xe || Ra(x)) && ((w.values = ee.getPayload()), (w.toValues = Ra(M) ? null : et == Sf ? [1] : Si(Q))),
-            w.immediate != $ && ((w.immediate = $), !$ && !G && this._set(x)),
+            ((Xe || Ra(x)) && ((C.values = ee.getPayload()), (C.toValues = Ra(M) ? null : et == Sf ? [1] : Si(Q))),
+            C.immediate != $ && ((C.immediate = $), !$ && !G && this._set(x)),
             Xe))
         ) {
-          const { onRest: He } = w
+          const { onRest: He } = C
           Ct(cU, (Re) => F2(this, o, Re))
           const St = Ja(this, Tf(this, x))
           ff(this._pendingCalls, St),
             this._pendingCalls.add(s),
-            w.changed &&
+            C.changed &&
               Et.batchedUpdates(() => {
                 var Re
-                ;(w.changed = !G),
+                ;(C.changed = !G),
                   He == null || He(St, this),
-                  G ? Hi(p.onRest, St) : (Re = w.onStart) == null || Re.call(w, St, this)
+                  G ? Hi(p.onRest, St) : (Re = C.onStart) == null || Re.call(C, St, this)
               })
         }
         G && this._set(te),
@@ -11595,20 +11597,20 @@ Valid keys: ` +
           h = this._changed.size > 0
         ;((c && !this._started) || (h && !this._started)) &&
           ((this._started = !0),
-          df(n, ([w, x]) => {
-            ;(x.value = this.get()), w(x, this, this._item)
+          df(n, ([C, x]) => {
+            ;(x.value = this.get()), C(x, this, this._item)
           }))
         const v = !c && this._started,
           p = h || (v && s.size) ? this.get() : null
         h &&
           o.size &&
-          df(o, ([w, x]) => {
-            ;(x.value = p), w(x, this, this._item)
+          df(o, ([C, x]) => {
+            ;(x.value = p), C(x, this, this._item)
           }),
           v &&
             ((this._started = !1),
-            df(s, ([w, x]) => {
-              ;(x.value = p), w(x, this, this._item)
+            df(s, ([C, x]) => {
+              ;(x.value = p), C(x, this, this._item)
             }))
       }
       eventObserved(n) {
@@ -11622,30 +11624,30 @@ Valid keys: ` +
     return Promise.all(o.map((s) => G2(n, s))).then((s) => I1(n, s))
   }
   async function G2(n, o, s) {
-    const { keys: c, to: h, from: v, loop: p, onRest: w, onResolve: x } = o,
-      C = me.obj(o.default) && o.default
+    const { keys: c, to: h, from: v, loop: p, onRest: C, onResolve: x } = o,
+      w = me.obj(o.default) && o.default
     p && (o.loop = !1), h === !1 && (o.to = null), v === !1 && (o.from = null)
     const M = me.arr(h) || me.fun(h) ? h : void 0
     M
-      ? ((o.to = void 0), (o.onRest = void 0), C && (C.onRest = void 0))
-      : Ct(dU, (L) => {
-          const Y = o[L]
+      ? ((o.to = void 0), (o.onRest = void 0), w && (w.onRest = void 0))
+      : Ct(dU, (j) => {
+          const Y = o[j]
           if (me.fun(Y)) {
-            const J = n._events[L]
-            ;(o[L] = ({ finished: ee, cancelled: G }) => {
+            const J = n._events[j]
+            ;(o[j] = ({ finished: ee, cancelled: G }) => {
               const te = J.get(Y)
               te
                 ? (ee || (te.finished = !1), G && (te.cancelled = !0))
                 : J.set(Y, { value: null, finished: ee || !1, cancelled: G || !1 })
             }),
-              C && (C[L] = o[L])
+              w && (w[j] = o[j])
           }
         })
     const T = n._state
     o.pause === !T.paused
       ? ((T.paused = o.pause), ff(o.pause ? T.pauseQueue : T.resumeQueue))
       : T.paused && (o.pause = !0)
-    const D = (c || Object.keys(n.springs)).map((L) => n.springs[L].start(o)),
+    const D = (c || Object.keys(n.springs)).map((j) => n.springs[j].start(o)),
       N = o.cancel === !0 || I2(o, 'cancel') === !0
     ;(M || (N && T.asyncId)) &&
       D.push(
@@ -11655,20 +11657,20 @@ Valid keys: ` +
           actions: {
             pause: d1,
             resume: d1,
-            start(L, Y) {
-              N ? (xf(T, n._lastAsyncId), Y(ac(n))) : ((L.onRest = w), Y(N2(M, L, T, n)))
+            start(j, Y) {
+              N ? (xf(T, n._lastAsyncId), Y(ac(n))) : ((j.onRest = C), Y(N2(M, j, T, n)))
             },
           },
         }),
       ),
       T.paused &&
-        (await new Promise((L) => {
-          T.resumeQueue.add(L)
+        (await new Promise((j) => {
+          T.resumeQueue.add(j)
         }))
     const U = I1(n, await Promise.all(D))
     if (p && U.finished && !(s && U.noop)) {
-      const L = H2(o, p, h)
-      if (L) return K2(n, [L]), G2(n, L, !0)
+      const j = H2(o, p, h)
+      if (j) return K2(n, [j]), G2(n, j, !0)
     }
     return x && Et.batchedUpdates(() => x(U, n, n.item)), U
   }
@@ -11725,8 +11727,8 @@ Valid keys: ` +
             Ct(n, (v, p) => {
               if (me.und(c)) h.push(v.start())
               else {
-                const w = s(c, v, p)
-                w && h.push(v.start(w))
+                const C = s(c, v, p)
+                C && h.push(v.start(C))
               }
             }),
             h
@@ -11758,8 +11760,8 @@ Valid keys: ` +
             Ct(n, (v, p) => {
               if (me.und(c)) h.push(v.start())
               else {
-                const w = this._getProps(c, v, p)
-                w && h.push(v.start(w))
+                const C = this._getProps(c, v, p)
+                C && h.push(v.start(C))
               }
             }),
             h
@@ -11784,19 +11786,19 @@ Valid keys: ` +
         reset: h,
         sort: v,
         trail: p = 0,
-        expires: w = !0,
+        expires: C = !0,
         exitBeforeEnter: x = !1,
-        onDestroyed: C,
+        onDestroyed: w,
         ref: M,
         config: T,
       } = c ? c() : o,
       D = _.useMemo(() => (c || arguments.length == 3 ? W2() : void 0), []),
       N = Si(n),
       U = [],
-      L = _.useRef(null),
-      Y = h ? null : L.current
+      j = _.useRef(null),
+      Y = h ? null : j.current
     ic(() => {
-      L.current = U
+      j.current = U
     }),
       E2(
         () => (
@@ -11804,17 +11806,17 @@ Valid keys: ` +
             D == null || D.add(ue.ctrl), (ue.ctrl.ref = D)
           }),
           () => {
-            Ct(L.current, (ue) => {
+            Ct(j.current, (ue) => {
               ue.expired && clearTimeout(ue.expirationId), M2(ue.ctrl, D), ue.ctrl.stop(!0)
             })
           }
         ),
       )
     const J = CU(N, c ? c() : o, Y),
-      ee = (h && L.current) || []
+      ee = (h && j.current) || []
     ic(() =>
       Ct(ee, ({ ctrl: ue, item: Ue, key: Le }) => {
-        M2(ue, D), Hi(C, Ue, Le)
+        M2(ue, D), Hi(w, Ue, Le)
       }),
     )
     const G = []
@@ -11874,12 +11876,12 @@ Valid keys: ` +
       const { onResolve: Ke } = ge
       ge.onResolve = (We) => {
         Hi(Ke, We)
-        const ke = L.current,
+        const ke = j.current,
           Ce = ke.find((Ye) => Ye.key === Le)
         if (Ce && !(We.cancelled && Ce.phase != 'update') && Ce.ctrl.idle) {
           const Ye = ke.every((be) => be.ctrl.idle)
           if (Ce.phase == 'leave') {
-            const be = Hi(w, Ce.item)
+            const be = Hi(C, Ce.item)
             if (be !== !1) {
               const ze = be === !0 ? 0 : be
               if (((Ce.expired = !0), !Ye && ze > 0)) {
@@ -11948,7 +11950,7 @@ Valid keys: ` +
     if (s === null) {
       const h = new Set()
       return n.map((v) => {
-        const p = c && c.find((w) => w.item === v && w.phase !== 'leave' && !h.has(w))
+        const p = c && c.find((C) => C.item === v && C.phase !== 'leave' && !h.has(C))
         return p ? (h.add(p), p.key) : wU++
       })
     }
@@ -12083,19 +12085,19 @@ Valid keys: ` +
             }
           } else {
             var p = Date,
-              w = p.now()
+              C = p.now()
             n.unstable_now = function () {
-              return p.now() - w
+              return p.now() - C
             }
           }
           var x = [],
-            C = [],
+            w = [],
             M = 1,
             T = null,
             D = 3,
             N = !1,
             U = !1,
-            L = !1,
+            j = !1,
             Y = typeof setTimeout == 'function' ? setTimeout : null,
             J = typeof clearTimeout == 'function' ? clearTimeout : null,
             ee = typeof setImmediate < 'u' ? setImmediate : null
@@ -12104,23 +12106,23 @@ Valid keys: ` +
             navigator.scheduling.isInputPending !== void 0 &&
             navigator.scheduling.isInputPending.bind(navigator.scheduling)
           function G(le) {
-            for (var ye = s(C); ye !== null; ) {
-              if (ye.callback === null) c(C)
-              else if (ye.startTime <= le) c(C), (ye.sortIndex = ye.expirationTime), o(x, ye)
+            for (var ye = s(w); ye !== null; ) {
+              if (ye.callback === null) c(w)
+              else if (ye.startTime <= le) c(w), (ye.sortIndex = ye.expirationTime), o(x, ye)
               else break
-              ye = s(C)
+              ye = s(w)
             }
           }
           function te(le) {
-            if (((L = !1), G(le), !U))
+            if (((j = !1), G(le), !U))
               if (s(x) !== null) (U = !0), Le(Q)
               else {
-                var ye = s(C)
+                var ye = s(w)
                 ye !== null && st(te, ye.startTime - le)
               }
           }
           function Q(le, ye) {
-            ;(U = !1), L && ((L = !1), J(et), (et = -1)), (N = !0)
+            ;(U = !1), j && ((j = !1), J(et), (et = -1)), (N = !0)
             var F = D
             try {
               for (G(ye), T = s(x); T !== null && (!(T.expirationTime > ye) || (le && !He())); ) {
@@ -12134,7 +12136,7 @@ Valid keys: ` +
               }
               if (T !== null) var Ke = !0
               else {
-                var je = s(C)
+                var je = s(w)
                 je !== null && st(te, je.startTime - ye), (Ke = !1)
               }
               return Ke
@@ -12278,8 +12280,8 @@ Valid keys: ` +
                 (le = { id: M++, callback: ye, priorityLevel: le, startTime: F, expirationTime: ge, sortIndex: -1 }),
                 F > Ae
                   ? ((le.sortIndex = F),
-                    o(C, le),
-                    s(x) === null && le === s(C) && (L ? (J(et), (et = -1)) : (L = !0), st(te, F - Ae)))
+                    o(w, le),
+                    s(x) === null && le === s(w) && (j ? (J(et), (et = -1)) : (j = !0), st(te, F - Ae)))
                   : ((le.sortIndex = ge), o(x, le), U || N || ((U = !0), Le(Q))),
                 le
               )
@@ -12326,7 +12328,7 @@ Valid keys: ` +
                 c = 5
               function h(Ee, Ve) {
                 var _e = Ee.length
-                Ee.push(Ve), w(Ee, Ve, _e)
+                Ee.push(Ve), C(Ee, Ve, _e)
               }
               function v(Ee) {
                 return Ee.length === 0 ? null : Ee[0]
@@ -12337,11 +12339,11 @@ Valid keys: ` +
                   _e = Ee.pop()
                 return _e !== Ve && ((Ee[0] = _e), x(Ee, _e, 0)), Ve
               }
-              function w(Ee, Ve, _e) {
+              function C(Ee, Ve, _e) {
                 for (var Ft = _e; Ft > 0; ) {
                   var An = (Ft - 1) >>> 1,
                     Tn = Ee[An]
-                  if (C(Tn, Ve) > 0) (Ee[An] = Ve), (Ee[Ft] = Tn), (Ft = An)
+                  if (w(Tn, Ve) > 0) (Ee[An] = Ve), (Ee[Ft] = Tn), (Ft = An)
                   else return
                 }
               }
@@ -12351,15 +12353,15 @@ Valid keys: ` +
                     tr = Ee[hn],
                     Xt = hn + 1,
                     Sr = Ee[Xt]
-                  if (C(tr, Ve) < 0)
-                    Xt < An && C(Sr, tr) < 0
+                  if (w(tr, Ve) < 0)
+                    Xt < An && w(Sr, tr) < 0
                       ? ((Ee[Ft] = Sr), (Ee[Xt] = Ve), (Ft = Xt))
                       : ((Ee[Ft] = tr), (Ee[hn] = Ve), (Ft = hn))
-                  else if (Xt < An && C(Sr, Ve) < 0) (Ee[Ft] = Sr), (Ee[Xt] = Ve), (Ft = Xt)
+                  else if (Xt < An && w(Sr, Ve) < 0) (Ee[Ft] = Sr), (Ee[Xt] = Ve), (Ft = Xt)
                   else return
                 }
               }
-              function C(Ee, Ve) {
+              function w(Ee, Ve) {
                 var _e = Ee.sortIndex - Ve.sortIndex
                 return _e !== 0 ? _e : Ee.id - Ve.id
               }
@@ -12368,7 +12370,7 @@ Valid keys: ` +
                 D = 3,
                 N = 4,
                 U = 5
-              function L(Ee, Ve) {}
+              function j(Ee, Ve) {}
               var Y = typeof performance == 'object' && typeof performance.now == 'function'
               if (Y) {
                 var J = performance
@@ -12674,14 +12676,14 @@ Valid keys: ` +
     function p(r, i) {
       for (h[r] = i, r = 0; r < i.length; r++) c.add(i[r])
     }
-    var w = !(typeof window > 'u' || typeof window.document > 'u' || typeof window.document.createElement > 'u'),
+    var C = !(typeof window > 'u' || typeof window.document > 'u' || typeof window.document.createElement > 'u'),
       x = Object.prototype.hasOwnProperty,
-      C =
+      w =
         /^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,
       M = {},
       T = {}
     function D(r) {
-      return x.call(T, r) ? !0 : x.call(M, r) ? !1 : C.test(r) ? (T[r] = !0) : ((M[r] = !0), !1)
+      return x.call(T, r) ? !0 : x.call(M, r) ? !1 : w.test(r) ? (T[r] = !0) : ((M[r] = !0), !1)
     }
     function N(r, i, A, d) {
       if (A !== null && A.type === 0) return !1
@@ -12715,7 +12717,7 @@ Valid keys: ` +
         }
       return !1
     }
-    function L(r, i, A, d, m, y, b) {
+    function j(r, i, A, d, m, y, b) {
       ;(this.acceptsBooleans = i === 2 || i === 3 || i === 4),
         (this.attributeName = d),
         (this.attributeNamespace = m),
@@ -12729,7 +12731,7 @@ Valid keys: ` +
     'children dangerouslySetInnerHTML defaultValue defaultChecked innerHTML suppressContentEditableWarning suppressHydrationWarning style'
       .split(' ')
       .forEach(function (r) {
-        Y[r] = new L(r, 0, !1, r, null, !1, !1)
+        Y[r] = new j(r, 0, !1, r, null, !1, !1)
       }),
       [
         ['acceptCharset', 'accept-charset'],
@@ -12738,30 +12740,30 @@ Valid keys: ` +
         ['httpEquiv', 'http-equiv'],
       ].forEach(function (r) {
         var i = r[0]
-        Y[i] = new L(i, 1, !1, r[1], null, !1, !1)
+        Y[i] = new j(i, 1, !1, r[1], null, !1, !1)
       }),
       ['contentEditable', 'draggable', 'spellCheck', 'value'].forEach(function (r) {
-        Y[r] = new L(r, 2, !1, r.toLowerCase(), null, !1, !1)
+        Y[r] = new j(r, 2, !1, r.toLowerCase(), null, !1, !1)
       }),
       ['autoReverse', 'externalResourcesRequired', 'focusable', 'preserveAlpha'].forEach(function (r) {
-        Y[r] = new L(r, 2, !1, r, null, !1, !1)
+        Y[r] = new j(r, 2, !1, r, null, !1, !1)
       }),
       'allowFullScreen async autoFocus autoPlay controls default defer disabled disablePictureInPicture disableRemotePlayback formNoValidate hidden loop noModule noValidate open playsInline readOnly required reversed scoped seamless itemScope'
         .split(' ')
         .forEach(function (r) {
-          Y[r] = new L(r, 3, !1, r.toLowerCase(), null, !1, !1)
+          Y[r] = new j(r, 3, !1, r.toLowerCase(), null, !1, !1)
         }),
       ['checked', 'multiple', 'muted', 'selected'].forEach(function (r) {
-        Y[r] = new L(r, 3, !0, r, null, !1, !1)
+        Y[r] = new j(r, 3, !0, r, null, !1, !1)
       }),
       ['capture', 'download'].forEach(function (r) {
-        Y[r] = new L(r, 4, !1, r, null, !1, !1)
+        Y[r] = new j(r, 4, !1, r, null, !1, !1)
       }),
       ['cols', 'rows', 'size', 'span'].forEach(function (r) {
-        Y[r] = new L(r, 6, !1, r, null, !1, !1)
+        Y[r] = new j(r, 6, !1, r, null, !1, !1)
       }),
       ['rowSpan', 'start'].forEach(function (r) {
-        Y[r] = new L(r, 5, !1, r.toLowerCase(), null, !1, !1)
+        Y[r] = new j(r, 5, !1, r.toLowerCase(), null, !1, !1)
       })
     var J = /[\-:]([a-z])/g
     function ee(r) {
@@ -12771,22 +12773,22 @@ Valid keys: ` +
       .split(' ')
       .forEach(function (r) {
         var i = r.replace(J, ee)
-        Y[i] = new L(i, 1, !1, r, null, !1, !1)
+        Y[i] = new j(i, 1, !1, r, null, !1, !1)
       }),
       'xlink:actuate xlink:arcrole xlink:role xlink:show xlink:title xlink:type'.split(' ').forEach(function (r) {
         var i = r.replace(J, ee)
-        Y[i] = new L(i, 1, !1, r, 'http://www.w3.org/1999/xlink', !1, !1)
+        Y[i] = new j(i, 1, !1, r, 'http://www.w3.org/1999/xlink', !1, !1)
       }),
       ['xml:base', 'xml:lang', 'xml:space'].forEach(function (r) {
         var i = r.replace(J, ee)
-        Y[i] = new L(i, 1, !1, r, 'http://www.w3.org/XML/1998/namespace', !1, !1)
+        Y[i] = new j(i, 1, !1, r, 'http://www.w3.org/XML/1998/namespace', !1, !1)
       }),
       ['tabIndex', 'crossOrigin'].forEach(function (r) {
-        Y[r] = new L(r, 1, !1, r.toLowerCase(), null, !1, !1)
+        Y[r] = new j(r, 1, !1, r.toLowerCase(), null, !1, !1)
       }),
-      (Y.xlinkHref = new L('xlinkHref', 1, !1, 'xlink:href', 'http://www.w3.org/1999/xlink', !0, !1)),
+      (Y.xlinkHref = new j('xlinkHref', 1, !1, 'xlink:href', 'http://www.w3.org/1999/xlink', !0, !1)),
       ['src', 'href', 'action', 'formAction'].forEach(function (r) {
-        Y[r] = new L(r, 1, !1, r.toLowerCase(), null, !0, !0)
+        Y[r] = new j(r, 1, !1, r.toLowerCase(), null, !0, !0)
       })
     function G(r, i, A, d) {
       var m = Y.hasOwnProperty(i) ? Y[i] : null
@@ -13447,7 +13449,7 @@ Valid keys: ` +
       return A
     }
     var dt = !1
-    if (w)
+    if (C)
       try {
         var pn = {}
         Object.defineProperty(pn, 'passive', {
@@ -14311,11 +14313,11 @@ Valid keys: ` +
       }),
       $a = bi(oi),
       Pn = [9, 13, 27, 32],
-      ma = w && 'CompositionEvent' in window,
+      ma = C && 'CompositionEvent' in window,
       Tl = null
-    w && 'documentMode' in document && (Tl = document.documentMode)
-    var vc = w && 'TextEvent' in window && !Tl,
-      ug = w && (!ma || (Tl && 8 < Tl && 11 >= Tl)),
+    C && 'documentMode' in document && (Tl = document.documentMode)
+    var vc = C && 'TextEvent' in window && !Tl,
+      ug = C && (!ma || (Tl && 8 < Tl && 11 >= Tl)),
       TA = String.fromCharCode(32),
       cg = !1
     function dg(r, i) {
@@ -14405,9 +14407,9 @@ Valid keys: ` +
       if (r === 'change') return i
     }
     var Wf = !1
-    if (w) {
+    if (C) {
       var Jf
-      if (w) {
+      if (C) {
         var Pf = 'oninput' in document
         if (!Pf) {
           var gg = document.createElement('div')
@@ -14556,7 +14558,7 @@ Valid keys: ` +
           (r = i[A]), (r.element.scrollLeft = r.left), (r.element.scrollTop = r.top)
       }
     }
-    var xg = w && 'documentMode' in document && 11 >= document.documentMode,
+    var xg = C && 'documentMode' in document && 11 >= document.documentMode,
       ga = null,
       zf = null,
       Ys = null,
@@ -14594,7 +14596,7 @@ Valid keys: ` +
       },
       Xf = {},
       _f = {}
-    w &&
+    C &&
       ((_f = document.createElement('div').style),
       'AnimationEvent' in window ||
         (delete Il.animationend.animation, delete Il.animationiteration.animation, delete Il.animationstart.animation),
@@ -19991,17 +19993,17 @@ Error generating stack: ` +
               if (!c) {
                 for (var t = arguments.length, a = new Array(t > 1 ? t - 1 : 0), l = 1; l < t; l++)
                   a[l - 1] = arguments[l]
-                w('warn', e, a)
+                C('warn', e, a)
               }
             }
             function p(e) {
               if (!c) {
                 for (var t = arguments.length, a = new Array(t > 1 ? t - 1 : 0), l = 1; l < t; l++)
                   a[l - 1] = arguments[l]
-                w('error', e, a)
+                C('error', e, a)
               }
             }
-            function w(e, t, a) {
+            function C(e, t, a) {
               {
                 var l = s.ReactDebugCurrentFrame,
                   u = l.getStackAddendum()
@@ -20013,13 +20015,13 @@ Error generating stack: ` +
               }
             }
             var x = 0,
-              C = 1,
+              w = 1,
               M = 2,
               T = 3,
               D = 4,
               N = 5,
               U = 6,
-              L = 7,
+              j = 7,
               Y = 8,
               J = 9,
               ee = 10,
@@ -20454,11 +20456,11 @@ Error generating stack: ` +
                 if (a === null) e.removeAttribute(I)
                 else {
                   var V = u.type,
-                    j
+                    L
                   V === Bn || (V === ur && a === !0)
-                    ? (j = '')
-                    : (Qt(a, I), (j = '' + a), u.sanitizeURL && xe(j.toString())),
-                    R ? e.setAttributeNS(R, I, j) : e.setAttribute(I, j)
+                    ? (L = '')
+                    : (Qt(a, I), (L = '' + a), u.sanitizeURL && xe(L.toString())),
+                    R ? e.setAttributeNS(R, I, L) : e.setAttribute(I, L)
                 }
               }
             }
@@ -20647,8 +20649,8 @@ Error generating stack: ` +
               } finally {
                 ;(Df = !1), (SA.current = f), oc(), (Error.prepareStackTrace = u)
               }
-              var j = e ? e.displayName || e.name : '',
-                z = j ? pa(j) : ''
+              var L = e ? e.displayName || e.name : '',
+                z = L ? pa(L) : ''
               return typeof e == 'function' && lc.set(e, z), z
             }
             function Nf(e, t, a) {
@@ -20704,7 +20706,7 @@ Error generating stack: ` +
                   return xl(e.type)
                 case G:
                   return xl(e.type.render)
-                case C:
+                case w:
                   return Nf(e.type)
                 default:
                   return ''
@@ -20811,7 +20813,7 @@ Error generating stack: ` +
                   return 'DehydratedFragment'
                 case G:
                   return Xm(a, a.render, 'ForwardRef')
-                case L:
+                case j:
                   return 'Fragment'
                 case N:
                   return a
@@ -20837,7 +20839,7 @@ Error generating stack: ` +
                   return 'SuspenseList'
                 case Le:
                   return 'TracingMarker'
-                case C:
+                case w:
                 case x:
                 case Xe:
                 case M:
@@ -21188,12 +21190,12 @@ Check the render method of \`` +
                   u[S].selected !== I && (u[S].selected = I), I && l && (u[S].defaultSelected = !0)
                 }
               } else {
-                for (var R = jr(jo(a)), V = null, j = 0; j < u.length; j++) {
-                  if (u[j].value === R) {
-                    ;(u[j].selected = !0), l && (u[j].defaultSelected = !0)
+                for (var R = jr(jo(a)), V = null, L = 0; L < u.length; L++) {
+                  if (u[L].value === R) {
+                    ;(u[L].selected = !0), l && (u[L].defaultSelected = !0)
                     return
                   }
-                  V === null && !u[j].disabled && (V = u[j])
+                  V === null && !u[L].disabled && (V = u[L])
                 }
                 V !== null && (V.selected = !0)
               }
@@ -22640,7 +22642,7 @@ Check the render method of \`` +
                   )
                 var R = document.createEvent('Event'),
                   V = !1,
-                  j = !0,
+                  L = !0,
                   z = window.event,
                   Z = Object.getOwnPropertyDescriptor(window, 'event')
                 function ne() {
@@ -22649,7 +22651,7 @@ Check the render method of \`` +
                 }
                 var Ne = Array.prototype.slice.call(arguments, 3)
                 function rt() {
-                  ;(V = !0), ne(), a.apply(l, Ne), (j = !1)
+                  ;(V = !0), ne(), a.apply(l, Ne), (L = !1)
                 }
                 var Ze,
                   Ot = !1,
@@ -22673,7 +22675,7 @@ Check the render method of \`` +
                   ap.dispatchEvent(R),
                   Z && Object.defineProperty(window, 'event', Z),
                   V &&
-                    j &&
+                    L &&
                     (Ot
                       ? kt &&
                         (Ze = new Error(
@@ -22798,7 +22800,7 @@ Check the render method of \`` +
             function Mi(e) {
               {
                 var t = io.current
-                if (t !== null && t.tag === C) {
+                if (t !== null && t.tag === w) {
                   var a = t,
                     l = a.stateNode
                   l._warnedAboutRefsInRender ||
@@ -23249,9 +23251,9 @@ Check the render method of \`` +
                 if (R >= V || (R === yn && (V & _o) !== ae)) return t
               }
               ;(l & ki) !== ae && (l |= a & yn)
-              var j = e.entangledLanes
-              if (j !== ae)
-                for (var z = e.entanglements, Z = l & j; Z > 0; ) {
+              var L = e.entangledLanes
+              if (L !== ae)
+                for (var z = e.entanglements, Z = l & L; Z > 0; ) {
                   var ne = el(Z),
                     Ne = 1 << ne
                   ;(l |= z[ne]), (Z &= ~Ne)
@@ -24526,24 +24528,24 @@ Check the render method of \`` +
                   var V = u.ownerDocument
                   V ? (R = V.defaultView || V.parentWindow) : (R = window)
                 }
-                var j, z
+                var L, z
                 if (S) {
                   var Z = l.relatedTarget || l.toElement
-                  if (((j = a), (z = Z ? Cu(Z) : null), z !== null)) {
+                  if (((L = a), (z = Z ? Cu(Z) : null), z !== null)) {
                     var ne = Ii(z)
                     ;(z !== ne || (z.tag !== N && z.tag !== U)) && (z = null)
                   }
-                } else (j = null), (z = a)
-                if (j !== z) {
+                } else (L = null), (z = a)
+                if (L !== z) {
                   var Ne = rl,
                     rt = 'onMouseLeave',
                     Ze = 'onMouseEnter',
                     Ot = 'mouse'
                   ;(t === 'pointerout' || t === 'pointerover') &&
                     ((Ne = qp), (rt = 'onPointerLeave'), (Ze = 'onPointerEnter'), (Ot = 'pointer'))
-                  var kt = j == null ? R : Id(j),
+                  var kt = L == null ? R : Id(L),
                     K = z == null ? R : Id(z),
-                    re = new Ne(rt, Ot + 'leave', j, l, u)
+                    re = new Ne(rt, Ot + 'leave', L, l, u)
                   ;(re.target = kt), (re.relatedTarget = K)
                   var W = null,
                     he = Cu(u)
@@ -24551,7 +24553,7 @@ Check the render method of \`` +
                     var Oe = new Ne(Ze, Ot + 'enter', z, l, u)
                     ;(Oe.target = K), (Oe.relatedTarget = kt), (W = Oe)
                   }
-                  h6(e, re, W, j, z)
+                  h6(e, re, W, L, z)
                 }
               }
             }
@@ -24616,21 +24618,21 @@ Check the render method of \`` +
                 V = null
               e: for (;;) {
                 for (
-                  var j = null;
+                  var L = null;
                   R === t && (a === 0 || R.nodeType === $a) && (g = f + a),
                     R === l && (u === 0 || R.nodeType === $a) && (E = f + u),
                     R.nodeType === $a && (f += R.nodeValue.length),
-                    (j = R.firstChild) !== null;
+                    (L = R.firstChild) !== null;
 
                 )
-                  (V = R), (R = j)
+                  (V = R), (R = L)
                 for (;;) {
                   if (R === e) break e
-                  if ((V === t && ++S === a && (g = f), V === l && ++I === u && (E = f), (j = R.nextSibling) !== null))
+                  if ((V === t && ++S === a && (g = f), V === l && ++I === u && (E = f), (L = R.nextSibling) !== null))
                     break
                   ;(R = V), (V = R.parentNode)
                 }
-                R = j
+                R = L
               }
               return g === -1 || E === -1 ? null : { start: g, end: E }
             }
@@ -25022,10 +25024,10 @@ Check the render method of \`` +
                 var R = (f & Ml) !== 0
                 {
                   var V = !R && t === 'scroll',
-                    j = f6(a, E, l.type, R, V)
-                  if (j.length > 0) {
+                    L = f6(a, E, l.type, R, V)
+                  if (L.length > 0) {
                     var z = new S(E, I, null, l, u)
-                    e.push({ event: z, listeners: j })
+                    e.push({ event: z, listeners: L })
                   }
                 }
               }
@@ -25082,10 +25084,10 @@ Check the render method of \`` +
                 for (var I = 0; I < t.length; I++) {
                   var R = t[I],
                     V = R.instance,
-                    j = R.currentTarget,
+                    L = R.currentTarget,
                     z = R.listener
                   if (V !== l && e.isPropagationStopped()) return
-                  TT(e, z, j), (l = V)
+                  TT(e, z, L), (l = V)
                 }
             }
             function IT(e, t) {
@@ -25160,8 +25162,8 @@ Check the render method of \`` +
                         for (var R = E.return; R !== null; ) {
                           var V = R.tag
                           if (V === T || V === D) {
-                            var j = R.stateNode.containerInfo
-                            if (RT(j, g)) return
+                            var L = R.stateNode.containerInfo
+                            if (RT(L, g)) return
                           }
                           R = R.return
                         }
@@ -25190,9 +25192,9 @@ Check the render method of \`` +
             function f6(e, t, a, l, u, f) {
               for (var g = t !== null ? t + 'Capture' : null, E = l ? g : t, S = [], I = e, R = null; I !== null; ) {
                 var V = I,
-                  j = V.stateNode,
+                  L = V.stateNode,
                   z = V.tag
-                if (z === N && j !== null && ((R = j), E !== null)) {
+                if (z === N && L !== null && ((R = L), E !== null)) {
                   var Z = kl(I, E)
                   Z != null && S.push(_p(I, Z, R))
                 }
@@ -25242,13 +25244,13 @@ Check the render method of \`` +
                   V = S.tag
                 if (I !== null && I === l) break
                 if (V === N && R !== null) {
-                  var j = R
+                  var L = R
                   if (u) {
                     var z = kl(E, f)
-                    z != null && g.unshift(_p(E, z, j))
+                    z != null && g.unshift(_p(E, z, L))
                   } else if (!u) {
                     var Z = kl(E, f)
-                    Z != null && g.push(_p(E, Z, j))
+                    Z != null && g.push(_p(E, Z, L))
                   }
                 }
                 E = E.return
@@ -25516,27 +25518,27 @@ Check the render method of \`` +
                       S === DT ||
                       (be.hasOwnProperty(S) ? f || (f = []) : (f = f || []).push(S, null))
               for (S in E) {
-                var j = E[S],
+                var L = E[S],
                   z = g != null ? g[S] : void 0
-                if (!(!E.hasOwnProperty(S) || j === z || (j == null && z == null)))
+                if (!(!E.hasOwnProperty(S) || L === z || (L == null && z == null)))
                   if (S === wu)
-                    if ((j && Object.freeze(j), z)) {
-                      for (I in z) z.hasOwnProperty(I) && (!j || !j.hasOwnProperty(I)) && (R || (R = {}), (R[I] = ''))
-                      for (I in j) j.hasOwnProperty(I) && z[I] !== j[I] && (R || (R = {}), (R[I] = j[I]))
-                    } else R || (f || (f = []), f.push(S, R)), (R = j)
+                    if ((L && Object.freeze(L), z)) {
+                      for (I in z) z.hasOwnProperty(I) && (!L || !L.hasOwnProperty(I)) && (R || (R = {}), (R[I] = ''))
+                      for (I in L) L.hasOwnProperty(I) && z[I] !== L[I] && (R || (R = {}), (R[I] = L[I]))
+                    } else R || (f || (f = []), f.push(S, R)), (R = L)
                   else if (S === $p) {
-                    var Z = j ? j[Ev] : void 0,
+                    var Z = L ? L[Ev] : void 0,
                       ne = z ? z[Ev] : void 0
                     Z != null && ne !== Z && (f = f || []).push(S, Z)
                   } else
                     S === Su
-                      ? (typeof j == 'string' || typeof j == 'number') && (f = f || []).push(S, '' + j)
+                      ? (typeof L == 'string' || typeof L == 'number') && (f = f || []).push(S, '' + L)
                       : S === yv ||
                         S === ns ||
                         (be.hasOwnProperty(S)
-                          ? (j != null && (typeof j != 'function' && wv(S, j), S === 'onScroll' && Dn('scroll', e)),
-                            !f && z !== j && (f = []))
-                          : (f = f || []).push(S, j))
+                          ? (L != null && (typeof L != 'function' && wv(S, L), S === 'onScroll' && Dn('scroll', e)),
+                            !f && z !== L && (f = []))
+                          : (f = f || []).push(S, L))
               }
               return R && (qs(R, E[wu]), (f = f || []).push(wu, R)), f
             }
@@ -25605,8 +25607,8 @@ Check the render method of \`` +
               {
                 S = new Set()
                 for (var R = e.attributes, V = 0; V < R.length; V++) {
-                  var j = R[V].name.toLowerCase()
-                  switch (j) {
+                  var L = R[V].name.toLowerCase()
+                  switch (L) {
                     case 'value':
                       break
                     case 'checked':
@@ -26035,12 +26037,12 @@ Check the render method of \`` +
                         : (R = '<' + e + '>'),
                       f)
                     ) {
-                      var j = ''
+                      var L = ''
                       S === 'table' &&
                         e === 'tr' &&
-                        (j +=
+                        (L +=
                           ' Add a <tbody>, <thead> or <tfoot> to your code to match the DOM tree generated by the browser.'),
-                        p('validateDOMNesting(...): %s cannot appear as a child of <%s>.%s%s', R, S, V, j)
+                        p('validateDOMNesting(...): %s cannot appear as a child of <%s>.%s%s', R, S, V, L)
                     } else p('validateDOMNesting(...): %s cannot appear as a descendant of <%s>.', R, S)
                   }
                 }
@@ -26662,7 +26664,7 @@ Check the render method of \`` +
             }
             function q5(e) {
               {
-                if (!cp(e) || e.tag !== C)
+                if (!cp(e) || e.tag !== w)
                   throw new Error(
                     'Expected subtree parent to be a mounted class component. This error is likely caused by a bug in React. Please file an issue.',
                   )
@@ -26671,7 +26673,7 @@ Check the render method of \`` +
                   switch (t.tag) {
                     case T:
                       return t.stateNode.context
-                    case C: {
+                    case w: {
                       var a = t.type
                       if (ll(a)) return t.stateNode.__reactInternalMemoizedMergedChildContext
                       break
@@ -26756,11 +26758,11 @@ Check the render method of \`` +
                 var I = f - (f % 5),
                   R = (1 << I) - 1,
                   V = (g & R).toString(32),
-                  j = g >> I,
+                  L = g >> I,
                   z = f - I,
                   Z = Vv(t) + z,
                   ne = E << z,
-                  Ne = ne | j,
+                  Ne = ne | L,
                   rt = V + u
                 ;(rA = (1 << Z) | Ne), (iA = rt)
               } else {
@@ -26877,8 +26879,8 @@ Check the render method of \`` +
                       }
                       case U: {
                         var V = t.pendingProps,
-                          j = (e.mode & xt) !== at
-                        L5(f, g, E, V, j)
+                          L = (e.mode & xt) !== at
+                        L5(f, g, E, V, L)
                         break
                       }
                     }
@@ -27094,39 +27096,39 @@ Check the render method of \`` +
                 (mo.flushPendingUnsafeLifecycleWarnings = function () {
                   var e = new Set()
                   sh.length > 0 &&
-                    (sh.forEach(function (j) {
-                      e.add(gt(j) || 'Component'), Ru.add(j.type)
+                    (sh.forEach(function (L) {
+                      e.add(gt(L) || 'Component'), Ru.add(L.type)
                     }),
                     (sh = []))
                   var t = new Set()
                   uh.length > 0 &&
-                    (uh.forEach(function (j) {
-                      t.add(gt(j) || 'Component'), Ru.add(j.type)
+                    (uh.forEach(function (L) {
+                      t.add(gt(L) || 'Component'), Ru.add(L.type)
                     }),
                     (uh = []))
                   var a = new Set()
                   ch.length > 0 &&
-                    (ch.forEach(function (j) {
-                      a.add(gt(j) || 'Component'), Ru.add(j.type)
+                    (ch.forEach(function (L) {
+                      a.add(gt(L) || 'Component'), Ru.add(L.type)
                     }),
                     (ch = []))
                   var l = new Set()
                   dh.length > 0 &&
-                    (dh.forEach(function (j) {
-                      l.add(gt(j) || 'Component'), Ru.add(j.type)
+                    (dh.forEach(function (L) {
+                      l.add(gt(L) || 'Component'), Ru.add(L.type)
                     }),
                     (dh = []))
                   var u = new Set()
                   fh.length > 0 &&
-                    (fh.forEach(function (j) {
-                      u.add(gt(j) || 'Component'), Ru.add(j.type)
+                    (fh.forEach(function (L) {
+                      u.add(gt(L) || 'Component'), Ru.add(L.type)
                     }),
                     (fh = []))
                   var f = new Set()
                   if (
                     (ph.length > 0 &&
-                      (ph.forEach(function (j) {
-                        f.add(gt(j) || 'Component'), Ru.add(j.type)
+                      (ph.forEach(function (L) {
+                        f.add(gt(L) || 'Component'), Ru.add(L.type)
                       }),
                       (ph = [])),
                     t.size > 0)
@@ -27320,7 +27322,7 @@ Learn more about this warning here: https://reactjs.org/link/legacy-context`,
                   u = l.child
                   for (var g = f.firstContext; g !== null; ) {
                     if (g.context === t) {
-                      if (l.tag === C) {
+                      if (l.tag === w) {
                         var E = ir(a),
                           S = aA(dn, E)
                         S.tag = Jv
@@ -27332,8 +27334,8 @@ Learn more about this warning here: https://reactjs.org/link/legacy-context`,
                         }
                       }
                       l.lanes = yt(l.lanes, a)
-                      var j = l.alternate
-                      j !== null && (j.lanes = yt(j.lanes, a)), fS(l.return, a, e), (f.lanes = yt(f.lanes, a))
+                      var L = l.alternate
+                      L !== null && (L.lanes = yt(L.lanes, a)), fS(l.return, a, e), (f.lanes = yt(f.lanes, a))
                       break
                     }
                     g = g.next
@@ -27613,8 +27615,8 @@ Learn more about this warning here: https://reactjs.org/link/legacy-context`,
                 var R = e.alternate
                 if (R !== null) {
                   var V = R.updateQueue,
-                    j = V.lastBaseUpdate
-                  j !== g && (j === null ? (V.firstBaseUpdate = I) : (j.next = I), (V.lastBaseUpdate = S))
+                    L = V.lastBaseUpdate
+                  L !== g && (L === null ? (V.firstBaseUpdate = I) : (L.next = I), (V.lastBaseUpdate = S))
                 }
               }
               if (f !== null) {
@@ -28001,14 +28003,14 @@ Learn more about this warning here: https://reactjs.org/link/legacy-context`,
               SI(e, R)
               {
                 if (typeof t.getDerivedStateFromProps == 'function' && V === null) {
-                  var j = un(t) || 'Component'
-                  SS.has(j) ||
-                    (SS.add(j),
+                  var L = un(t) || 'Component'
+                  SS.has(L) ||
+                    (SS.add(L),
                     p(
                       '`%s` uses `getDerivedStateFromProps` but its initial state is %s. This is not recommended. Instead, define the initial state by assigning an object to `this.state` in the constructor of `%s`. This ensures that `getDerivedStateFromProps` arguments have a consistent shape.',
-                      j,
+                      L,
                       R.state === null ? 'null' : 'undefined',
-                      j,
+                      L,
                     ))
                 }
                 if (typeof t.getDerivedStateFromProps == 'function' || typeof R.getSnapshotBeforeUpdate == 'function') {
@@ -28151,9 +28153,9 @@ https://reactjs.org/link/unsafe-component-lifecycles`,
                 (f !== a || g !== S) &&
                 CI(e, u, a, S),
                 hI()
-              var j = e.memoizedState,
-                z = (u.state = j)
-              if ((Xv(e, a, u, l), (z = e.memoizedState), f === a && j === z && !Ov() && !_v())) {
+              var L = e.memoizedState,
+                z = (u.state = L)
+              if ((Xv(e, a, u, l), (z = e.memoizedState), f === a && L === z && !Ov() && !_v())) {
                 if (typeof u.componentDidMount == 'function') {
                   var Z = vt
                   ;(Z |= Ai), (e.mode & ea) !== at && (Z |= si), (e.flags |= Z)
@@ -28161,7 +28163,7 @@ https://reactjs.org/link/unsafe-component-lifecycles`,
                 return !1
               }
               typeof R == 'function' && (MS(e, t, R, a), (z = e.memoizedState))
-              var ne = _v() || EI(e, t, f, a, j, z, S)
+              var ne = _v() || EI(e, t, f, a, L, z, S)
               if (ne) {
                 if (
                   (!V &&
@@ -28194,8 +28196,8 @@ https://reactjs.org/link/unsafe-component-lifecycles`,
                 V = Sa
               if (typeof R == 'object' && R !== null) V = Er(R)
               else {
-                var j = Md(t, a, !0)
-                V = Rd(t, j)
+                var L = Md(t, a, !0)
+                V = Rd(t, L)
               }
               var z = a.getDerivedStateFromProps,
                 Z = typeof z == 'function' || typeof f.getSnapshotBeforeUpdate == 'function'
@@ -28285,7 +28287,7 @@ https://reactjs.org/link/unsafe-component-lifecycles`,
                     g
                   if (f) {
                     var E = f
-                    if (E.tag !== C)
+                    if (E.tag !== w)
                       throw new Error(
                         'Function components cannot have string refs. We recommend using useRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref',
                       )
@@ -28302,8 +28304,8 @@ https://reactjs.org/link/unsafe-component-lifecycles`,
                   var I = '' + l
                   if (t !== null && t.ref !== null && typeof t.ref == 'function' && t.ref._stringRef === I) return t.ref
                   var R = function (V) {
-                    var j = S.refs
-                    j === gI && (j = S.refs = {}), V === null ? delete j[I] : (j[I] = V)
+                    var L = S.refs
+                    L === gI && (L = S.refs = {}), V === null ? delete L[I] : (L[I] = V)
                   }
                   return (R._stringRef = I), R
                 } else {
@@ -28425,7 +28427,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                 }
               }
               function R(K, re, W, he, Oe) {
-                if (re === null || re.tag !== L) {
+                if (re === null || re.tag !== j) {
                   var Te = vs(W, K.mode, he, Oe)
                   return (Te.return = K), Te
                 } else {
@@ -28462,7 +28464,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                 }
                 return typeof re == 'function' && ty(K), null
               }
-              function j(K, re, W, he) {
+              function L(K, re, W, he) {
                 var Oe = re !== null ? re.key : null
                 if ((typeof W == 'string' && W !== '') || typeof W == 'number')
                   return Oe !== null ? null : E(K, re, '' + W, he)
@@ -28475,7 +28477,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                     case dr: {
                       var Te = W._payload,
                         ct = W._init
-                      return j(K, re, ct(Te), he)
+                      return L(K, re, ct(Te), he)
                     }
                   }
                   if (fr(W) || Za(W)) return Oe !== null ? null : R(K, re, W, he, null)
@@ -28549,7 +28551,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                 }
                 for (var mt = null, ln = null, Gt = re, Ar = 0, qt = 0, Xn = null; Gt !== null && qt < W.length; qt++) {
                   Gt.index > qt ? ((Xn = Gt), (Gt = null)) : (Xn = Gt.sibling)
-                  var vi = j(K, Gt, W[qt], he)
+                  var vi = L(K, Gt, W[qt], he)
                   if (vi === null) {
                     Gt === null && (Gt = Xn)
                     break
@@ -28630,7 +28632,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                   ri++, Ui = Gt.next()
                 ) {
                   Xn.index > ri ? ((Ca = Xn), (Xn = null)) : (Ca = Xn.sibling)
-                  var Li = j(K, Xn, Ui.value, he)
+                  var Li = L(K, Xn, Ui.value, he)
                   if (Li === null) {
                     Xn === null && (Xn = Ca)
                     break
@@ -28694,7 +28696,7 @@ See https://reactjs.org/link/refs-must-have-owner for more information.`,
                   if (Te.key === Oe) {
                     var ct = W.type
                     if (ct === Wn) {
-                      if (Te.tag === L) {
+                      if (Te.tag === j) {
                         a(K, Te.sibling)
                         var mt = u(Te, W.props.children)
                         return (mt.return = K), (mt._debugSource = W._source), (mt._debugOwner = W._owner), mt
@@ -29140,7 +29142,7 @@ Incoming: %s`,
               if (g !== null) {
                 var R = g.next,
                   V = f.baseState,
-                  j = null,
+                  L = null,
                   z = null,
                   Z = null,
                   ne = R
@@ -29170,14 +29172,14 @@ Incoming: %s`,
                       eagerState: ne.eagerState,
                       next: null,
                     }
-                    Z === null ? ((z = Z = rt), (j = V)) : (Z = Z.next = rt), (on.lanes = yt(on.lanes, Ne)), Vh(Ne)
+                    Z === null ? ((z = Z = rt), (L = V)) : (Z = Z.next = rt), (on.lanes = yt(on.lanes, Ne)), Vh(Ne)
                   }
                   ne = ne.next
                 } while (ne !== null && ne !== R)
-                Z === null ? (j = V) : (Z.next = z),
+                Z === null ? (L = V) : (Z.next = z),
                   Ge(V, l.memoizedState) || Mh(),
                   (l.memoizedState = V),
-                  (l.baseState = j),
+                  (l.baseState = L),
                   (l.baseQueue = Z),
                   (u.lastRenderedState = V)
               }
@@ -30306,7 +30308,7 @@ Incoming: %s`,
                   f = t.stack,
                   g = f !== null ? f : ''
                 if (l != null && l._suppressLogging) {
-                  if (e.tag === C) return
+                  if (e.tag === w) return
                   console.error(l)
                 }
                 var E = u ? gt(u) : null,
@@ -30333,9 +30335,9 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
 ` +
                   ('' + I)
                 console.error(V)
-              } catch (j) {
+              } catch (L) {
                 setTimeout(function () {
-                  throw j
+                  throw L
                 })
               }
             }
@@ -30425,7 +30427,7 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
               if ((e.mode & xt) === at) {
                 if (e === t) e.flags |= hr
                 else {
-                  if (((e.flags |= ft), (a.flags |= eu), (a.flags &= ~(Ic | Ti)), a.tag === C)) {
+                  if (((e.flags |= ft), (a.flags |= eu), (a.flags &= ~(Ic | Ti)), a.tag === w)) {
                     var f = a.alternate
                     if (f === null) a.tag = Xe
                     else {
@@ -30476,11 +30478,11 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                     I.flags |= hr
                     var V = ir(u)
                     I.lanes = yt(I.lanes, V)
-                    var j = oM(I, R, V)
-                    vS(I, j)
+                    var L = oM(I, R, V)
+                    vS(I, L)
                     return
                   }
-                  case C:
+                  case w:
                     var z = l,
                       Z = I.type,
                       ne = I.stateNode
@@ -30569,8 +30571,8 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                 R && po(R, l, 'prop', un(I))
               }
               var V = e.child,
-                j = kw(e, u)
-              if (!j) {
+                L = kw(e, u)
+              if (!L) {
                 var z = V.memoizedProps,
                   Z = a.compare
                 if (((Z = Z !== null ? Z : $e), Z(z, l) && e.ref === t.ref)) return oA(e, t, u)
@@ -30614,8 +30616,8 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                 } else if (pi(a, fi)) {
                   var V = { baseLanes: ae, cachePool: null, transitions: null }
                   t.memoizedState = V
-                  var j = f !== null ? f.baseLanes : a
-                  jy(t, j)
+                  var L = f !== null ? f.baseLanes : a
+                  jy(t, L)
                 } else {
                   var E = null,
                     S
@@ -30709,8 +30711,8 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                   }
                 }
                 if (t.type !== t.elementType) {
-                  var j = a.propTypes
-                  j && po(j, l, 'prop', un(a))
+                  var L = a.propTypes
+                  L && po(L, l, 'prop', un(a))
                 }
               }
               var z
@@ -30810,9 +30812,9 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                   return gM(e, t, E, a, V)
                 } else {
                   $5(t)
-                  var j = II(t, null, E, a)
-                  t.child = j
-                  for (var z = j; z; ) (z.flags = (z.flags & ~mn) | Xi), (z = z.sibling)
+                  var L = II(t, null, E, a)
+                  t.child = L
+                  for (var z = L; z; ) (z.flags = (z.flags & ~mn) | Xi), (z = z.sibling)
                 }
               } else {
                 if ((Bd(), E === f)) return oA(e, t, a)
@@ -30849,14 +30851,14 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
               switch (I) {
                 case x:
                   return xw(t, S), (t.type = S = Zd(S)), (V = ww(null, t, S, R, l)), V
-                case C:
+                case w:
                   return (t.type = S = eC(S)), (V = hM(null, t, S, R, l)), V
                 case G:
                   return (t.type = S = tC(S)), (V = uM(null, t, S, R, l)), V
                 case se: {
                   if (t.type !== t.elementType) {
-                    var j = S.propTypes
-                    j && po(j, R, 'prop', un(S))
+                    var L = S.propTypes
+                    L && po(L, R, 'prop', un(S))
                   }
                   return (V = cM(null, t, S, go(S.type, R), l)), V
                 }
@@ -30876,7 +30878,7 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
               )
             }
             function $L(e, t, a, l, u) {
-              Ty(e, t), (t.tag = C)
+              Ty(e, t), (t.tag = w)
               var f
               return (
                 ll(a) ? ((f = !0), Lv(t)) : (f = !1), Od(t, u), wI(t, a, l), kS(t, a, l, u), Cw(null, t, a, !0, f, u)
@@ -30938,15 +30940,15 @@ Visit https://reactjs.org/link/error-boundaries to learn more about error bounda
                     ),
                     (Ih[V] = !0))
                 }
-                ;(t.tag = C), (t.memoizedState = null), (t.updateQueue = null)
-                var j = !1
+                ;(t.tag = w), (t.memoizedState = null), (t.updateQueue = null)
+                var L = !1
                 return (
-                  ll(a) ? ((j = !0), Lv(t)) : (j = !1),
+                  ll(a) ? ((L = !0), Lv(t)) : (L = !1),
                   (t.memoizedState = E.state !== null && E.state !== void 0 ? E.state : null),
                   gS(t),
                   SI(t, E),
                   kS(t, a, u, l),
-                  Cw(null, t, a, !0, j, l)
+                  Cw(null, t, a, !0, L, l)
                 )
               } else {
                 if (((t.tag = x), t.mode & Rn)) {
@@ -31042,8 +31044,8 @@ Check the render method of \`` +
                   R = l.fallback
                 if (f) {
                   var V = i8(t, I, R, a),
-                    j = t.child
-                  return (j.memoizedState = Tw(a)), (t.memoizedState = bw), V
+                    L = t.child
+                  return (L.memoizedState = Tw(a)), (t.memoizedState = bw), V
                 } else return Iw(t, I)
               } else {
                 var z = e.memoizedState
@@ -31212,8 +31214,8 @@ Check the render method of \`` +
                     : (V = new Error(
                         'The server could not finish this Suspense boundary, likely due to an error during server rendering. Switched to client rendering.',
                       ))
-                  var j = pw(V, E, I)
-                  return by(e, t, g, j)
+                  var L = pw(V, E, I)
+                  return by(e, t, g, L)
                 }
                 var z = pi(g, e.childLanes)
                 if (Eo || z) {
@@ -31409,7 +31411,7 @@ Check the render method of \`` +
                     break
                   }
                   case 'backwards': {
-                    var j = null,
+                    var L = null,
                       z = t.child
                     for (t.child = null; z !== null; ) {
                       var Z = z.alternate
@@ -31418,9 +31420,9 @@ Check the render method of \`` +
                         break
                       }
                       var ne = z.sibling
-                      ;(z.sibling = j), (j = z), (z = ne)
+                      ;(z.sibling = L), (L = z), (z = ne)
                     }
-                    Rw(t, !0, j, null, f)
+                    Rw(t, !0, L, null, f)
                     break
                   }
                   case 'together': {
@@ -31537,7 +31539,7 @@ Check the render method of \`` +
                 case N:
                   RI(t)
                   break
-                case C: {
+                case w: {
                   var l = t.type
                   ll(l) && Lv(t)
                   break
@@ -31575,9 +31577,9 @@ Check the render method of \`` +
                   break
                 }
                 case He: {
-                  var j = (e.flags & ft) !== tt,
+                  var L = (e.flags & ft) !== tt,
                     z = pi(a, t.childLanes)
-                  if (j) {
+                  if (L) {
                     if (z) return wM(e, t, a)
                     t.flags |= ft
                   }
@@ -31624,11 +31626,11 @@ Check the render method of \`` +
                     V = t.elementType === I ? R : go(I, R)
                   return ww(e, t, I, V, a)
                 }
-                case C: {
-                  var j = t.type,
+                case w: {
+                  var L = t.type,
                     z = t.pendingProps,
-                    Z = t.elementType === j ? z : go(j, z)
-                  return hM(e, t, j, Z, a)
+                    Z = t.elementType === L ? z : go(L, z)
+                  return hM(e, t, L, Z, a)
                 }
                 case T:
                   return zL(e, t, a)
@@ -31646,7 +31648,7 @@ Check the render method of \`` +
                     rt = t.elementType === ne ? Ne : go(ne, Ne)
                   return uM(e, t, ne, rt, a)
                 }
-                case L:
+                case j:
                   return WL(e, t, a)
                 case Y:
                   return JL(e, t, a)
@@ -31829,13 +31831,13 @@ Check the render method of \`` +
                 case $:
                 case x:
                 case G:
-                case L:
+                case j:
                 case Y:
                 case te:
                 case J:
                 case se:
                   return _r(t), null
-                case C: {
+                case w: {
                   var u = t.type
                   return ll(u) && Uv(t), _r(t), null
                 }
@@ -31874,8 +31876,8 @@ Check the render method of \`` +
                       V = Fv(t)
                     if (V) tL(t, S, R) && qd(t)
                     else {
-                      var j = F6(I, l, S, R, t)
-                      IM(j, t, !1, !1), (t.stateNode = j), q6(j, I, l, S) && qd(t)
+                      var L = F6(I, l, S, R, t)
+                      IM(L, t, !1, !1), (t.stateNode = L), q6(L, I, l, S) && qd(t)
                     }
                     t.ref !== null && TM(t)
                   }
@@ -32022,7 +32024,7 @@ Check the render method of \`` +
             }
             function S8(e, t, a) {
               switch ((rS(t), t.tag)) {
-                case C: {
+                case w: {
                   var l = t.type
                   ll(l) && Uv(t)
                   var u = t.flags
@@ -32066,7 +32068,7 @@ Check the render method of \`` +
             }
             function DM(e, t, a) {
               switch ((rS(t), t.tag)) {
-                case C: {
+                case w: {
                   var l = t.type.childContextTypes
                   l != null && Uv(t)
                   break
@@ -32219,7 +32221,7 @@ Check the render method of \`` +
                   case G:
                   case $:
                     break
-                  case C: {
+                  case w: {
                     if (t !== null) {
                       var l = t.memoizedProps,
                         u = t.memoizedState,
@@ -32393,7 +32395,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                       else fs(Ir | Tr, a)
                     break
                   }
-                  case C: {
+                  case w: {
                     var u = a.stateNode
                     if (a.flags & vt && !$r)
                       if (t === null)
@@ -32469,7 +32471,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                           case N:
                             I = a.child.stateNode
                             break
-                          case C:
+                          case w:
                             I = a.child.stateNode
                             break
                         }
@@ -32481,8 +32483,8 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                     var R = a.stateNode
                     if (t === null && a.flags & vt) {
                       var V = a.type,
-                        j = a.memoizedProps
-                      Z6(R, V, j)
+                        L = a.memoizedProps
+                      Z6(R, V, L)
                     }
                     break
                   }
@@ -32553,7 +32555,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   else NM(e, e.return)
                   break
                 }
-                case C: {
+                case w: {
                   var t = e.stateNode
                   typeof t.componentDidMount == 'function' && b8(e, e.return, t), OM(e, e.return)
                   break
@@ -32807,13 +32809,13 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                           R = I
                         do {
                           var V = R,
-                            j = V.destroy,
+                            L = V.destroy,
                             z = V.tag
-                          j !== void 0 &&
+                          L !== void 0 &&
                             ((z & Al) !== Aa
-                              ? My(a, t, j)
+                              ? My(a, t, L)
                               : (z & Ir) !== Aa &&
-                                (Lc(a), a.mode & ot ? (dl(), My(a, t, j), cl(a)) : My(a, t, j), OA())),
+                                (Lc(a), a.mode & ot ? (dl(), My(a, t, L), cl(a)) : My(a, t, L), OA())),
                             (R = R.next)
                         } while (R !== I)
                       }
@@ -32822,7 +32824,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   ps(e, t, a)
                   return
                 }
-                case C: {
+                case w: {
                   if (!$r) {
                     Wd(a, t)
                     var Z = a.stateNode
@@ -32929,7 +32931,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   }
                   return
                 }
-                case C: {
+                case w: {
                   Co(t, e), fl(e), u & li && l !== null && Wd(l, l.return)
                   return
                 }
@@ -32969,10 +32971,10 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                         'This should have a text node initialized. This error is likely caused by a bug in React. Please file an issue.',
                       )
                     var V = e.stateNode,
-                      j = e.memoizedProps,
-                      z = l !== null ? l.memoizedProps : j
+                      L = e.memoizedProps,
+                      z = l !== null ? l.memoizedProps : L
                     try {
-                      _6(V, z, j)
+                      _6(V, z, L)
                     } catch (ct) {
                       En(e, e.return, ct)
                     }
@@ -33078,10 +33080,10 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                       I = S !== null && S.memoizedState !== null,
                       R = I || $r,
                       V = Iy,
-                      j = $r
-                    ;(Iy = E), ($r = R), $r && !j && ((qe = u), q8(u))
+                      L = $r
+                    ;(Iy = E), ($r = R), $r && !L && ((qe = u), q8(u))
                     for (var z = f; z !== null; ) (qe = z), qM(z, t, a), (z = z.sibling)
-                    ;(qe = u), (Iy = V), ($r = j), Uw(e, t, a)
+                    ;(qe = u), (Iy = V), ($r = L), Uw(e, t, a)
                     continue
                   }
                 }
@@ -33131,7 +33133,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                     else So(Ir, t, t.return)
                     break
                   }
-                  case C: {
+                  case w: {
                     Wd(t, t.return)
                     var l = t.stateNode
                     typeof l.componentWillUnmount == 'function' && Bw(t, t.return, l)
@@ -33355,7 +33357,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   }
                   break
                 }
-                case C: {
+                case w: {
                   var t = e.stateNode
                   try {
                     t.componentDidMount()
@@ -33392,7 +33394,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   }
                   break
                 }
-                case C: {
+                case w: {
                   var t = e.stateNode
                   typeof t.componentWillUnmount == 'function' && Bw(e, e.return, t)
                   break
@@ -33632,8 +33634,8 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                       V !== ae && ((u = V), (g = Ww(e, V)))
                     }
                     if (g === Dh) {
-                      var j = Nh
-                      throw (Lu(e, ae), gs(e, u), ua(e, Mn()), j)
+                      var L = Nh
+                      throw (Lu(e, ae), gs(e, u), ua(e, Mn()), L)
                     }
                   }
                   ;(e.finishedWork = R), (e.finishedLanes = u), mj(e, g, u)
@@ -34040,12 +34042,12 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                   ar(R),
                   (ti.transition = I)
               } else (e.current = u), iM()
-              var j = Uu
+              var L = Uu
               if (
                 (Uu ? ((Uu = !1), (hs = e), (jh = f)) : ((Pd = 0), (Oy = null)),
                 (g = e.pendingLanes),
                 g === ae && (Jd = null),
-                j || c4(e.current, !1),
+                L || c4(e.current, !1),
                 ao(u.stateNode, l),
                 xr && e.memoizedUpdaters.clear(),
                 oj(),
@@ -34154,7 +34156,7 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
                 if (l.tag === T) {
                   s4(l, e, a)
                   return
-                } else if (l.tag === C) {
+                } else if (l.tag === w) {
                   var u = l.type,
                     f = l.stateNode
                   if (
@@ -34269,7 +34271,7 @@ Error message:
               {
                 if ((Nt & ni) !== kr || !(e.mode & xt)) return
                 var t = e.tag
-                if (t !== M && t !== T && t !== C && t !== x && t !== G && t !== se && t !== $) return
+                if (t !== M && t !== T && t !== w && t !== x && t !== G && t !== se && t !== $) return
                 var a = gt(e) || 'ReactComponent'
                 if (Vy !== null) {
                   if (Vy.has(a)) return
@@ -34332,7 +34334,7 @@ Error message:
                     }
                     break
                   }
-                  case C: {
+                  case w: {
                     f4 ||
                       (p(
                         'Cannot update during an existing state transition (such as within `render`). Render methods should be a pure function of props and state.',
@@ -34449,7 +34451,7 @@ This ensures that you're testing the behavior the user would see in the browser.
                   u = !1,
                   f = typeof l == 'object' && l !== null ? l.$$typeof : null
                 switch (e.tag) {
-                  case C: {
+                  case w: {
                     typeof l == 'function' && (u = !0)
                     break
                   }
@@ -34513,7 +34515,7 @@ This ensures that you're testing the behavior the user would see in the browser.
                 switch (g) {
                   case x:
                   case $:
-                  case C:
+                  case w:
                     S = E
                     break
                   case G:
@@ -34525,15 +34527,15 @@ This ensures that you're testing the behavior the user would see in the browser.
                   R = !1
                 if (S !== null) {
                   var V = qa(S)
-                  V !== void 0 && (a.has(V) ? (R = !0) : t.has(V) && (g === C ? (R = !0) : (I = !0)))
+                  V !== void 0 && (a.has(V) ? (R = !0) : t.has(V) && (g === w ? (R = !0) : (I = !0)))
                 }
                 if (
                   (zd !== null && (zd.has(e) || (l !== null && zd.has(l))) && (R = !0),
                   R && (e._debugNeedsRemount = !0),
                   R || I)
                 ) {
-                  var j = la(e, At)
-                  j !== null && Nr(j, e, At, dn)
+                  var L = la(e, At)
+                  L !== null && Nr(L, e, At, dn)
                 }
                 u !== null && !R && nC(u, t, a), f !== null && nC(f, t, a)
               }
@@ -34559,7 +34561,7 @@ This ensures that you're testing the behavior the user would see in the browser.
                 switch (f) {
                   case x:
                   case $:
-                  case C:
+                  case w:
                     E = g
                     break
                   case G:
@@ -34664,7 +34666,7 @@ This ensures that you're testing the behavior the user would see in the browser.
               return typeof e == 'function' && !aC(e) && e.defaultProps === void 0
             }
             function Xj(e) {
-              if (typeof e == 'function') return aC(e) ? C : x
+              if (typeof e == 'function') return aC(e) ? w : x
               if (e != null) {
                 var t = e.$$typeof
                 if (t === No) return G
@@ -34714,7 +34716,7 @@ This ensures that you're testing the behavior the user would see in the browser.
                 case $:
                   a.type = Zd(e.type)
                   break
-                case C:
+                case w:
                   a.type = eC(e.type)
                   break
                 case G:
@@ -34766,7 +34768,7 @@ This ensures that you're testing the behavior the user would see in the browser.
             function oC(e, t, a, l, u, f) {
               var g = M,
                 E = e
-              if (typeof e == 'function') aC(e) ? ((g = C), (E = eC(E))) : (E = Zd(E))
+              if (typeof e == 'function') aC(e) ? ((g = w), (E = eC(E))) : (E = Zd(E))
               else if (typeof e == 'string') g = N
               else
                 e: switch (e) {
@@ -34840,7 +34842,7 @@ Check the render method of \`` +
               return (E._debugSource = e._source), (E._debugOwner = e._owner), E
             }
             function vs(e, t, a, l) {
-              var u = wa(L, e, l, t)
+              var u = wa(j, e, l, t)
               return (u.lanes = a), u
             }
             function eQ(e, t, a, l) {
@@ -34974,8 +34976,8 @@ Check the render method of \`` +
                 V = $j(t, f)
               ;(R.current = V), (V.stateNode = R)
               {
-                var j = { element: l, isDehydrated: a, cache: null, transitions: null, pendingSuspenseBoundaries: null }
-                V.memoizedState = j
+                var L = { element: l, isDehydrated: a, cache: null, transitions: null, pendingSuspenseBoundaries: null }
+                V.memoizedState = L
               }
               return gS(V), R
             }
@@ -34993,7 +34995,7 @@ Check the render method of \`` +
               if (!e) return Sa
               var t = zi(e),
                 a = q5(t)
-              if (t.tag === C) {
+              if (t.tag === w) {
                 var l = t.type
                 if (ll(l)) return PT(t, l, a)
               }
@@ -35046,11 +35048,11 @@ Check the render method of \`` +
               var R = !0,
                 V = S4(a, l, R, e, u, f, g, E, S)
               V.context = w4(null)
-              var j = V.current,
+              var L = V.current,
                 z = Oi(),
-                Z = ms(j),
+                Z = ms(L),
                 ne = aA(z, Z)
-              return (ne.callback = t ?? null), As(j, ne, Z), pj(V, Z, z), V
+              return (ne.callback = t ?? null), As(L, ne, Z), pj(V, Z, z), V
             }
             function qh(e, t, a, l) {
               Qg(t, e)
@@ -35490,8 +35492,8 @@ Check the render method of %s.`,
                 if (typeof l == 'function') {
                   var f = l
                   l = function () {
-                    var j = Fy(g)
-                    f.call(j)
+                    var L = Fy(g)
+                    f.call(L)
                   }
                 }
                 var g = x4(t, l, e, as, null, !1, !1, '', J4)
@@ -35503,8 +35505,8 @@ Check the render method of %s.`,
                 if (typeof l == 'function') {
                   var I = l
                   l = function () {
-                    var j = Fy(R)
-                    I.call(j)
+                    var L = Fy(R)
+                    I.call(L)
                   }
                 }
                 var R = C4(e, as, null, !1, !1, '', J4)
@@ -35764,8 +35766,8 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
   function BU(n, o) {
     if (!n.nodeType || !n.setAttribute) return !1
     const s = n.nodeName === 'filter' || (n.parentNode && n.parentNode.nodeName === 'filter'),
-      { style: c, children: h, scrollTop: v, scrollLeft: p, viewBox: w, ...x } = o,
-      C = Object.values(x),
+      { style: c, children: h, scrollTop: v, scrollLeft: p, viewBox: C, ...x } = o,
+      w = Object.values(x),
       M = Object.keys(x).map((T) =>
         s || n.hasAttribute(T) ? T : nT[T] || (nT[T] = T.replace(/([A-Z])/g, (D) => '-' + D.toLowerCase())),
       )
@@ -35776,11 +35778,11 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
         tT.test(T) ? n.style.setProperty(T, D) : (n.style[T] = D)
       }
     M.forEach((T, D) => {
-      n.setAttribute(T, C[D])
+      n.setAttribute(T, w[D])
     }),
       v !== void 0 && (n.scrollTop = v),
       p !== void 0 && (n.scrollLeft = p),
-      w !== void 0 && n.setAttribute('viewBox', w)
+      C !== void 0 && n.setAttribute('viewBox', C)
   }
   var Mf = {
       animationIterationCount: !0,
@@ -35839,17 +35841,17 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
           v = []
         ;(n || o || s) &&
           (h.push([n || 0, o || 0, s || 0]),
-          v.push((p) => [`translate3d(${p.map((w) => j1(w, 'px')).join(',')})`, Km(p, 0)])),
-          Do(c, (p, w) => {
-            if (w === 'transform') h.push([p || '']), v.push((x) => [x, x === ''])
-            else if (UU.test(w)) {
-              if ((delete c[w], me.und(p))) return
-              const x = LU.test(w) ? 'px' : jU.test(w) ? 'deg' : ''
+          v.push((p) => [`translate3d(${p.map((C) => j1(C, 'px')).join(',')})`, Km(p, 0)])),
+          Do(c, (p, C) => {
+            if (C === 'transform') h.push([p || '']), v.push((x) => [x, x === ''])
+            else if (UU.test(C)) {
+              if ((delete c[C], me.und(p))) return
+              const x = LU.test(C) ? 'px' : jU.test(C) ? 'deg' : ''
               h.push(Si(p)),
                 v.push(
-                  w === 'rotate3d'
-                    ? ([C, M, T, D]) => [`rotate3d(${C},${M},${T},${j1(D, x)})`, Km(D, 0)]
-                    : (C) => [`${w}(${C.map((M) => j1(M, x)).join(',')})`, Km(C, w.startsWith('scale') ? 1 : 0)],
+                  C === 'rotate3d'
+                    ? ([w, M, T, D]) => [`rotate3d(${w},${M},${T},${j1(D, x)})`, Km(D, 0)]
+                    : (w) => [`${C}(${w.map((M) => j1(M, x)).join(',')})`, Km(w, C.startsWith('scale') ? 1 : 0)],
                 )
             }
           }),
@@ -36261,9 +36263,9 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
               children: M.img && k.jsx($U, { src: M.img, alt: M.title }),
             }),
         })),
-      w = EU(),
+      C = EU(),
       x = SU(c, {
-        ref: w,
+        ref: C,
         keys: null,
         from: { opacity: 0, transform: 'translate3d(0,10%,0)' },
         enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
@@ -36272,9 +36274,9 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
         delay: 200,
       })
     _.useEffect(() => {
-      w.start()
-    }, [c, w])
-    const C = aT.find((M) => M.id === 'all').list.map((M) => ({ ...M, title: s.formatMessage(M.title) }))[0]
+      C.start()
+    }, [c, C])
+    const w = aT.find((M) => M.id === 'all').list.map((M) => ({ ...M, title: s.formatMessage(M.title) }))[0]
     return k.jsxs(bm, {
       height: 400,
       className: n ? 'active' : '',
@@ -36327,14 +36329,14 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
             }),
             k.jsx(XU, {
               children: k.jsx(iT, {
-                href: C.href,
+                href: w.href,
                 arrow: !0,
                 color: 'var(--color-fg-subtle)',
                 hoverColor: 'var(--color-bd-pink)',
                 'data-mixpanel-id': 'products footAllProducts',
                 'data-mixpanel-pos': 'header',
-                'data-mixpanel-to': C.href,
-                children: C.title,
+                'data-mixpanel-to': w.href,
+                children: w.title,
               }),
             }),
           ],
@@ -37248,7 +37250,7 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
         c = r1(),
         { onClose: h } = o,
         v = () =>
-          pT.map((p, w) =>
+          pT.map((p, C) =>
             k.jsxs(
               _.Fragment,
               {
@@ -37277,7 +37279,7 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
                       ],
                     }),
                   }),
-                  w !== pT.length - 1 &&
+                  C !== pT.length - 1 &&
                     !c &&
                     k.jsx(q3, { gap: '32px', color: 'var(--color-border-slight)', style: { height: 218 } }),
                 ],
@@ -37312,48 +37314,44 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
         o = r1(),
         [s, c] = _.useState(),
         [h, v] = _.useState(),
-        [p, w] = _.useState(),
+        [p, C] = _.useState(),
         x = _.useRef(),
-        C = _.useRef(null),
-        M = _.useRef(null),
-        T = {
+        w = {
           products: 'products',
           walletsAndAssets: 'walletsAndAssets',
           resources: 'resources',
           partnerships: 'partnerships',
         },
-        D = [
-          { name: T.products, title: Wt.products },
-          { name: T.walletsAndAssets, title: Wt.walletsAndCoins },
-          { name: T.resources, title: Wt.resources },
-          { name: T.partnerships, title: Wt.partnerships },
-        ],
-        N = _.useCallback(() => {
-          c(null), w(!1), v(!1)
-        }, []),
-        U = _.useCallback(
-          (G) => {
-            o ||
-              (clearTimeout(M.current),
-              clearTimeout(C.current),
-              (M.current = setTimeout(() => {
-                c(G)
-              }, 300)))
-          },
-          [o],
-        ),
-        L = _.useCallback(() => {
-          C.current = setTimeout(() => {
+        M = [
+          { name: w.products, title: Wt.products },
+          { name: w.walletsAndAssets, title: Wt.walletsAndCoins },
+          { name: w.resources, title: Wt.resources },
+          { name: w.partnerships, title: Wt.partnerships },
+        ]
+      let T, D
+      const N = () => {
+          c(null), C(!1), v(!1)
+        },
+        U = (G) => {
+          o ||
+            (clearTimeout(D),
+            clearTimeout(T),
+            (D = setTimeout(() => {
+              c(G)
+            }, 300)))
+        },
+        j = () => {
+          T = setTimeout(() => {
             N()
           }, 300)
-        }, [N]),
+        },
         Y = (G) => {
           o && c(G)
         }
       _.useEffect(() => {
-        o || w(!1), o && s && w(!0)
+        o || C(!1), o && s && C(!0)
       }, [s, o])
-      const J = _.useCallback((G) => !o && { onMouseEnter: () => U(G), onMouseLeave: L }, [o, U, L])
+      const J = _.useCallback((G) => !o && { onMouseEnter: () => U(G), onMouseLeave: j }, [o])
       return k.jsx(k.Fragment, {
         children: k.jsx(ZN, {
           className: 'theme-dark',
@@ -37369,12 +37367,12 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
                     k.jsxs($N, {
                       children: [
                         k.jsxs(eO, {
-                          to:
+                          href:
                             o && s
                               ? (ee = window == null ? void 0 : window.location) == null
                                 ? void 0
                                 : ee.pathname
-                              : '/',
+                              : Tt,
                           children: [k.jsx(tO, { src: x3, title: n.formatMessage(Wt.home) }), k.jsx(nO, { src: b3 })],
                         }),
                         k.jsx(lO, {
@@ -37386,7 +37384,7 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
                       ],
                     }),
                     k.jsx(rO, {
-                      children: D.map((G) => {
+                      children: M.map((G) => {
                         const te = (G.onlyMobile && o) || G.onlyMobile === void 0,
                           Q = !G.onlyMobile && !o
                         return (
@@ -37412,24 +37410,24 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
                     }),
                     k.jsxs(sO, {
                       children: [
-                        s && s === T.products && k.jsx(ji, { ...Wt.products }),
-                        s && s === T.walletsAndAssets && k.jsx(ji, { ...Wt.walletsAndCoins }),
-                        s && s === T.partnerships && k.jsx(ji, { ...Wt.partnerships }),
-                        s && s === T.resources && k.jsx(ji, { ...Wt.resources }),
+                        s && s === w.products && k.jsx(ji, { ...Wt.products }),
+                        s && s === w.walletsAndAssets && k.jsx(ji, { ...Wt.walletsAndCoins }),
+                        s && s === w.partnerships && k.jsx(ji, { ...Wt.partnerships }),
+                        s && s === w.resources && k.jsx(ji, { ...Wt.resources }),
                       ],
                     }),
                     k.jsx(oO, {
                       children: p
                         ? k.jsx(Wb, { className: 'menu-mobile-icon', onClick: () => N() })
-                        : k.jsx(C3, { className: 'menu-mobile-icon', onClick: () => w(!0) }),
+                        : k.jsx(C3, { className: 'menu-mobile-icon', onClick: () => C(!0) }),
                     }),
                   ],
                 }),
               }),
-              k.jsx(l3, { open: s === T.products, ...J(T.products) }),
-              k.jsx(J3, { open: s === T.walletsAndAssets, ...J(T.walletsAndAssets), onClose: L }),
-              k.jsx(w3, { open: s === T.resources, ...J(T.resources) }),
-              k.jsx(R3, { open: s === T.partnerships, ...J(T.partnerships) }),
+              k.jsx(l3, { open: s === w.products, ...J(w.products) }),
+              k.jsx(J3, { open: s === w.walletsAndAssets, ...J(w.walletsAndAssets), onClose: j }),
+              k.jsx(w3, { open: s === w.resources, ...J(w.resources) }),
+              k.jsx(R3, { open: s === w.partnerships, ...J(w.partnerships) }),
             ],
           }),
         }),

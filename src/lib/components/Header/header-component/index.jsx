@@ -28,6 +28,7 @@ import LogoMobileIcon from '../../Footer/images/logo.svg'
 import Partnerships from '../Partnerships'
 import WalletsAndAssets from '../WalletsAndAssets'
 import '../../index.scss'
+import { DOMAIN } from '../../config'
 
 export const Header = () => {
   const intl = useIntl()
@@ -37,8 +38,6 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState()
 
   const dom = useRef()
-  const leaveTimerRef = useRef(null)
-  const enterTimerRef = useRef(null)
 
   const menuTypes = {
     products: 'products',
@@ -65,27 +64,30 @@ export const Header = () => {
       title: messages.partnerships,
     },
   ]
-  const closeSubmenu = useCallback(() => {
+
+  let leaveTimer
+  let enterTimer
+
+  const closeSubmenu = () => {
     setActiveMenu(null)
     setIsMobileMenuOpen(false)
     setIsHover(false)
-  }, [])
-  const handleOnMouseEnter = useCallback(
-    (menu) => {
-      if (isMobile) return
-      clearTimeout(enterTimerRef.current)
-      clearTimeout(leaveTimerRef.current)
-      enterTimerRef.current = setTimeout(() => {
-        setActiveMenu(menu)
-      }, 300)
-    },
-    [isMobile],
-  )
-  const handleOnMouseLeave = useCallback(() => {
-    leaveTimerRef.current = setTimeout(() => {
+  }
+
+  const handleOnMouseEnter = (menu) => {
+    if (isMobile) return
+    clearTimeout(enterTimer)
+    clearTimeout(leaveTimer)
+    enterTimer = setTimeout(() => {
+      setActiveMenu(menu)
+    }, 300)
+  }
+
+  const handleOnMouseLeave = () => {
+    leaveTimer = setTimeout(() => {
       closeSubmenu()
     }, 300)
-  }, [closeSubmenu])
+  }
 
   const handleClickMenu = (menu) => {
     if (!isMobile) return
@@ -110,7 +112,7 @@ export const Header = () => {
         }
       )
     },
-    [isMobile, handleOnMouseEnter, handleOnMouseLeave],
+    [isMobile],
   )
 
   return (
@@ -129,7 +131,7 @@ export const Header = () => {
           <nav>
             <Container>
               <LogoBox>
-                <LogoLink to={isMobile && activeMenu ? window?.location?.pathname : '/'}>
+                <LogoLink href={isMobile && activeMenu ? window?.location?.pathname : DOMAIN}>
                   <Logo src={LogoIcon} title={intl.formatMessage(messages.home)} />
                   <LogoMobile src={LogoMobileIcon} />
                 </LogoLink>

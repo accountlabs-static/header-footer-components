@@ -89,6 +89,7 @@
   "keystone.footer.metamask": "MetaMask Compatibility",
   "keystone.hot": "Hot",
   "keystone.saleOff": "{discount}% OFF",
+  "keystone.dollarOff": "${discount} OFF",
   "keystone.comingSoon": "Coming soon",
   "keystone.support": "Support",
   "keystone.blog": "Blog",
