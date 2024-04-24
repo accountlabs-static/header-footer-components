@@ -1,2 +1,2 @@
-export default Card
-declare function Card(): import('react/jsx-runtime').JSX.Element
+export default Card;
+declare function Card(): import("react/jsx-runtime").JSX.Element;

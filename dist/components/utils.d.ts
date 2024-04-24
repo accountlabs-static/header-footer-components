@@ -1,1 +1,1 @@
-export function isBrowser(): boolean
+export function isBrowser(): boolean;

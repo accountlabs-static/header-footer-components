@@ -1,4 +1,4 @@
 export default function useMessages(): {
-  linkText: string | any[]
-  evmCoinsTip: string | any[]
-}
+    linkText: string | any[];
+    evmCoinsTip: string | any[];
+};

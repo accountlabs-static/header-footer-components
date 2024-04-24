@@ -1,7 +1,4 @@
-export default function Products({
-  open,
-  ...args
-}: {
-  [x: string]: any
-  open: any
-}): import('react/jsx-runtime').JSX.Element
+export default function Products({ open, ...args }: {
+    [x: string]: any;
+    open: any;
+}): import("react/jsx-runtime").JSX.Element;
