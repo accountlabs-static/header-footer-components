@@ -61,7 +61,6 @@ const walletsAndAssets = [
     id: 'okx',
     walletName: 'OKX',
     icon: <OKX width="48px" height="48px" />,
-    tag: 'new',
     coins: [
       {
         id: 'btc',
@@ -165,6 +164,7 @@ const WalletsAndAssets = ({ open, ...args }) => {
                     <Coin key={coin.id}>
                       {coin.icon}
                       <CoinName>{coin.coinName}</CoinName>
+                      {coin.tag && <Tag color="purple">{coin.tag}</Tag>}
                     </Coin>
                   )
                 })}
