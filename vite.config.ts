@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import { UserConfigExport } from 'vite'
 import { name } from './package.json'
+import { babel } from '@rollup/plugin-babel'
 
 const app = async (): Promise<UserConfigExport> => {
   /**
@@ -35,6 +36,13 @@ const app = async (): Promise<UserConfigExport> => {
             'react/jsx-runtime': 'react/jsx-runtime',
           },
         },
+        plugins: [
+          babel({
+            extensions: ['.js', '.ts', '.jsx', '.tsx'],
+            babelHelpers: 'bundled',
+            plugins: [['babel-plugin-styled-components', { displayName: false }]],
+          }),
+        ],
       },
     },
   })
