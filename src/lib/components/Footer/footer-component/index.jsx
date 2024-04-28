@@ -229,12 +229,6 @@ export const Footer = () => {
       link: isZh ? 'https://twitter.com/KeystoneCN' : 'https://twitter.com/KeystoneWallet',
     },
     {
-      title: 'Medium',
-      icon: medium,
-      activeIcon: mediumC,
-      link: 'https://blog.keyst.one',
-    },
-    {
       title: 'YouTube',
       icon: youtube,
       activeIcon: youtubeC,
