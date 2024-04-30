@@ -33,8 +33,6 @@ import discord from '../images/discord.png'
 import discordC from '../images/discord_c.png'
 import twitter from '../images/x.png'
 import twitterC from '../images/x_c.png'
-import medium from '../images/medium.png'
-import mediumC from '../images/medium_c.png'
 import youtube from '../images/youtube.png'
 import youtubeC from '../images/youtube_c.png'
 import telegram from '../images/telegram.png'
@@ -47,6 +45,8 @@ import warpcast from '../images/warpcast.png'
 import warpcastC from '../images/warpcast_c.png'
 import primal from '../images/primal.png'
 import primalC from '../images/primal_c.png'
+import facebook from '../images/facebook.png'
+import facebookC from '../images/facebook_c.png'
 import logo from '../images/logo.png'
 
 const menuList = [
@@ -263,6 +263,12 @@ export const Footer = () => {
       icon: primal,
       activeIcon: primalC,
       link: 'https://primal.net/p/npub16s4cnphx2k7ndmlt9qmurkdrrulcammg3jxnz0f9c7dhepqg38zqpp4p24',
+    },
+    {
+      title: 'Facebook',
+      icon: facebook,
+      activeIcon: facebookC,
+      link: 'https://www.facebook.com/people/Keystone-Wallet/61558817937104/',
     },
   ]
 
