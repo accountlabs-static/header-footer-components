@@ -30,7 +30,8 @@ import { useIsMobile } from '../../hooks'
 import Atom from '../../assets/images/Atom'
 import Cro from '../../assets/images/Cro'
 import Dym from '../../assets/images/Dym'
-import NunchukLight from '../../assets/images/NunchukLight'
+import Typhon from '../../assets/images/Typhon'
+import Ada from '../../assets/images/Ada'
 
 const walletsAndAssets = [
   {
@@ -107,15 +108,15 @@ const walletsAndAssets = [
     shouldShowEvmHoverTip: false,
   },
   {
-    id: 'nunchuk',
-    walletName: 'Nunchuk',
-    icon: <NunchukLight width="48px" height="48px" />,
+    id: 'typhon',
+    walletName: 'Typhon',
+    icon: <Typhon width="48px" height="48px" />,
     tag: 'new',
     coins: [
       {
-        id: 'btc',
-        coinName: 'BTC',
-        icon: <Btc width="32px" height="32px" />,
+        id: 'ada',
+        coinName: 'ADA',
+        icon: <Ada width="32px" height="32px" />,
       },
     ],
     supportAllEvmChains: false,
