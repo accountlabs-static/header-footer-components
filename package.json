@@ -1,8 +1,8 @@
 {
   "name": "header-footer-components",
   "private": false,
-  "version": "2.0.4",
-  "packageManager": "pnpm@8.4.0",
+  "version": "2.1.0",
+  "packageManager": "pnpm@9.5.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/KeystoneHQ/header-footer-components"
@@ -19,7 +19,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "engines": {
-    "node": "18"
+    "node": "^22.14.0"
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
